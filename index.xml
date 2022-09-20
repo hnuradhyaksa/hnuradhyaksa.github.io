@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>adhyaksa</title>
-    <link>https://hna997.github.io/</link>
+    <link>https://adhyaksa.io/</link>
     <description>Recent content on adhyaksa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Tue, 20 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hna997.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://adhyaksa.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://hna997.github.io/about/</link>
+      <link>https://adhyaksa.io/about/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
-      <guid>https://hna997.github.io/about/</guid>
+      <guid>https://adhyaksa.io/about/</guid>
       <description>Greetings. I’m Nur Adhyaksa, a data analyst aspirant. Right now, my focus is to build a proper portfolio covering my interests, including football, energy, and data visualization. Hopefully, I can dive in to analyze and contribute to the real-world problem soon.
 For my expertise, mostly I utilize Jupyter Notebook to write python and Postgres for SQL for my data analysis routine. For visualizing, I use tableau or R.
 This personal web would also hold my writings related to my thoughts on general things.</description>
@@ -21,10 +21,10 @@ This personal web would also hold my writings related to my thoughts on general 
     
     <item>
       <title>This is my first post</title>
-      <link>https://hna997.github.io/posts/post-1/</link>
+      <link>https://adhyaksa.io/posts/post-1/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
-      <guid>https://hna997.github.io/posts/post-1/</guid>
+      <guid>https://adhyaksa.io/posts/post-1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Dictum varius duis at consectetur lorem donec massa. Id semper risus in hendrerit gravida rutrum quisque non tellus. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Massa tempor nec feugiat nisl pretium. Luctus venenatis lectus magna fringilla urna.</description>
     </item>
     
