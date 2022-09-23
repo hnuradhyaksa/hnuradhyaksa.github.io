@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>adhyaksa</title>
-    <link>https://hna997.github.io/</link>
+    <link>https://hnuradhyaksa.github.io/</link>
     <description>Recent content on adhyaksa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Tue, 20 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hna997.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://hna997.github.io/about/</link>
+      <link>https://hnuradhyaksa.github.io/about/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
-      <guid>https://hna997.github.io/about/</guid>
+      <guid>https://hnuradhyaksa.github.io/about/</guid>
       <description>Greetings. I’m Nur Adhyaksa, a data analyst aspirant. Right now, my focus is to build a proper portfolio covering my interests, including football, energy, and data visualization. Hopefully, I can dive in to analyze and contribute to the real-world problem soon.
 For my expertise, mostly I utilize Jupyter Notebook to write python and Postgres for SQL for my data analysis routine. For visualizing, I use tableau or R.
 This personal web would also hold my writings related to my thoughts on general things.</description>
@@ -21,10 +21,10 @@ This personal web would also hold my writings related to my thoughts on general 
     
     <item>
       <title>Looking Back at MUFC&#39;s Performance Last Season</title>
-      <link>https://hna997.github.io/posts/2022-09-21-mufc-last-season/</link>
+      <link>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
-      <guid>https://hna997.github.io/posts/2022-09-21-mufc-last-season/</guid>
+      <guid>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</guid>
       <description>Manchester United&amp;rsquo;s last season&amp;rsquo;s performance is unbearable to watch. At least for their supporter, including me. As a long-life fan, my bar is already set high as I&amp;rsquo;ve already witnessed the glorious era of this club. Apparently, it is too high for around these periods.
 The squad is in a transitional period, and they haven&amp;rsquo;t found their true shape yet. Even the manager has changed eight times since the retirement of Sir Alex, for crying out loud.</description>
     </item>
