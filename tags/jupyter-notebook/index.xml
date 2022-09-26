@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ggplot2 on adhyaksa</title>
-    <link>https://hnuradhyaksa.github.io/tags/ggplot2/</link>
-    <description>Recent content in ggplot2 on adhyaksa</description>
+    <title>Jupyter Notebook on adhyaksa</title>
+    <link>https://hnuradhyaksa.github.io/tags/jupyter-notebook/</link>
+    <description>Recent content in Jupyter Notebook on adhyaksa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Mon, 26 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/jupyter-notebook/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wanna know the best signing in last season&#39;s Premier League summer transfer?</title>
       <link>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</link>
@@ -16,16 +16,6 @@
       <guid>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</guid>
       <description>This writing is a repercussion of my curiosity as I seek to quantify the 2021/2022 Premier League summer transfer results. I will try to answer these questions:
 Who&amp;rsquo;s the best Premier League summer signing? How many players failed to live up to price tag expectations? However, as a prerequisite, I need a massive database that covers detailed transfer fees at least for Premier League clubs. Lucky for me, I stumbled upon an amazing GitHub repo that provides guidance on how to append the transfermarkt data—the holy grail of global football transfers data—into a processable form.</description>
-    </item>
-    
-    <item>
-      <title>Looking Back at MUFC&#39;s Performance Last Season</title>
-      <link>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</link>
-      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</guid>
-      <description>Manchester United&amp;rsquo;s last season&amp;rsquo;s performance is unbearable to watch. At least for their supporter, including me. As a long-life fan, my bar is already set high as I&amp;rsquo;ve already witnessed the glorious era of this club. Apparently, it is too high for around these periods.
-The squad is in a transitional period, and they haven&amp;rsquo;t found their true shape yet. Even the manager has changed eight times since the retirement of Sir Alex, for crying out loud.</description>
     </item>
     
   </channel>
