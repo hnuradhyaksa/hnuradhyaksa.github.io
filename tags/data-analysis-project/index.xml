@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>adhyaksa</title>
-    <link>https://hnuradhyaksa.github.io/</link>
-    <description>Recent content on adhyaksa</description>
+    <title>data analysis project on adhyaksa</title>
+    <link>https://hnuradhyaksa.github.io/tags/data-analysis-project/</link>
+    <description>Recent content in data analysis project on adhyaksa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Sat, 15 Oct 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Jabar Data Viz Festival Submission</title>
-      <link>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</link>
-      <pubDate>Sat, 15 Oct 2022 18:31:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</guid>
-      <description>Just now, I commit to this awesome data visualization competition (quite rare to be found in Indonesia I presumed) held by Jabar Digital Service.
-Kindly check the visualization I&amp;rsquo;ve made through this link. If you like it, feel free to give it a star ⭐
-Have a good day 😊
-Oh, and here is the preview of my visualization:</description>
-    </item>
-    
+    <lastBuildDate>Mon, 26 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/data-analysis-project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Finding Out Premier League Best Summer Signing: 2021/2022 Edition</title>
       <link>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</link>
@@ -28,17 +16,6 @@ Oh, and here is the preview of my visualization:</description>
       <guid>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</guid>
       <description>This writing is a repercussion of my curiosity as I seek to quantify the 2021/2022 Premier League summer transfer results. I will try to answer these questions:
 Who&amp;rsquo;s the best Premier League summer signing? How many players failed to live up to price tag expectations? However, as a prerequisite, I need a massive database that covers detailed transfer fees at least for Premier League clubs. Lucky for me, I stumbled upon an amazing GitHub repo that provides guidance on how to append the transfermarkt data—the holy grail of global football transfers data—into a processable form.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://hnuradhyaksa.github.io/about/</link>
-      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/about/</guid>
-      <description>Greetings. I’m Nur Adhyaksa, a data analyst aspirant. Right now, my focus is to build a proper portfolio covering my interests, including football, energy, and data visualization. Hopefully, I can dive in to analyze and contribute to the real-world problem soon.
-For my expertise, mostly I utilize Jupyter Notebook to write python and Postgres for SQL for my data analysis routine. For visualizing, I use tableau or R.
-This personal web would also hold my writings related to my thoughts on general things.</description>
     </item>
     
     <item>
