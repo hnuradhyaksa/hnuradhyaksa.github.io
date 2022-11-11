@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard - adhyaksa</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A concise dashboard to monitor worldwide energy transition progress" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard" />
+<meta property="og:description" content="A concise dashboard to monitor worldwide energy transition progress" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hnuradhyaksa.github.io/posts/2022-11-02-energy-transition-tracker/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-02T18:31:03+07:00" />
+<meta property="article:modified_time" content="2022-11-02T18:31:03+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard"/>
+<meta name="twitter:description" content="A concise dashboard to monitor worldwide energy transition progress"/>
+<script src="https://hnuradhyaksa.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hnuradhyaksa.github.io/css/fonts.2f2a3c0a5151b34b17643a9cc42899051859706bf5d19702adb812f7bc8d125a.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hnuradhyaksa.github.io/css/main.c574bf7ba07ef7a60d113e3e0a2ae376d52d188fec302397cf521cf5a4ba57ec.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://hnuradhyaksa.github.io/css/dark.5459c1a717a3a41d18e0bc7322c1f741de68be742ee5080c25043cacffcc6d45.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<a href="https://hnuradhyaksa.github.io/">adhyaksa</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://hnuradhyaksa.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard</h1>
+			<div class="meta">Posted on Nov 2, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p>Energy is an essential component of modern civilization. It fuels our daily activities. Even energy usage is strongly correlated to a country&rsquo;s prosperity. However, we have used it unwisely as we have failed to take into account the externalities. Now, we must redefine our trajectory on how to use energy properly.</p>
+<p>Through this article, I want to examine the current status of energy transition around the world. I want to find out which countries are quite progressive (and which countries are not) in terms of renewable energy development.</p>
+<p>Ultimately, I design a dashboard in order to keep a closer look (collectively monitor) global renewable energy development.</p>
+<p>My writing will be divided into two separate parts:</p>
+<ol>
+<li><a href="#part-i-an-ode-to-a-sustainable-earth">An explorative elucidation</a></li>
+<li><a href="#part-ii-let-us-be-the-overseer">A straightforward dashboard</a></li>
+</ol>
+<p>Feel free to skip the first part if you want to explore the dashboard.</p>
+<h1 id="part-i-an-ode-to-a-sustainable-earth">Part I: An Ode To A Sustainable Earth</h1>
+<p><em>The world is progressing into a better shape. Most of us are also surrounded by well-being. However, our past approach to reaching prosperity contains blemishes as we burn a myriad of fossil fuels to drive the economy. Sadly, our atmospheric system is not made to self-cleanse. The air pollutant accumulates, and the consequences are coming.</em></p>
+<p><em>Now we must redeem.</em></p>
+<h3 id="overlooked-sin-and-approaching-consequences">Overlooked sin and approaching consequences</h3>
+<p>We have been progressive in economic development for the last century, and energy has an essential role in accelerating our global economy.</p>
+<p>Replacement of human labor by machinery fueled by fossil energy remark the beginning of the Industrial Revolution during the early nineteenth century. Later, it was used to generate electricity massively. It is an improvement in efficiency, however, also a catalyst of greenhouse gasses accumulation. The rapid burning is aligned with the rising greenhouse gasses concentration.</p>
+<figure><img src="figs/ghg-rise.png" width="100%"/>
+</figure>
+
+<figure><img src="figs/ghg-gdp.png" width="100%"/>
+</figure>
+
+<p>Above indications show that our well-being does not escape the emissions that accumulate and overshadow us.</p>
+<h3 id="current-condition">Current condition</h3>
+<p>In 2021, the world&rsquo;s electricity generation consisted of 36.8% coal, 22.3% gas, and 2.7% other fossil fuels. Global electricity consumption has risen by 12,550.35 TWh (83.86%) since 2000 and is predicted to keep growing as our population folds and our necessities intensify. Those stand without the interference of efficiency measures.</p>
+<figure><img src="figs/current-formation.png" width="100%"/>
+</figure>
+
+<p>Since decades ago, coal has been the first choice in fulfilling power necessities. It is cheap, abundant, and transportable. It is suitable to fuel a country&rsquo;s economic growth.</p>
+<p>Nevertheless, this kind of energy source has a by-product. Coal is an energy source that is carbon intensive, where it produces 97.13 kilograms of CO2 per MMBtu (sub-bituminous). It is the highest compared to other fossil sources.</p>
+<figure><img src="figs/coal.png" width="100%"/>
+</figure>
+
+<p>The shift in our energy landscape has just felt recently. Many countries (especially high-income countries) have begun to intensify their renewable energy development, seeking to replace fossil generation completely.</p>
+<p>Technology advancement and policy design played an essential role in this transformation. Variable renewable energy technologies, previously an expensive and unreliable kind of generation, have become favorites and feasible to be reliably integrated into our power system. In fact, the barriers to the utilization of these energy sources are not technological, but rather economic and political.</p>
+<figure><img src="figs/vre.png" width="100%"/>
+</figure>
+
+<p>Since The Paris Accord, we mainly build VRE. Solar and wind have grown by almost 1,000 and 500 GW, respectively.</p>
+<figure><img src="figs/change-capacity.png" width="100%"/>
+</figure>
+
+<p>Even though we are being progressive, we are still not on our trajectory to meet the developmental target.</p>
+<h3 id="joint-effort-to-mend-past-mistakes">Joint effort to mend past mistakes</h3>
+<p>The Paris Climate Accord marks the turnaround of the world&rsquo;s sustainable energy development as around 175 countries have pledged to make an effort to contribute towards climate change mitigation. The majority of the countries have also set a renewable energy target that seeks to be fulfilled before 2060.</p>
+<p>Liberia, Tonga, and Jordan were seen to be the most progressive countries in building clean generations. Liberia topped the list with a +47.37% renewable capacity share increase since 2015.</p>
+<figure><img src="figs/prog_countries.png" width="100%"/>
+</figure>
+
+<p>On the other hand, the Central African Republic suffer a setback in target fulfillment. The renewable capacity shares shrank by 27.78% since The Paris Accord.</p>
+<figure><img src="figs/reg-countries.png" width="100%"/>
+</figure>
+
+<h1 id="part-ii-let-us-be-the-overseer">Part II: Let Us Be The Overseer</h1>
+<p>As a conclusion of my article, I design a dashboard that contains parameters for clean energy transition observation across countries. I use data from Ember-Climate, an awesome think tank that focuses on the coal use reduction campaign.</p>
+<p>All of the calculation shenanigans to produce the derivative parameters have also been uploaded on my Github.</p>
+<h3 id="the-interface">The Interface</h3>
+<figure><img src="figs/tracker-dashboard.png" width="100%"/>
+</figure>
+
+<p>You can check it at my Tableau profile. Feel free to explore!</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/project">project</a></li>
+					
+					<li><a href="/tags/data-visualization-project">data visualization project</a></li>
+					
+					<li><a href="/tags/python">python</a></li>
+					
+					<li><a href="/tags/tableau">Tableau</a></li>
+					
+					<li><a href="/tags/dataviz">dataviz</a></li>
+					
+					<li><a href="/tags/dashboard-design">dashboard design</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<br>
+  <div style="display:flex"><a class="soc" href="https://github.com/hnuradhyaksa" title="GitHub"><i data-feather="github"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="https://twitter.com/nuradhyaksa" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="https://www.linkedin.com/in/nuradhyaksa/" title="LinkedIn"><i data-feather="linkedin"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="mailto:hnuradhyaksa@gmail.com" title="Email"><i data-feather="mail"></i></a>
+    <a class=""></a>
+    &nbsp;<div class="footer-info">
+    &nbsp;2022  ©adhyaksa 
+  </div>
+</br>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

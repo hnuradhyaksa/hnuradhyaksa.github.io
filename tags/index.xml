@@ -9,11 +9,20 @@
     <copyright>©adhyaksa</copyright>
     <lastBuildDate>Sat, 15 Oct 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dataviz</title>
-      <link>https://hnuradhyaksa.github.io/tags/dataviz/</link>
+      <title>competition</title>
+      <link>https://hnuradhyaksa.github.io/tags/competition/</link>
       <pubDate>Sat, 15 Oct 2022 18:31:03 +0700</pubDate>
       
-      <guid>https://hnuradhyaksa.github.io/tags/dataviz/</guid>
+      <guid>https://hnuradhyaksa.github.io/tags/competition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data visualization project</title>
+      <link>https://hnuradhyaksa.github.io/tags/data-visualization-project/</link>
+      <pubDate>Sat, 15 Oct 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/tags/data-visualization-project/</guid>
       <description></description>
     </item>
     
@@ -29,7 +38,7 @@
     <item>
       <title>data analysis project</title>
       <link>https://hnuradhyaksa.github.io/tags/data-analysis-project/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
+      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/tags/data-analysis-project/</guid>
       <description></description>
@@ -38,7 +47,7 @@
     <item>
       <title>football</title>
       <link>https://hnuradhyaksa.github.io/tags/football/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
+      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/tags/football/</guid>
       <description></description>
@@ -47,36 +56,18 @@
     <item>
       <title>ggplot2</title>
       <link>https://hnuradhyaksa.github.io/tags/ggplot2/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
+      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Jupyter Notebook</title>
-      <link>https://hnuradhyaksa.github.io/tags/jupyter-notebook/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/tags/jupyter-notebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://hnuradhyaksa.github.io/tags/python/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data viz</title>
-      <link>https://hnuradhyaksa.github.io/tags/data-viz/</link>
+      <title>project</title>
+      <link>https://hnuradhyaksa.github.io/tags/project/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
-      <guid>https://hnuradhyaksa.github.io/tags/data-viz/</guid>
+      <guid>https://hnuradhyaksa.github.io/tags/project/</guid>
       <description></description>
     </item>
     

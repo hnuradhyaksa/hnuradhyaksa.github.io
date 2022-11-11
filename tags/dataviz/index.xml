@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Sat, 15 Oct 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Nov 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard</title>
+      <link>https://hnuradhyaksa.github.io/posts/2022-11-02-energy-transition-tracker/</link>
+      <pubDate>Wed, 02 Nov 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/posts/2022-11-02-energy-transition-tracker/</guid>
+      <description>Energy is an essential component of modern civilization. It fuels our daily activities. Even energy usage is strongly correlated to a country&amp;rsquo;s prosperity. However, we have used it unwisely as we have failed to take into account the externalities. Now, we must redefine our trajectory on how to use energy properly.
+Through this article, I want to examine the current status of energy transition around the world. I want to find out which countries are quite progressive (and which countries are not) in terms of renewable energy development.</description>
+    </item>
+    
     <item>
       <title>My Jabar Data Viz Festival Submission</title>
       <link>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</link>
@@ -16,8 +26,8 @@
       <guid>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</guid>
       <description>Just now, I commit to this awesome data visualization competition (quite rare to be found in Indonesia I presumed) held by Jabar Digital Service.
 Kindly check the visualization I&amp;rsquo;ve made through this link. If you like it, feel free to give it a star ⭐
-Have a good day 😊
-Oh, and here is the preview of my visualization:</description>
+Oh, and here is the preview of my visualization:
+Have a good day 😊</description>
     </item>
     
   </channel>

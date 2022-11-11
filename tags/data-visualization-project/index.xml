@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data visualization project on adhyaksa</title>
+    <link>https://hnuradhyaksa.github.io/tags/data-visualization-project/</link>
+    <description>Recent content in data visualization project on adhyaksa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>©adhyaksa</copyright>
+    <lastBuildDate>Sat, 15 Oct 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/data-visualization-project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Jabar Data Viz Festival Submission</title>
+      <link>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</link>
+      <pubDate>Sat, 15 Oct 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/posts/2022-10-15-jdvf-2022/</guid>
+      <description>Just now, I commit to this awesome data visualization competition (quite rare to be found in Indonesia I presumed) held by Jabar Digital Service.
+Kindly check the visualization I&amp;rsquo;ve made through this link. If you like it, feel free to give it a star ⭐
+Oh, and here is the preview of my visualization:
+Have a good day 😊</description>
+    </item>
+    
+  </channel>
+</rss>

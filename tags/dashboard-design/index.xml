@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on adhyaksa</title>
-    <link>https://hnuradhyaksa.github.io/tags/python/</link>
-    <description>Recent content in python on adhyaksa</description>
+    <title>dashboard design on adhyaksa</title>
+    <link>https://hnuradhyaksa.github.io/tags/dashboard-design/</link>
+    <description>Recent content in dashboard design on adhyaksa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Wed, 02 Nov 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Nov 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/dashboard-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tracking Country&#39;s Energy Transition Progression with Tableau Dashboard</title>
       <link>https://hnuradhyaksa.github.io/posts/2022-11-02-energy-transition-tracker/</link>
@@ -16,17 +16,6 @@
       <guid>https://hnuradhyaksa.github.io/posts/2022-11-02-energy-transition-tracker/</guid>
       <description>Energy is an essential component of modern civilization. It fuels our daily activities. Even energy usage is strongly correlated to a country&amp;rsquo;s prosperity. However, we have used it unwisely as we have failed to take into account the externalities. Now, we must redefine our trajectory on how to use energy properly.
 Through this article, I want to examine the current status of energy transition around the world. I want to find out which countries are quite progressive (and which countries are not) in terms of renewable energy development.</description>
-    </item>
-    
-    <item>
-      <title>Finding Out Premier League Best Summer Signing: 2021/2022 Edition</title>
-      <link>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</guid>
-      <description>An interactive version of this observation is available on my Tableau page
-This writing is a repercussion of my curiosity as I seek to quantify the 2021/2022 Premier League summer transfer results. I will try to answer these questions:
-Who&amp;rsquo;s the best Premier League summer signing? How many players failed to live up to price tag expectations? However, as a prerequisite, I need a massive database that covers detailed transfer fees at least for Premier League clubs.</description>
     </item>
     
   </channel>

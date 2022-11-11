@@ -7,25 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Mon, 26 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/football/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Finding Out Premier League Best Summer Signing: 2021/2022 Edition</title>
-      <link>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/posts/2022-09-24-best-pl2122-transfer/</guid>
-      <description>This writing is a repercussion of my curiosity as I seek to quantify the 2021/2022 Premier League summer transfer results. I will try to answer these questions:
-Who&amp;rsquo;s the best Premier League summer signing? How many players failed to live up to price tag expectations? However, as a prerequisite, I need a massive database that covers detailed transfer fees at least for Premier League clubs. Lucky for me, I stumbled upon an amazing GitHub repo that provides guidance on how to append the transfermarkt data—the holy grail of global football transfers data—into a processable form.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 20 Sep 2022 14:26:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/football/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All About Manchester United Performance Last Season</title>
       <link>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</link>
       <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/posts/2022-09-21-mufc-last-season/</guid>
-      <description>Manchester United&amp;rsquo;s last season&amp;rsquo;s performance is unbearable to watch. At least for their supporter, including me. As a long-life fan, my bar is already set high as I&amp;rsquo;ve already witnessed the glorious era of this club. Apparently, it is too high for around these periods.
-The squad is in a transitional period, and they haven&amp;rsquo;t found their true shape yet. Even the manager has changed eight times since the retirement of Sir Alex, for crying out loud.</description>
+      <description>Table of Content Motivation Approach and Tools The Findings Insight Summary Recommendation Motivation Manchester United has experienced their worst performance, where they only managed to collect 58 points (16 wins, 10 draws, and 12 losses) by the end of the 2021/2022 season—the lowest number of points accumulated by the club since the establishment of the Premier League format in 1992. This is in stark contrast to the previous season, where they could finish second and collect 73 points (21 wins, 11 draws, and 6 losses).</description>
     </item>
     
   </channel>
