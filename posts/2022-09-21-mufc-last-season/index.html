@@ -74,7 +74,7 @@
 <h1 id="approach-and-tools"><em>Approach and Tools</em></h1>
 <p>By leveraging football data publicly available on the <a href="https://fbref.com/en/comps/9/Premier-League-Stats">FBRef website</a>, I will explore further using primarily <strong>SQL</strong> to get insights. The data contains general to comprehensive football statistics that can cover player&rsquo;s performance regardless of the position.</p>
 <p>I utilize <strong>PostgreSQL</strong> to analyze the data, and later <strong>tableau</strong> and the <strong>ggplot2</strong> library on R to visualize the findings.</p>
-<p>Table summary:</p>
+<p>Summary of comprehension:</p>
 <table>
 <thead>
 <tr>
@@ -111,8 +111,36 @@
 <details>
 <summary>A few annotations:</summary>
 
+<h4 id="football-terminologies">Football terminologies</h4>
+<p>Below is a list of football terminology used in this article:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Terminology</th>
+<th style="text-align:left">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Per 90</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Attacking third</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Midfield third</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Defensive third</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h4 id="construction-of-the-main-table">Construction of the main table</h4>
-<p>The master table will be called frequently and take up many spaces. Therefore, to summarize the query displayed on this website, the master table formed by Common Table Expression (CTE) will be written below and called in the query block by using a corresponding comment.</p>
+<p>The master table will be called frequently and take up many spaces. Therefore, to summarize the query displayed on this page, the master table formed by Common Table Expression (CTE) will be written below and called in the query block by using a corresponding comment.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#75715e">--merged we undefeated
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">WITH</span> pl21_22 <span style="color:#66d9ef">AS</span>
 </span></span><span style="display:flex;"><span>(
@@ -160,10 +188,63 @@
 </details>
 
 <hr>
+<h4 id="player-selection">Player selection</h4>
 <h1 id="the-findings"><em>The Findings</em></h1>
+<h2 id="united-was-among-the-biggest-spender-but-failed-to-improve-their-leagues-position">United was among the biggest spender but failed to improve their league&rsquo;s position.</h2>
+<p>Manchester United spent <strong>140 million euros</strong> in the 2021/2022 summer transfer—the <strong>second biggest spender</strong> after Arsenal. They brought three high-profile players, including Jadon Sancho from Borussia Dortmund for 85 million, Raphaël Varane from Madrid for 40 million, and Cristiano Ronaldo, United&rsquo;s former player, from Juventus for 15 million.</p>
+<p>However, instead of improving their league standing, <strong>they fell to sixth place</strong>. United was <strong>the most wasteful and inefficient spender</strong>, reflected in the 2021/20222 transfer outcome.</p>
+<figure><img src="figs/spending_progression.png" width="100%"/>
+</figure>
+
+
+<details>
+<summary>Show SQL Query</summary>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#75715e">--calling master table
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>transfer_fee <span style="color:#66d9ef">AS</span>(
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> 	<span style="color:#66d9ef">CASE</span> transfer.club_name 
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Manchester United&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Manchester Utd&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Liverpool FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Liverpool&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Chelsea FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Chelsea&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;West Ham United&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;West Ham&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Tottenham Hotspur&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Tottenham&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Arsenal FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Arsenal&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Everton FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Everton&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Newcastle United&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Newcastle Utd&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Wolverhampton Wanderers&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Wolves&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Southampton FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Southampton&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Brighton &amp; Hove Albion&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Brighton&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Burnley FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Burnley&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Watford FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Watford&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> <span style="color:#e6db74">&#39;Brentford FC&#39;</span> <span style="color:#66d9ef">THEN</span> <span style="color:#e6db74">&#39;Brentford&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">ELSE</span> transfer.club_name 
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">END</span> <span style="color:#66d9ef">AS</span> club_name,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(transfer.fee_cleaned) <span style="color:#66d9ef">AS</span> transfer_fee,
+</span></span><span style="display:flex;"><span>		ROW_NUMBER() OVER (<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">SUM</span>(transfer.fee_cleaned) <span style="color:#66d9ef">DESC</span>) <span style="color:#66d9ef">AS</span> spending_rank
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> 	<span style="color:#e6db74">&#34;transfer_database&#34;</span>.transfers <span style="color:#66d9ef">AS</span> transfer
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span>	transfer.transfer_movement		<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;in&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">AND</span> transfer.transfer_period	<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Summer&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">AND</span> transfer.league			<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Premier League&#39;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">AND</span> transfer.season			<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2021/2022&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>	transfer.club_name
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>	club_name,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(spending_rank),
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">CASE</span> 
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">WHEN</span> comparation.Squad_20_21 <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span> <span style="color:#66d9ef">THEN</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> <span style="color:#66d9ef">SUM</span>(comparation.Rank_21_22)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">ELSE</span> <span style="color:#66d9ef">SUM</span>(comparation.Rank_20_21) <span style="color:#f92672">-</span> <span style="color:#66d9ef">SUM</span>(comparation.Rank_21_22)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">END</span> <span style="color:#66d9ef">AS</span> progression
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span>	comparation
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">RIGHT</span> <span style="color:#66d9ef">JOIN</span>	transfer_fee
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ON</span>	comparation.Squad_21_22 <span style="color:#f92672">=</span> club_name
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>	comparation.Squad_20_21, club_name
+</span></span></code></pre></div>
+</details>
+
 <h2 id="united-considered-having-a-weak-defensive-play-with-mediocre-attacking-play">United considered having a weak defensive play with mediocre attacking play</h2>
+<p>Manchester United only able to produced <strong>13.29 shots</strong> per game, while allowed <strong>13.34 shots</strong>. The big six team (other than United) averaged 16.18 shots per game and allowed only 9.35 shots.</p>
 <p>Manchester United are nowhere near City or Liverpool level during the previous season. Similar to Tottenham, United did not have decent attacking to cover their messy defense. Even though such typical performance could make Tottenham reach the Champions League, it was not reliable hence <strong>prone to losing points</strong>.</p>
-<p>Manchester United only able to produce <strong>13.29 shots</strong> per game, while allowing <strong>13.34 shots</strong>. The big six team (other than United) has an average of 16.18 shots per game and allowing only 9.35 shots.</p>
 <blockquote>
 <p>The Big Six team is England&rsquo;s top-flight elite club in term of their current and historical performance. They consist of Manchester City, Manchester United, Liverpool, Tottenham, Arsenal, and Chelsea. 
 Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-english-clubs-nickname-explained/130iokmi8t8dt1k3kudou73s1k">characteristics of this group</a> is to compete at least in the top 4, have a large fanbase, and immense funding power.</p>
@@ -171,29 +252,36 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 <figure><img src="figs/united_overall_pl21_22.png" width="100%"/>
 </figure>
 
-<h2 id="among-the-big-six-only-city-liverpool-and-chelsea-have-more-player-involved-in-goalscoring">Among &lsquo;The Big Six&rsquo;, Only City, Liverpool, and Chelsea have more player involved in goalscoring</h2>
+<h2 id="united-made-a-few-touches-in-the-front-area-compared-to-other-big-six">United made a few touches in the front area compared to other &lsquo;Big Six&rsquo;</h2>
+<p>United was not dominant in the opponent&rsquo;s area, where they only had <strong>175 touches per game</strong>, among the lowest compared to the other &lsquo;Big Six&rsquo;. Overall, the majority of their ball flow was in the middle area. In fact, united is a team that often plays the ball in their own defensive area with <strong>202 touches per game</strong>. Only Tottenham outperform United in that metric.</p>
+<figure><img src="figs/possession_heatmap.png" width="100%"/>
+</figure>
+
 
 <details>
 <summary>Show SQL Query</summary>
 
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>	goals,
-</span></span><span style="display:flex;"><span>        squad
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> 	<span style="color:#e6db74">&#34;PL21_22&#34;</span>.stats
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span> 	squad <span style="color:#66d9ef">IN</span>
-</span></span><span style="display:flex;"><span>            (
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Manchester Utd&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Manchester City&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Liverpool&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Arsenal&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Chelsea&#39;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;Tottenham&#39;</span>
-</span></span><span style="display:flex;"><span>            )
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">AND</span>		minutes <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span>	goals <span style="color:#66d9ef">ASC</span>, squad <span style="color:#66d9ef">ASC</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span>	squad,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(touches_own_pen)<span style="color:#f92672">/</span><span style="color:#ae81ff">38</span> <span style="color:#66d9ef">AS</span> touches_own_pen,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(touches_other_pen)<span style="color:#f92672">/</span><span style="color:#ae81ff">38</span> <span style="color:#66d9ef">AS</span> touches_other_pen,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(touches_def)<span style="color:#f92672">/</span><span style="color:#ae81ff">38</span> <span style="color:#66d9ef">AS</span> touches_def,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(touches_mid)<span style="color:#f92672">/</span><span style="color:#ae81ff">38</span> <span style="color:#66d9ef">AS</span> touches_mid,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SUM</span>(touches_front)<span style="color:#f92672">/</span><span style="color:#ae81ff">38</span> <span style="color:#66d9ef">AS</span> touches_front
+</span></span><span style="display:flex;"><span>		
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span>	<span style="color:#e6db74">&#34;PL21_22&#34;</span>.possession
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span>	squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Manchester City&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">OR</span> squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Manchester Utd&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">OR</span> squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Liverpool&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">OR</span> squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Chelsea&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">OR</span> squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Tottenham&#39;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">OR</span> squad <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Arsenal&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span>	squad
 </span></span></code></pre></div>
 </details>
 
-<h2 id="only-bruno-victor-fred-and-scott-mctominay-who-remain-regular">Only Bruno, Victor, Fred, and Scott McTominay who remain regular</h2>
+<h2 id="only-four-players-managed-to-keep-their-place-in-the-main-squad">Only four players managed to keep their place in the main squad</h2>
+<p>The squad&rsquo;s playing minutes <strong>vary differently</strong> from the previous season. Only four players were able to maintain their position to play regularly (more than 20 games), including Bruno, Victor, Fred, and Scott McTominay.</p>
+<p>Some major structural changes are also felt in the squad. Almost all of the new players were <strong>instantly integrated</strong> into the main squad, playing many minutes (more than 12 games) of their first season. However, only Ronaldo was able to be integrated successfully.</p>
 <figure><img src="figs/playing_minutes.png" width="100%"/>
 </figure>
 
@@ -243,7 +331,13 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 </span></span></code></pre></div>
 </details>
 
-<h2 id="__wan-bissaka-was-subpar-in-offense-but-stellar-in-defense__"><strong>Wan-Bissaka was subpar in offense but stellar in defense</strong></h2>
+<p>Injuries haunt Manchester United during the 2021/2022 season, where it costs an average of <strong>13.2 games</strong> of their core squad. It therefore forced changes to the structure of the squad. Several prominent players (including Cavani, Shaw, Rashford, Wan-Bissaka, and Pogba) had to miss many games due to injury.</p>
+<p>Even the new signing did not escape the injury storm. Varane had heavy injury that forced him to be sidelined for <strong>14 games</strong>.</p>
+<figure><img src="figs/injury-status.png" width="100%"/>
+</figure>
+
+<h2 id="key-players-that-missed-many-games">Key players that missed many games</h2>
+<p>Aaron Wan-Bissaka was <strong>the best defensive full-back</strong> in the 2020/2021 season and he only played 19.9 games, <strong>14.1 games fewer</strong> than the previous season. AWB&rsquo;s performance is worth mentioning considering his stellar performance on defending, where he helped to <strong>prevent about 1.0 fewer crosses</strong> and <strong>2.3 fewer passes</strong> entering the team&rsquo;s penalty box while on the pitch.</p>
 <figure><img src="figs/awb_stats_pl20_21.png" width="100%"/>
 </figure>
 
@@ -286,7 +380,14 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 </span></span></code></pre></div>
 </details>
 
+<p>Manchester United also lost Edinson Cavani, where he had to absent in <strong>22 games</strong>. He was <strong>Manchester United&rsquo;s most efficient player</strong>, where <strong>every 3.4 shots he had became a goal</strong>. Losing Cavani makes attacking option becoming less and it affects United&rsquo;s goal productivity. They lose a player who can score two digits goals.</p>
+<p>Besides Cavani, United also lost Rashford, the team&rsquo;s <strong>second top scorer</strong> in the 2020/2021 season.</p>
 <h2 id="lack-of-productivity-compared-to-the-previous-season">Lack of productivity compared to the previous season</h2>
+<p>Rashford’s position as the main starter was replaced for <strong>20 matches</strong> by the new signing Jadon Sancho, who was brought in from Borussia Dortmund. However, Sancho failed to at least <strong>match Rashford’s stats (20 Goals + Assists)</strong> as he only scored <strong>3 goals and assisted 3 times</strong> through his first Premier League season.</p>
+<blockquote>
+<p>Squad depth has become one of the most important aspects of modern football. If a club is competing at the highest level of football, they are expected to play at least three competitions outside the main league. More games, more schedule intensity, more exposure to injury. The club needs a rotation with the same quality as the main players. <a href="https://www.skysports.com/football/news/11679/12506072/man-citys-squad-depth-and-pep-guardiolas-rotation-is-the-difference-in-the-premier-league-title-race">Manchester City has realized it</a>. And the results have been proven in recent years.</p>
+</blockquote>
+<p>The cleveland dot chart below shows that none of the players was outscoring the 2021/2021 top scorer. Only Ronaldo was at least able to match the number of goals scored by Bruno (18 goals), the top scorer of the previous season.</p>
 <figure><img src="figs/united_productivity.png" width="100%"/>
 </figure>
 
@@ -345,24 +446,27 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 </details>
 
 <h2 id="uniteds-two-third-midfielders-overshadowed-by-leagues-overall-performance">United&rsquo;s Two-Third Midfielders overshadowed by league&rsquo;s overall performance</h2>
+<p>Midfielder player performance would be assessed by three measures: <strong>creating turbulence around the opponent</strong>, <strong>sustaining a pressure</strong>, and <strong>attacking build-up</strong>.</p>
 <h3 id="creating-turbulence-around-the-opponent">Creating turbulence around the opponent</h3>
-<p>One of the abilities that are essential for a midfielder is disrupting the opponent’s ball movement. This ability is best explained by two metrics: successful pressure applied to the opponent and the number of tackles won by the player. Successful pressure is described by FBRef as <em>the number of times the squad gained possession within five seconds of applying pressure</em>. While tackles won is self-explanatory.</p>
+<p>One of the abilities that are essential for a midfielder is disrupting the opponent’s ball movement. This ability is best explained by two metrics: successful pressure applied to the opponent and the number of tackles won by the player. Successful pressure is described by FBRef as <em>the number of times the squad gained possession within five seconds of applying pressure</em>.</p>
 <figure><img src="figs/cdmf_def_stats_pl21_22.png" width="100%"/>
 </figure>
 
-<p>In these metrics, our players didn&rsquo;t manage to complete their tasks well. Both Fred and MacTominay are below average in successfully applying pressure on the opponent. Though, McTominay is a lot better in tackling compared to Fred, with a margin of 22%.</p>
+<p>In these metrics, United&rsquo;s core players didn&rsquo;t manage to complete their tasks well. Both Fred and MacTominay are <strong>below average</strong> in successfully applying pressure on the opponent. Though, McTominay is a lot better in tackling compared to Fred, with a margin of <strong>22%</strong>.</p>
 <h3 id="sustaining-a-pressure">Sustaining a pressure</h3>
 <p>Inversely, a midfielder also has to withstand pressure as sometimes they are needed to initiate a defensive-to-offensive transition. Therefore, two metrics were applied to assess this ability, including how successful they are in receiving passes and how much they pass while being pressured.</p>
 <figure><img src="figs/cdmf_press_stats_pl21_22.png" width="100%"/>
 </figure>
 
-<p>They are subpar in receiving passes but moderately better in passing while being pressured. Nevertheless, they are still below United&rsquo;s standard. We need players who can maintain ball circulation alive in the midfield. An ideal example for this position is Chelsea’s Jorgi. While for a near-perfect case, there is City’s Rodri.</p>
+<p>They are <strong>subpar in receiving passes</strong> but <strong>moderately better in passing while being pressured</strong>. An ideal example for this position is Chelsea’s Jorgi. While for a near-perfect case, there is City’s Rodri.</p>
 <h3 id="attacking-build-up">Attacking build-up</h3>
 <figure><img src="figs/cdmf_attack_stats_pl21_22.png" width="100%"/>
 </figure>
 
-<p>Again, our players fail to be among the best. Even though % of successful passes is a very tight metric, perfection is necessary. We can&rsquo;t afford ineffectiveness in the mid-area as we should utilize all available chances to score a goal.</p>
-<p>Looking at all of those plots, our players should definitely improve themselves. But wait. Hold up. Nemanja Matić is looking good at those stats, at least compared to the McFred duo. But why he didn&rsquo;t get picked up more? Apparently, he has a <a href="https://www.sportbible.com/utddistrict/reflection-of-matic-at-manchester-united-20220608">fitness problem</a>. He played 23 games, with only 7 full games during that season.</p>
+<p>Even though % of successful passes is a very tight metric, perfection is necessary, and United&rsquo;s players <strong>fail to be among the best</strong>.</p>
+<blockquote>
+<p>Nemanja Matić is looking good at all of the stats measured, at least compared to the core players. However, he had a <a href="https://www.sportbible.com/utddistrict/reflection-of-matic-at-manchester-united-20220608">fitness problem</a>. He played <strong>23 games</strong>, with only <strong>7 full games</strong> during that season.</p>
+</blockquote>
 
 <details>
 <summary>Show SQL Query</summary>
@@ -413,11 +517,11 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 </details>
 
 <h2 id="the-goalkeepers-stats-are-undeniably-inferior-compared-to-other-big-six-keepres">The goalkeeper&rsquo;s stats are undeniably inferior compared to other &lsquo;Big Six&rsquo; keepres</h2>
-<p>Modern football is not only revolutionizing playing style and player composition. It redefines each position in every line, including goalkeeper. Nowadays, goalkeepers are required to actively participate in building attacks rather than passively stay at the box waiting for shots coming at them. They are also expected to be more involved in defending action outside the penalty area. And how well has De Gea performed so far?</p>
+<p>In the modern era of football, goalkeepers are <strong>required to actively participate in building attacks</strong> rather than passively stay at the box waiting for shots coming at them. They are also expected to be <strong>more involved in defending action outside the penalty area</strong>.</p>
 <figure><img src="figs/gk_stats.png" width="100%"/>
 </figure>
 
-<p>De Gea could be considered descent when it’s about saving shots. However, he is <em>overly cautious</em>. His lack of involvement outside the penalty area and his reluctance to take shorter passes show that. He also has low scores on the &ldquo;passes while being pressured&rdquo; metric.</p>
+<p>De Gea could be considered <strong>descent</strong> when it’s about saving shots. However, he is <em>overly cautious</em>. His <strong>lack of involvement</strong> outside the penalty area and his <strong>reluctance to take shorter passes</strong> indicate those poor performances. He also scored badly on the &ldquo;passes while being pressured&rdquo; metric.</p>
 
 <details>
 <summary>Show SQL Query</summary>
@@ -470,9 +574,10 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 <hr>
 <h1 id="insight-summary"><em>Insight Summary</em></h1>
 <ul>
-<li>United&rsquo;s both sides (attacking and defending) can be criticized, as they were not functional enough. However, the defensive side is more to blame.</li>
-<li>The primary suspect in their performance downfall was the injury storm. Nevertheless, Manchester United&rsquo;s shallow squad structure did not allow it to overcome the crisis. The quality of the core squad and its backers is lopsided.</li>
 <li>The club&rsquo;s spending is second in the league, where they only signed three players. Yet, only Ronaldo, the cheapest new signing, managed to deliver.</li>
+<li>United&rsquo;s both sides (attacking and defending) can be criticized, as they were not functional enough. However, the defensive side is more to blame.</li>
+<li>United was struggling to control the front area. They had the lowest touches in that area.</li>
+<li>The primary suspect in their performance downfall was the injury storm. Nevertheless, Manchester United&rsquo;s shallow squad structure did not allow it to overcome the crisis. The quality of the core squad and its backers is lopsided.</li>
 <li>On an individual basis, United&rsquo;s core Midfielders and Goalkeeper performed poorly during the season.</li>
 </ul>
 <h1 id="recommendation"><em>Recommendation</em></h1>
@@ -482,80 +587,17 @@ Common <a href="https://www.goal.com/en/news/who-are-premier-league-big-six-top-
 <li>Taking into account that Erik Ten Hag is now coaching the team, de Gea needs to improve his playstyle “modernity” to bring the best of Ten Hag’s play scheme, considering that he <a href="https://www.sportbible.com/utddistrict/manchester-united-pre-season-erik-ten-hag-explains-20220709">adheres to progressive football and systematic possession</a>. The manager needs a composed goalkeeper who is able to provide ball connections from below; a player who favors short passes and is brave against the opponent&rsquo;s pressure.</li>
 <li>For the long-term, United needs to invest more in scouting to maximize the success of the new signing. An underrated and efficient signing (typically a stellar young player under the radar) would improve the club&rsquo;s performance and save the club&rsquo;s finances.</li>
 </ul>
-<p>Manchester United&rsquo;s last season performance is unbearable to watch. At least for their supporter, including me. As a long-life fan, my bar is already set high as I&rsquo;ve already witnessed the glorious era of this club. Apparently, it is too high for around these periods.</p>
-<p>The squad is in a transitional period, and they haven&rsquo;t found their true shape yet. Even the manager has changed <strong>eight times</strong> since the retirement of Sir Alex, for crying out loud. Rumor has it that the management side of the club contributed to their sluggish transition. But I&rsquo;m not gonna dive into the political side of it, <em>really</em>. I will try to find the reasoning<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> behind the squad&rsquo;s performance decline through FBref and other supporting data<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<h2 id="overall-performance">Overall Performance</h2>
-<p>Before we delve into anything, let&rsquo;s take a look at how the club performed last season through attempted and allowed shots.</p>
-<figure><img src="figs/united_overall_pl21_22.png" width="100%"/>
-</figure>
-
-<p>We are nowhere near City or Liverpool level during the previous season. Similar to Tottenham, we don&rsquo;t have decent attacking to cover our messy defense. Even though a performance like that could make Tottenham reach the Champions League, it made the fans uneasy throughout the game. It&rsquo;s not reliable. We are prone to losing points.</p>
-<p>Actually, the stats above has made me wonder about the characteristics of the goal distribution, at least for the &ldquo;Big Six&rdquo; teams. So I run a query and form a ridgeline plot based on that. It resulted in the plot below.</p>
-<figure><img src="figs/goal_dist.png" width="100%"/>
-</figure>
-
-<p>Apart from the above characteristics, Manchester United&rsquo;s performance last season was also quite severe if we draw the line all the way to 1992 when the Premier League format was introduced.</p>
-<figure><img src="figs/historical_points.png" width="100%"/>
-</figure>
-
-<p>I know it&rsquo;s a little bit messy. The chart basically illustrates how complicated the journey has been lately. It compares the club&rsquo;s spending rank and accumulated points for each season. But for now, let&rsquo;s focus only on the red dot. It&rsquo;s a record-breaking performance (not a good one) where United has the <strong>lowest points accumulation</strong> since 1992.</p>
-<p>Huh. It&rsquo;s that bad. But what happened?</p>
-<h2 id="injuries-and-lack-of-depth">Injuries and Lack of Depth</h2>
-<p>Whilst digging into the FBRef data, I found that the squad&rsquo;s playing minutes vary differently from their previous season. Only four players were able to maintain their position to play regularly, including Bruno, Victor, Fred, and Scott McTominay. The rest of them was mainly sided mostly due to injury or replaced by a few new signings (and a return).</p>
-<figure><img src="figs/playing_minutes.png" width="100%"/>
-</figure>
-
-<p>Injuries made Manchester United lose several important figures. Aaron Wan-Bissaka was the best defensive full-back in the 2020/2021 season and he only played 19.9 games, 14.1 games fewer than the previous season. He played an important defensive role for Manchester United, where he helped to prevent about 1.0 fewer crosses and 2.3 fewer passes entering the team&rsquo;s penalty box while on the pitch.</p>
-<figure><img src="figs/awb_stats_pl20_21.png" width="100%"/>
-</figure>
-
-<p>Manchester United also lost Edinson Cavani because of injuries. He had to miss more than 20 games. He is a player with proven goalscoring ability and a high work ethic. Also, his shots-to-goal conversion is quite insane. Losing Cavani makes attacking option becoming less and it affects United&rsquo;s goal productivity. They lose a player who can score two digits goals.</p>
-<figure><img src="figs/united_productivity.png" width="100%"/>
-</figure>
-
-<p>Besides Cavani, we also lost Rashford, the team&rsquo;s second top scorer in the 2020/2021 season. His minutes of play were greatly reduced due to injury. And when he could play, he was not able to show his best. Rashford’s position as the main starter was replaced for 20 matches by the new signing Jadon Sancho, who was brought in from Borussia Dortmund. However, Sancho failed to at least match Rashy’s stats (20 GA) as he only scored 3 goals and assisted 3 times through his first Premier League season.</p>
-<p>Squad depth has become one of the most important aspects of modern football. And we lack it. If a club is competing at the highest level of football, they are expected to play at least three competitions outside the main league. More games, more schedule intensity, more exposure to injury. The club needs a rotation with the same quality as the main players. <a href="https://www.skysports.com/football/news/11679/12506072/man-citys-squad-depth-and-pep-guardiolas-rotation-is-the-difference-in-the-premier-league-title-race">Manchester City has realized it</a>. And the results have been proven in recent years.</p>
-<blockquote>
-<p>The cause of the injury storm is beyond my data. However, several interesting studies discuss this particular topic. <a href="https://bjsm.bmj.com/content/43/7/483">This paper</a> concludes that injury incidence would increase with age, and some type of training would expose a player to injury. Match schedule intensity and its mismatch with the rule of the game were also discussed by <a href="https://www.espn.com/soccer/english-premier-league/story/4235931/premier-leagues-punishing-schedule-is-causing-more-muscle-injuries-this-season-and-it-will-get-worse">ESPN</a> as the cause of an injury spike in the 2020/2021 Premier League.</p>
-</blockquote>
-<h2 id="the-midfields-two-third">The Midfield&rsquo;s Two-Third</h2>
-<p>The midfield position has been regularly given to Fred and McTominay, each played around 28 games or more for the past two seasons. By getting a regular place, they had at least made a good impression on their manager at the time. But how have they embraced the assignment so far?</p>
-<h3 id="creating-turbulence-around-the-opponent-1">Creating turbulence around the opponent</h3>
-<p>One of the abilities that are essential for a midfielder is disrupting the opponent’s ball movement. This ability is best explained by two metrics: successful pressure applied to the opponent and the number of tackles won by the player. Successful pressure is described by FBRef as <em>the number of times the squad gained possession within five seconds of applying pressure</em>. While tackles won is self-explanatory.</p>
-<figure><img src="figs/cdmf_def_stats_pl21_22.png" width="100%"/>
-</figure>
-
-<p>In these metrics, our players didn&rsquo;t manage to complete their tasks well. Both Fred and MacTominay are below average in successfully applying pressure on the opponent. Though, McTominay is a lot better in tackling compared to Fred, with a margin of 22%.</p>
-<h3 id="sustaining-a-pressure-1">Sustaining a pressure</h3>
-<p>Inversely, a midfielder also has to withstand pressure as sometimes they are needed to initiate a defensive-to-offensive transition. Therefore, two metrics were applied to assess this ability, including how successful they are in receiving passes and how much they pass while being pressured.</p>
-<figure><img src="figs/cdmf_press_stats_pl21_22.png" width="100%"/>
-</figure>
-
-<p>They are subpar in receiving passes but moderately better in passing while being pressured. Nevertheless, they are still below United&rsquo;s standard. We need players who can maintain ball circulation alive in the midfield. An ideal example for this position is Chelsea’s Jorgi. While for a near-perfect case, there is City’s Rodri.</p>
-<h3 id="attacking-build-up-1">Attacking build-up</h3>
-<figure><img src="figs/cdmf_attack_stats_pl21_22.png" width="100%"/>
-</figure>
-
-<p>Again, our players fail to be among the best. Even though % of successful passes is a very tight metric, perfection is necessary. We can&rsquo;t afford ineffectiveness in the mid-area as we should utilize all available chances to score a goal.</p>
-<p>Looking at all of those plots, our players should definitely improve themselves. But wait. Hold up. Nemanja Matić is looking good at those stats, at least compared to the McFred duo. But why he didn&rsquo;t get picked up more? Apparently, he has a <a href="https://www.sportbible.com/utddistrict/reflection-of-matic-at-manchester-united-20220608">fitness problem</a>. He played 23 games, with only 7 full games during that season.</p>
-<h2 id="the-goalkeepers-role">The Goalkeeper&rsquo;s Role</h2>
-<p>Modern football is not only revolutionizing playing style and player composition. It redefines each position in every line, including goalkeeper. Nowadays, goalkeepers are required to actively participate in building attacks rather than passively stay at the box waiting for shots coming at them. They are also expected to be more involved in defending action outside the penalty area. And how well has De Gea performed so far?</p>
-<figure><img src="figs/gk_stats.png" width="100%"/>
-</figure>
-
-<p>De Gea could be considered descent when it’s about saving shots. However, he is <em>overly cautious</em>. His lack of involvement outside the penalty area and his reluctance to take shorter passes show that. He also has low scores on the &ldquo;passes while being pressured&rdquo; metric.</p>
-<p>Taking into account that Erik Ten Hag is now coaching the team, de Gea needs to improve his playstyle “modernity” to bring the best of Ten Hag’s play scheme, considering that he <a href="https://www.sportbible.com/utddistrict/manchester-united-pre-season-erik-ten-hag-explains-20220709">adheres to progressive football and systematic possession</a>. The manager needs a composed goalkeeper who is able to provide ball connections from below; a player who favors short passes and is brave against the opponent&rsquo;s pressure.</p>
-<div class="footnotes" role="doc-endnotes">
 <hr>
+<h1 id="heading"></h1>
+<p><em>Footnotes</em></p>
 <ol>
-<li id="fn:1">
-<p>All of the SQL queries and R plots behind this post can be found <a href="https://github.com/hnuradhyaksa/project-mu21-22-performance">here</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li>
+<p>All of the SQL queries behind this post can be found <a href="https://github.com/hnuradhyaksa/project-mu21-22-performance">here</a>.</p>
 </li>
-<li id="fn:2">
-<p>I use <a href="https://fbref.com/en/comps/9/Premier-League-Stats">FBRef</a> data for player and club performance statistics and <a href="https://www.transfermarkt.com/premier-league/transfers/wettbewerb/GB1">transfermarkt</a> for club transfers history.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li>
+<p>I use <a href="https://fbref.com/en/comps/9/Premier-League-Stats">FBRef</a> data for player and club performance statistics and <a href="https://www.transfermarkt.com/premier-league/transfers/wettbewerb/GB1">transfermarkt</a> for club transfers history and injury status.</p>
 </li>
 </ol>
-</div>
 
 		</section>
 
