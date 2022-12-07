@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Among The Giants of MOOC Provider - adhyaksa</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A competitive analysis of EdX, Coursera, and FutureLearn" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Among The Giants of MOOC Provider" />
+<meta property="og:description" content="A competitive analysis of EdX, Coursera, and FutureLearn" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hnuradhyaksa.github.io/posts/2022-11-10-mooc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-10T18:31:03+07:00" />
+<meta property="article:modified_time" content="2022-11-10T18:31:03+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Among The Giants of MOOC Provider"/>
+<meta name="twitter:description" content="A competitive analysis of EdX, Coursera, and FutureLearn"/>
+<script src="https://hnuradhyaksa.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://hnuradhyaksa.github.io/css/fonts.2f2a3c0a5151b34b17643a9cc42899051859706bf5d19702adb812f7bc8d125a.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://hnuradhyaksa.github.io/css/main.dcdab418b88363f9d7e4fb8208448dca7984ce4887cc1f542dfdd737f85f26fc.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://hnuradhyaksa.github.io/css/dark.5459c1a717a3a41d18e0bc7322c1f741de68be742ee5080c25043cacffcc6d45.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<a href="https://hnuradhyaksa.github.io/">adhyaksa</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/tags/project/">Projects</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://hnuradhyaksa.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Among The Giants of MOOC Provider</h1>
+			<div class="meta">Posted on Nov 10, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<h2 id="table-of-content"><a href="">Table of Content</a></h2>
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#approach-and-tools">Approach and Tools</a></li>
+<li><a href="#insights">Insights</a></li>
+<li><a href="#insight-summary">Insight Summary</a></li>
+</ul>
+<h1 id="exploration-basis"><em>Exploration Basis</em></h1>
+<p>The online education world has entered a new era. Ease of learning access, time flexibility, and interactivity are why people are starting to be attracted to online learning. 
+We can also interact with people from other parts of the world throughout our studies. People are starting to realize that online certificates also have a weight that is no less useful than conventional diplomas, especially to legitimize additional capabilities.</p>
+<figure><img src="figs/MOOCs_growth.png" width="100%"/>
+</figure>
+
+<p>EdX, Coursera, and FutureLearn are among the Massive Open Online Courses (MOOC) providers with abundant (and exclusive) courses. This article compares all of them from many perspectives.</p>
+<h1 id="approach-and-tools"><em>Approach and Tools</em></h1>
+<p>Python&rsquo;s Beautiful Soup is the main tool to extract the data from <a href="https://www.classcentral.com/">classcentral.com</a>. The same data processing environment is also used to prepare the data for analysis.</p>
+<p>Class Central would be the main data source for this article. Class Central is an awesome site that provides broad information on MOOCs around the world, including rating, popularity, and course-by-course details. I will also use Google Trends to support my findings. You can view my data here.</p>
+<p>Summary of comprehension:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Comprehension</th>
+<th style="text-align:left">Technique</th>
+<th style="text-align:left">Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Data mining</td>
+<td style="text-align:left">Extract</td>
+<td style="text-align:left">Python (Beautiful Soup)</td>
+</tr>
+<tr>
+<td style="text-align:left">Data preparation</td>
+<td style="text-align:left">Clean, Modify</td>
+<td style="text-align:left">Python (pandas)</td>
+</tr>
+<tr>
+<td style="text-align:left">Data manipulation &amp; exploration</td>
+<td style="text-align:left">Joins, Ranking, Pivot Table, Statistical Measurement</td>
+<td style="text-align:left">Python (pandas, NumPy, SciPy)</td>
+</tr>
+<tr>
+<td style="text-align:left">Data visualization</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">Tableau, Python (matplotlib)</td>
+</tr>
+<tr>
+<td style="text-align:left">Reporting</td>
+<td style="text-align:left">Markdown language</td>
+<td style="text-align:left">Visual Studio Code</td>
+</tr>
+</tbody>
+</table>
+<h1 id="insights"><em>Insights</em></h1>
+<h2 id="which-platform-is-the-most-open">Which platform is the most &ldquo;open&rdquo;?</h2>
+<p>MOOC itself stands for the word <em>Open</em>. From this definition, I want to know <strong>which platforms provide more open learning opportunities than others</strong>.</p>
+<figure><img src="figs/openess.png" width="100%"/>
+</figure>
+
+<p>Of the three, EdX is the most accessible platform. 4,540 of their courses (84.75 %) could be accessed without a paywall. 
+Does that make EdX the favorite of all?</p>
+<p>Google Trends shows otherwise. From the search popularity, Coursera is far superior to others. There is a noticeable gap between the three that is shown in the graphic below.</p>
+<figure><img src="figs/search_interest.png" width="100%"/>
+</figure>
+
+<p>As of November 2022, Coursera is ranked no. 1 in search interest metric, followed by EdX in second and FutureLearn in third.</p>
+<p>From this point onwards, the question will focus on the differentiators of the three platforms.</p>
+<h2 id="subject-composition">Subject composition</h2>
+<p>Business subjects excluded, there are quite striking differences. Coursera is constructed on technology-related topics. Programming and CS contributed to a total of 32.64% of all the courses.</p>
+<p>Meanwhile, EdX is more diverse in terms of subject coverage. For FutureLearn, they count on medicine and humanities courses.</p>
+<figure><img src="figs/subject_shares.png" width="100%"/>
+</figure>
+
+<h2 id="course-provider-exclusivity">Course provider exclusivity</h2>
+<p>EdX is the most exclusive in terms of contributor diversity, especially for enterprise providers. Only 64 unique course providers are accounted for; half the number of Coursera and one-third of FutureLearn. EdX is very strict about their partnership.</p>
+<figure><img src="figs/entity_distribution.png" width="100%"/>
+</figure>
+
+<h2 id="which-platform-is-the-most-affordable">Which platform is the most affordable?</h2>
+<p>Courses affordability will be rated for open courses only, which means that the courses could be accessed freely, but it needs further payment to obtain the certificate.</p>
+<figure><img src="figs/cost_distribution.png" width="100%"/>
+</figure>
+
+<p>From this point of view, Coursera&rsquo;s certificate is cheaper compared to others. Unfortunately, this number only represents estimation since no open data are available (require specific steps to reveal the price of the individual course).</p>
+<p>EdX is the most expensive platform, with a median price of US$99 and an IQR of US$101.</p>
+<h2 id="from-the-eyes-of-the-people">From the eyes of the people</h2>
+<p>In this section, an assessment will be carried out and will be pointed toward one metric: the number of reviewers in Class Central. This was done to identify tendencies across several variables.</p>
+<h3 id="long-courses-are-getting-more-review-than-others">Long courses are getting more review than others</h3>
+<p>It is shown that people are more in favor of long-duration courses. 20% of long-duration courses are getting reviewed 33 times or more.</p>
+<figure><img src="figs/percent_by_durations.png" width="100%"/>
+</figure>
+
+<p>This shows that people like the course to be thorough rather than introductory.</p>
+<h3 id="beginner-courses-are-getting-more-review-than-others">Beginner courses are getting more review than others</h3>
+<p>Beginner courses are reviewed more than other levels. 20% of beginner courses are getting reviewed 46 times or more.</p>
+<figure><img src="figs/percent_by_levels.png" width="100%"/>
+</figure>
+
+<p>This could indicate that people mainly join online courses to close their knowledge gap of a certain topic.</p>
+<h3 id="programming-and-personal-development-courses-are-favorites">Programming and Personal Development courses are favorites</h3>
+<p>There is a noticable gap on the review number between programming subject and the rest.</p>
+<figure><img src="figs/reviewer_by_subjects_cc.png" width="100%"/>
+</figure>
+
+<p>It only makes sense that programming takes over subject popularity. According to <a href="https://www.springboard.com/blog/software-engineering/programmer-salary-guide/">Springboard</a>, entry-level programmers have a range of salary between US$ 40,000 - US$ 87,000 and a median of US$ 60,000 per year. Meanwhile, senior programmers have an average base salary of US$ 91,116 per year.</p>
+<p>Personal development courses are also popular in Class Central. This shows that people are aware of their personal growth, mostly for their career advancement.</p>
+<h1 id="insight-summary"><em>Insight Summary</em></h1>
+<ul>
+<li>EdX is the most open platform, yet its popularity is below Coursera. They are also relatively expensive compared to other platforms.</li>
+<li>Long-duration courses are getting more reviews. This shows that people like the course to be thorough rather than introductory.</li>
+<li>Beginner courses are reviewed more than other levels. This could indicate that people mainly join online courses to close their knowledge gap of a certain topic.</li>
+<li>Programming subject hold the most popular subject. This is in accordance with their entry-level salary which is quite high.</li>
+<li>Personal development subject is also popular in Class Central. This shows that people are aware of their personal growth, mostly for their career advancement.</li>
+</ul>
+<hr>
+<h1 id="heading"></h1>
+<p><em>Footnotes</em></p>
+<ol>
+<li>
+<p>All of the data processing behind this post can be found <a href="https://github.com/hnuradhyaksa/project-MOOC">here</a>.</p>
+</li>
+<li>
+<p>I use <a href="https://www.classcentral.com/providers">Class Central website</a> data for course-by-course detail and <a href="https://trends.google.com/trends/explore?date=today%205-y&amp;q=edx,coursera,futurelearn">Google Trends</a> to find the search interests of my observation.</p>
+</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/project">project</a></li>
+					
+					<li><a href="/tags/exploratory-data-analysis">exploratory data analysis</a></li>
+					
+					<li><a href="/tags/python">python</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+<br>
+  <div style="display:flex"><a class="soc" href="https://github.com/hnuradhyaksa" title="GitHub"><i data-feather="github"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="https://twitter.com/nuradhyaksa" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="https://www.linkedin.com/in/nuradhyaksa/" title="LinkedIn"><i data-feather="linkedin"></i></a>
+    <a class=""></a>
+    &nbsp;<a class="soc" href="mailto:hnuradhyaksa@gmail.com" title="Email"><i data-feather="mail"></i></a>
+    <a class=""></a>
+    &nbsp;<div class="footer-info">
+    &nbsp;2022  ©adhyaksa 
+  </div>
+</br>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

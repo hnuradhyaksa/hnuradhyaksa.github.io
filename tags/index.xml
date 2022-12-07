@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>©adhyaksa</copyright>
-    <lastBuildDate>Wed, 02 Nov 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 18:31:03 +0700</lastBuildDate><atom:link href="https://hnuradhyaksa.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>exploratory data analysis</title>
+      <link>https://hnuradhyaksa.github.io/tags/exploratory-data-analysis/</link>
+      <pubDate>Thu, 10 Nov 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/tags/exploratory-data-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>project</title>
+      <link>https://hnuradhyaksa.github.io/tags/project/</link>
+      <pubDate>Thu, 10 Nov 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://hnuradhyaksa.github.io/tags/python/</link>
+      <pubDate>Thu, 10 Nov 2022 18:31:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dashboard design</title>
       <link>https://hnuradhyaksa.github.io/tags/dashboard-design/</link>
@@ -23,24 +50,6 @@
       <pubDate>Wed, 02 Nov 2022 18:31:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/tags/data-visualization-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>project</title>
-      <link>https://hnuradhyaksa.github.io/tags/project/</link>
-      <pubDate>Wed, 02 Nov 2022 18:31:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/tags/project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://hnuradhyaksa.github.io/tags/python/</link>
-      <pubDate>Wed, 02 Nov 2022 18:31:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -81,20 +90,20 @@
     </item>
     
     <item>
-      <title>ggplot2</title>
-      <link>https://hnuradhyaksa.github.io/tags/ggplot2/</link>
-      <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
-      
-      <guid>https://hnuradhyaksa.github.io/tags/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jupyter Notebook</title>
       <link>https://hnuradhyaksa.github.io/tags/jupyter-notebook/</link>
       <pubDate>Mon, 26 Sep 2022 14:26:03 +0700</pubDate>
       
       <guid>https://hnuradhyaksa.github.io/tags/jupyter-notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://hnuradhyaksa.github.io/tags/ggplot2/</link>
+      <pubDate>Tue, 20 Sep 2022 14:26:03 +0700</pubDate>
+      
+      <guid>https://hnuradhyaksa.github.io/tags/ggplot2/</guid>
       <description></description>
     </item>
     
