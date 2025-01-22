@@ -1,3 +1,7 @@
+<script>
+  import {base} from '$app/paths'
+</script>
+
 <style>
     .back-to-home {
         font-family: 'Inter';
@@ -14,7 +18,7 @@
     }
 </style>
   
-  <a href="/" class="back-to-home">
+  <a href="{base}/" class="back-to-home">
     ←
   </a>
   

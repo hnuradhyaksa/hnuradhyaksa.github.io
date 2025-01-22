@@ -1,7 +1,7 @@
 <script>
 	import Grid from '$lib/components/grid.svelte';
 	import {posts} from '$lib/data/post.js';
-	import BacktoTop from '$lib/components/back2top.svelte'
+	import BacktoTop from '$lib/components/back2top.svelte';
 </script>
   
   <style>

@@ -7,7 +7,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : "/hnuradhyaksa.github.io"
+            base: process.env.NODE_ENV === 'production' ? '/hnuradhyaksa.github.io' : '',
 		}
 	}
 };

@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "cross-env NODE_ENV=production vite build",
 		"preview": "vite preview",
 		"lint": "eslint . && prettier --check .",
 		"format": "prettier --write .",
@@ -28,6 +28,7 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"cross-env": "^7.0.3",
 		"d3": "^7.9.0",
 		"gh-pages": "^6.3.0"
 	}
