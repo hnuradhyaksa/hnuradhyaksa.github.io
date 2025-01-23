@@ -8,7 +8,7 @@ export const posts = [
     client: '',
     title: 'After Crisis: How Are Industries Post-Covid?',
     summary: 'Explore the performance of industries in Indonesia post-Covid through trends and arrow charts.',
-    link: `${base}/post/covid-downturn-recovery/`,
+    link: `${base}/post/covid-downturn-recovery`,
     author: 'Nur Adhyaksa Hamid',
   },
 ];

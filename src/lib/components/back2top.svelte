@@ -21,9 +21,11 @@
   </script>
   
   <style>
+
     .to-top-button {
       font-family: 'Inter';
       font-style: normal;
+      font-weight: 500;
       position: fixed;
       bottom: 20px;
       right: 20px;

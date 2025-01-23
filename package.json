@@ -9,7 +9,7 @@
 		"preview": "vite preview",
 		"lint": "eslint . && prettier --check .",
 		"format": "prettier --write .",
-		"deploy": "npm run build && npx gh-pages -d build -t true"
+		"deploy": "npm run build && npx gh-pages -d build"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -29,6 +29,7 @@
 	},
 	"dependencies": {
 		"d3": "^7.9.0",
-		"gh-pages": "^6.3.0"
+		"gh-pages": "^6.3.0",
+		"@sveltejs/adapter-static": "^1.0.0"
 	}
 }
