@@ -1,4604 +1,3924 @@
 export const data = 
 [
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2014,
-    "value": 162876.9,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 51426.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2015,
-    "value": 179648.5,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 54340.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2016,
-    "value": 194501.6,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 57440.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2017,
-    "value": 197484.1,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 60394.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2018,
-    "value": 196218.1,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 62997.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2019,
-    "value": 201253.2,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 63867.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2020,
-    "value": 208185.7,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 48227.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2021,
-    "value": 212575.2,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 51010,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2022,
-    "value": 226795.8,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 66802.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Accommodation",
     "year": 2023,
-    "value": 244226.32,
-    "sector_eng": "Agriculture, Livestock & Hunting",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "value": 75524.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2014,
+    "value": 206388.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2015,
+    "value": 214582.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2016,
+    "value": 225382.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2017,
+    "value": 237735.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2018,
+    "value": 252071.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2019,
+    "value": 269437.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2020,
+    "value": 250894.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2021,
+    "value": 259727.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2022,
+    "value": 281051.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Accommodation & Food Service Activities",
+    "sector_eng": "Food & Beverage Service Activities",
+    "year": 2023,
+    "value": 307149.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2014,
+    "value": 880389.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2015,
+    "value": 906805.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2016,
+    "value": 936356.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2017,
+    "value": 970262.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2018,
+    "value": 1005655,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2019,
+    "value": 1038903,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2020,
+    "value": 1061087,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2021,
+    "value": 1072978,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2022,
+    "value": 1097952,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Agriculture, Livestock, Hunting & Agriculture Services",
+    "year": 2023,
+    "value": 1099935,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
     "year": 2014,
-    "value": 8262.69,
+    "value": 189089.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2015,
+    "value": 204016.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2016,
+    "value": 214596.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2017,
+    "value": 226833.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2018,
+    "value": 238616.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2019,
+    "value": 252278.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2020,
+    "value": 254112.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2021,
+    "value": 267966.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2022,
+    "value": 275452.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
+    "sector_eng": "Fishing",
+    "year": 2023,
+    "value": 290575.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2014,
+    "value": 59573.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2015,
-    "value": 9203.53,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2015,
+    "value": 60623.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2016,
-    "value": 9008.92,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2016,
+    "value": 60002,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2017,
-    "value": 9977.31,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2017,
+    "value": 61279.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2018,
-    "value": 9814.43,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2018,
+    "value": 62981.8,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2019,
-    "value": 10618.23,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2019,
+    "value": 63217.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2020,
-    "value": 10189.31,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2020,
+    "value": 63199.3,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2021,
-    "value": 11291.91,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2021,
+    "value": 63246.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2022,
-    "value": 12241.08,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
+    "year": 2022,
+    "value": 62448.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Kehutanan dan Penebangan Kayu",
-    "year": 2023,
-    "value": 14288.11,
+    "parent_sector_eng": "Agriculture, Forestry & Fishing",
     "sector_eng": "Forestry & Logging",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2014,
-    "value": 37474.08,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2015,
-    "value": 42090.41,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2016,
-    "value": 45943.11,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2017,
-    "value": 50993.06,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2018,
-    "value": 53230.54,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2019,
-    "value": 54524.45,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2020,
-    "value": 54871.13,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2021,
-    "value": 57915.58,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
-    "year": 2022,
-    "value": 64392.8,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Perikanan",
     "year": 2023,
-    "value": 67471.33,
-    "sector_eng": "Fisheries",
-    "parent_sector_eng": "Agriculture, Forestry & Fisheries",
-    "parent_sector_order": 2,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2014,
-    "value": 54741.65,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2015,
-    "value": 40428.9,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2016,
-    "value": 41779.35,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2017,
-    "value": 50540.11,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2018,
-    "value": 61158.27,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2019,
-    "value": 59529.9,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2020,
-    "value": 46957,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2021,
-    "value": 62586.65,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2022,
-    "value": 81148.13,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Minyak, Gas dan Panas Bumi",
-    "year": 2023,
-    "value": 69817.71,
-    "sector_eng": "Geothermal, Oil & Gas Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2014,
-    "value": 630.76,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2015,
-    "value": 518.14,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2016,
-    "value": 529.33,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2017,
-    "value": 557.26,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2018,
-    "value": 526.71,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2019,
-    "value": 543.55,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2020,
-    "value": 548.53,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2021,
-    "value": 564.47,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2022,
-    "value": 664.25,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan Bijih Logam",
-    "year": 2023,
-    "value": 794.14,
-    "sector_eng": "Metal Ore Mining",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2014,
-    "value": 23162.71,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2015,
-    "value": 25579.18,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2016,
-    "value": 27591.59,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2017,
-    "value": 29748.81,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2018,
-    "value": 32515.95,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2019,
-    "value": 33818.79,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2020,
-    "value": 34013.7,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2021,
-    "value": 34711.23,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2022,
-    "value": 37510.16,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pertambangan dan Penggalian Lainnya",
-    "year": 2023,
-    "value": 40641.53,
-    "sector_eng": "Other Mining & Quarrying",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2014,
-    "value": 909.93,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2015,
-    "value": 915.68,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2016,
-    "value": 909.25,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2017,
-    "value": 1054.15,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2018,
-    "value": 1150.64,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2019,
-    "value": 1183.17,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2020,
-    "value": 1145.62,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2021,
-    "value": 1113.86,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2022,
-    "value": 1189.12,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Batubara dan Pengilangan Migas",
-    "year": 2023,
-    "value": 1284.33,
-    "sector_eng": "Coal & Oil Refining Industry",
-    "parent_sector_eng": "Mining & Quarrying",
-    "parent_sector_order": 6,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2014,
-    "value": 122086.8,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2015,
-    "value": 142809.6,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2016,
-    "value": 163287.1,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2017,
-    "value": 185800.4,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2018,
-    "value": 214642,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2019,
-    "value": 248615,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2020,
-    "value": 263043.2,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2021,
-    "value": 290545.1,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2022,
-    "value": 325293.8,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Makanan dan Minuman",
-    "year": 2023,
-    "value": 362368.14,
-    "sector_eng": "Food & Beverage Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2014,
-    "value": 115692.6,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2015,
-    "value": 129880.2,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2016,
-    "value": 145180.4,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2017,
-    "value": 156032,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2018,
-    "value": 175743.3,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2019,
-    "value": 194532.1,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2020,
-    "value": 182205.1,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2021,
-    "value": 186081.1,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2022,
-    "value": 197825.8,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengolahan Tembakau",
-    "year": 2023,
-    "value": 205446.11,
-    "sector_eng": "Tobacco Processing",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2014,
-    "value": 7007.86,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2015,
-    "value": 7542.23,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2016,
-    "value": 8338.62,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2017,
-    "value": 8764.31,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2018,
-    "value": 9822.99,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2019,
-    "value": 10987.41,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2020,
-    "value": 11262.49,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2021,
-    "value": 12036.92,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2022,
-    "value": 12970.23,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Tekstil dan Pakaian Jadi",
-    "year": 2023,
-    "value": 13577.11,
-    "sector_eng": "Textile & Apparel Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2014,
-    "value": 6116.66,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2015,
-    "value": 6610.51,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2016,
-    "value": 7208.34,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2017,
-    "value": 8471.81,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2018,
-    "value": 9500.45,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2019,
-    "value": 9148.22,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2020,
-    "value": 8241.93,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2021,
-    "value": 8843.2,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2022,
-    "value": 9976.69,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kulit, Barang dari Kulit dan Alas Kaki",
-    "year": 2023,
-    "value": 10669.58,
-    "sector_eng": "Leather, Leather Goods & Footwear Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2014,
-    "value": 28158.88,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2015,
-    "value": 28834.94,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2016,
-    "value": 28628.39,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2017,
-    "value": 30552.46,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2018,
-    "value": 31759.21,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2019,
-    "value": 28811.31,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2020,
-    "value": 24229.85,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2021,
-    "value": 23390.61,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2022,
-    "value": 25439.98,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya",
-    "year": 2023,
-    "value": 26487.13,
-    "sector_eng": "Wood, Cork & Bamboo Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2014,
-    "value": 21653.48,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2015,
-    "value": 23593.12,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2016,
-    "value": 25216.69,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2017,
-    "value": 27444.39,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2018,
-    "value": 31590.42,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2019,
-    "value": 35223.53,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2020,
-    "value": 35467.77,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2021,
-    "value": 36963.68,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2022,
-    "value": 42868.56,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman",
-    "year": 2023,
-    "value": 45985.95,
-    "sector_eng": "Paper, Printing & Media Reproduction Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2014,
-    "value": 39589.15,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2015,
-    "value": 44564.3,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2016,
-    "value": 44532.19,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2017,
-    "value": 46978.04,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2018,
-    "value": 47844.45,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2019,
-    "value": 45987.48,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2020,
-    "value": 57446.49,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2021,
-    "value": 66204.31,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2022,
-    "value": 80256.27,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Kimia, Farmasi dan Obat Tradisional",
-    "year": 2023,
-    "value": 88645.32,
-    "sector_eng": "Chemical, Pharmaceutical & Traditional Medicine",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 0,
-    "recovery_category": "Accelerated"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2014,
-    "value": 20561.93,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2015,
-    "value": 21735.34,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2016,
-    "value": 21255.82,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2017,
-    "value": 22233.21,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2018,
-    "value": 21475.72,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2019,
-    "value": 21394.37,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2020,
-    "value": 19903.79,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2021,
-    "value": 23100.31,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2022,
-    "value": 22031.77,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Karet, Barang dari Karet dan Plastik",
-    "year": 2023,
-    "value": 22920.26,
-    "sector_eng": "Rubber & Plastics Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2014,
-    "value": 19304.78,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2015,
-    "value": 20871.78,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2016,
-    "value": 21031.84,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2017,
-    "value": 24068.69,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2018,
-    "value": 27035.09,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2019,
-    "value": 27477.36,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2020,
-    "value": 23485.08,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2021,
-    "value": 24565.21,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2022,
-    "value": 30630.63,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Barang Galian bukan Logam",
-    "year": 2023,
-    "value": 33390.77,
-    "sector_eng": "Non-Metallic Mineral Products Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2014,
-    "value": 18385.1,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2015,
-    "value": 18465.22,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2016,
-    "value": 19629.41,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2017,
-    "value": 22604.75,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2018,
-    "value": 25184.83,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2019,
-    "value": 27777.84,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2020,
-    "value": 27563.85,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2021,
-    "value": 28604.27,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2022,
-    "value": 29850.95,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Logam Dasar",
-    "year": 2023,
-    "value": 31365.93,
-    "sector_eng": "Basic Metal Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2014,
-    "value": 20887.86,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
+    "value": 64076.2,
     "recovery_status": 2,
-    "recovery_category": "Recovered"
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2015,
-    "value": 23033.28,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2016,
-    "value": 23178.24,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2017,
-    "value": 23685.47,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2018,
-    "value": 25020.4,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2019,
-    "value": 27054.87,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2020,
-    "value": 22473.77,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2021,
-    "value": 22366.99,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2022,
-    "value": 25364.99,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik",
-    "year": 2023,
-    "value": 27238.91,
-    "sector_eng": "Electronics & Metals",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2014,
-    "value": 995.09,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2015,
-    "value": 1080.82,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2016,
-    "value": 1143.08,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2017,
-    "value": 1094.89,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2018,
-    "value": 1146.92,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2019,
-    "value": 1289.17,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2020,
-    "value": 1239.99,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2021,
-    "value": 1257.04,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2022,
-    "value": 1415.54,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Mesin dan Perlengkapan YTDL",
-    "year": 2023,
-    "value": 1515.06,
-    "sector_eng": "Machinery & Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2014,
-    "value": 5264.84,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2015,
-    "value": 5632.31,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2016,
-    "value": 5820.67,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2017,
-    "value": 5828.57,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2018,
-    "value": 5859.18,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2019,
-    "value": 5939.67,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2020,
-    "value": 5011.66,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2021,
-    "value": 5148.71,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2022,
-    "value": 4888.92,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Alat Angkutan",
-    "year": 2023,
-    "value": 5284.33,
-    "sector_eng": "Transportation Equipment Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2014,
-    "value": 14264.34,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2015,
-    "value": 15535.01,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2016,
-    "value": 16252.15,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2017,
-    "value": 16594.83,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2018,
-    "value": 18286.67,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2019,
-    "value": 20543.86,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2020,
-    "value": 17928.92,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2021,
-    "value": 18747.87,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2022,
-    "value": 20362.9,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri Furnitur",
-    "year": 2023,
-    "value": 20396.05,
-    "sector_eng": "Furniture Industry",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 2,
-    "recovery_category": "Recovered"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2014,
-    "value": 4400.44,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2015,
-    "value": 4647.49,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2016,
-    "value": 4824.54,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2017,
-    "value": 5027.56,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2018,
-    "value": 5064.59,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2019,
-    "value": 5090.16,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2020,
-    "value": 4613.47,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2021,
-    "value": 4906.09,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2022,
-    "value": 5303.6,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan",
-    "year": 2023,
-    "value": 5308.86,
-    "sector_eng": "Other Manufacturing, Repair & Installation Services",
-    "parent_sector_eng": "Manufacturing Industry",
-    "parent_sector_order": 5,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2014,
-    "value": 1355.37,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2014,
+    "value": 79581.5,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2015,
-    "value": 1517.99,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2015,
+    "value": 81407,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2016,
-    "value": 1651.49,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2016,
+    "value": 86580.3,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2017,
-    "value": 1987.43,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2017,
+    "value": 88663.4,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2018,
-    "value": 2180.36,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2018,
+    "value": 93318,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2019,
-    "value": 2359.68,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2019,
+    "value": 97623.8,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2020,
-    "value": 2274.33,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2020,
+    "value": 96663.1,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2021,
-    "value": 2343.11,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2021,
+    "value": 102083.9,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2022,
-    "value": 2525.27,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
+    "year": 2022,
+    "value": 109290.2,
     "recovery_status": 1,
     "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Ketenagalistrikan",
-    "year": 2023,
-    "value": 2635.92,
+    "parent_sector_eng": "Electricity & Gas",
     "sector_eng": "Electricity",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2014,
-    "value": 4256.91,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2015,
-    "value": 4430.49,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2016,
-    "value": 4552.94,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2017,
-    "value": 4687.72,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2018,
-    "value": 4521.75,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2019,
-    "value": 4535.34,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2020,
-    "value": 4474.86,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2021,
-    "value": 4914.48,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
-    "year": 2022,
-    "value": 5517.62,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Pengadaan Gas dan Produksi Es",
     "year": 2023,
-    "value": 7720.05,
-    "sector_eng": "Gas Supply & Ice Production",
-    "parent_sector_eng": "Electricity & Gas Supply",
-    "parent_sector_order": 3,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 114833.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2014,
-    "value": 1434.53,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 14465.7,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2015,
-    "value": 1573.39,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13487.8,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2016,
-    "value": 1705.06,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13429.6,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2017,
-    "value": 1853.13,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 12887.9,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2018,
-    "value": 1948.99,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13790.6,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2019,
-    "value": 2015.94,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13812.9,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2020,
-    "value": 2125.35,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 12163.3,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2021,
-    "value": 2303.05,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 12777.2,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2022,
-    "value": 2443.2,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13161.7,
     "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "recovery_category": "Has not recovered"
   },
   {
-    "sector_idn": "Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang",
+    "parent_sector_eng": "Electricity & Gas",
+    "sector_eng": "Manufacture of Gas & Production of Ice",
     "year": 2023,
-    "value": 2542.03,
-    "sector_eng": "Water Supply, Waste Management & Recycling",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
+    "value": 13627,
     "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
+    "year": 2014,
+    "value": 319825.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
-    "year": 2014,
-    "value": 145884.6,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2015,
-    "value": 160496.4,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 347269,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2016,
-    "value": 180549.5,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 378279.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2017,
-    "value": 197699,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 398971.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2018,
-    "value": 212519.5,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 415620.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2019,
-    "value": 220274.9,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 443093.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2020,
-    "value": 213813.2,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 457486.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2021,
-    "value": 222708.6,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 464637.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2022,
-    "value": 246876.4,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 473623.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Konstruksi",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial & Insurance Activities",
     "year": 2023,
-    "value": 263491.03,
-    "sector_eng": "Construction",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 496236.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
     "year": 2014,
-    "value": 77734.86,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 197712.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
     "year": 2015,
-    "value": 82312.83,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2016,
-    "value": 89213.55,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2017,
-    "value": 96719.58,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2018,
-    "value": 104643.8,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2019,
-    "value": 111703.2,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2020,
-    "value": 88254.45,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2021,
-    "value": 108950.7,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2022,
-    "value": 129623,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Mobil, Sepeda Motor dan Reparasinya",
-    "year": 2023,
-    "value": 140827.29,
-    "sector_eng": "Motor Vehicle & Motorcycle Trade & Repairs",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
-    "year": 2014,
-    "value": 188999.2,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 216631.2,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2016,
+    "value": 237896.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2017,
+    "value": 246031.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2018,
+    "value": 251912.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2019,
+    "value": 267387,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2020,
+    "value": 278028.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2021,
+    "value": 285571.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2022,
+    "value": 292549.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Intermediary Services",
+    "year": 2023,
+    "value": 313055.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
+    "year": 2014,
+    "value": 7854,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2015,
-    "value": 215303.4,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 8225.9,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2016,
-    "value": 242977.4,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 8617.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2017,
-    "value": 264180.7,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 8960.9,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2018,
-    "value": 293578.6,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 9167.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2019,
-    "value": 322096.7,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 9357.8,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2020,
-    "value": 323761.9,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 9531.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2021,
-    "value": 343733.3,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 10025.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2022,
-    "value": 380315.8,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 10089.2,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Financial Supporting Service",
     "year": 2023,
-    "value": 417812.94,
-    "sector_eng": "Wholesale & Retail Trade (Non-Vehicles)",
-    "parent_sector_eng": "Wholesale and Retail Trade; Motor Vehicles",
-    "parent_sector_order": 8,
-    "recovery_status": 3,
+    "value": 9935.2,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2014,
-    "value": 415.41,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 69794.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2015,
-    "value": 525.58,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 74398.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2016,
-    "value": 615.6,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 79292.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2017,
-    "value": 673.66,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 86687.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2018,
-    "value": 743.81,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 93169.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2019,
-    "value": 820.02,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 98453.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2020,
-    "value": 569.42,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 102419,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2021,
-    "value": 667.24,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 103146.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2022,
-    "value": 1127.85,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 102120.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Angkutan Rel",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Insurance & Pension Fund",
     "year": 2023,
-    "value": 1541.78,
-    "sector_eng": "Rail Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2014,
-    "value": 13944.32,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2015,
-    "value": 15885.09,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2016,
-    "value": 17878.35,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2017,
-    "value": 20349.13,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2018,
-    "value": 22230.98,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2019,
-    "value": 24911.15,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2020,
-    "value": 23949.76,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2021,
-    "value": 25846.45,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2022,
-    "value": 32233.94,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Darat",
-    "year": 2023,
-    "value": 39545.53,
-    "sector_eng": "Land Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2014,
-    "value": 4102,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2015,
-    "value": 4625.97,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2016,
-    "value": 4976.97,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2017,
-    "value": 5364.57,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2018,
-    "value": 5856.52,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2019,
-    "value": 6333.36,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2020,
-    "value": 5566.29,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2021,
-    "value": 5472.83,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2022,
-    "value": 6750.06,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Laut",
-    "year": 2023,
-    "value": 8242.4,
-    "sector_eng": "Sea Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2014,
-    "value": 492.1,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2015,
-    "value": 542.12,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2016,
-    "value": 596.09,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2017,
-    "value": 636.7,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2018,
-    "value": 662.24,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2019,
-    "value": 722.25,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2020,
-    "value": 533.26,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2021,
-    "value": 444.96,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2022,
-    "value": 574.34,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Sungai Danau dan Penyeberangan",
-    "year": 2023,
-    "value": 680.48,
-    "sector_eng": "River, Lake & Ferry Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2014,
-    "value": 13475.93,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2015,
-    "value": 15471.46,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2016,
-    "value": 17848.33,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2017,
-    "value": 19203.19,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2018,
-    "value": 20491.76,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2019,
-    "value": 20747.7,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2020,
-    "value": 11535.62,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2021,
-    "value": 12415.32,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2022,
-    "value": 24967.12,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Angkutan Udara",
-    "year": 2023,
-    "value": 33695.9,
-    "sector_eng": "Air Transport",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2014,
-    "value": 17570.95,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2015,
-    "value": 19582.59,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2016,
-    "value": 20860.04,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2017,
-    "value": 22949.11,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2018,
-    "value": 25174.34,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2019,
-    "value": 27172.45,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2020,
-    "value": 26903.96,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2021,
-    "value": 26626.96,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2022,
-    "value": 30861.47,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Pergudangan dan Jasa Penunjang Angkutan Pos dan Kurir",
-    "year": 2023,
-    "value": 35814.92,
-    "sector_eng": "Warehousing & Courier Services",
-    "parent_sector_eng": "Transport & Warehousing",
-    "parent_sector_order": 7,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2014,
-    "value": 11465.33,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2015,
-    "value": 12469.28,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2016,
-    "value": 13712.58,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2017,
-    "value": 15223.49,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2018,
-    "value": 17140.28,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2019,
-    "value": 19279.2,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2020,
-    "value": 12475.62,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2021,
-    "value": 12856.13,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2022,
-    "value": 15010.77,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Akomodasi",
-    "year": 2023,
-    "value": 16383.22,
-    "sector_eng": "Accommodation Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 4,
-    "recovery_category": "Has not recovered"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2014,
-    "value": 68481.48,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2015,
-    "value": 79006.98,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2016,
-    "value": 91226.2,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2017,
-    "value": 100834.8,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2018,
-    "value": 109703.1,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2019,
-    "value": 119875.6,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2020,
-    "value": 115678,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2021,
-    "value": 123582.4,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2022,
-    "value": 139131.6,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Penyediaan Makan Minum",
-    "year": 2023,
-    "value": 156806.11,
-    "sector_eng": "Food & Beverage Services",
-    "parent_sector_eng": "Accommodation & Food Services",
-    "parent_sector_order": 1,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2014,
-    "value": 69883.1,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 101607.3,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2015,
-    "value": 77087.45,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2016,
-    "value": 85149.76,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2017,
-    "value": 92928.66,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2018,
-    "value": 99216.38,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2019,
-    "value": 106706.7,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2020,
-    "value": 118381.6,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2021,
-    "value": 128713.3,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2022,
-    "value": 135659.6,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Informasi dan Komunikasi",
-    "year": 2023,
-    "value": 145514.15,
-    "sector_eng": "Information & Communication",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2014,
-    "value": 26765.52,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2015,
-    "value": 30184.37,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2016,
-    "value": 33212.02,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2017,
-    "value": 35175.58,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2018,
-    "value": 38189.77,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2019,
-    "value": 40104.96,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2020,
-    "value": 39839.15,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2021,
-    "value": 42765.82,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2022,
-    "value": 47991.65,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Perantara Keuangan",
-    "year": 2023,
-    "value": 51179.09,
-    "sector_eng": "Financial Intermediation Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2014,
-    "value": 6214.31,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2015,
-    "value": 7072.77,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2016,
-    "value": 8024.25,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2017,
-    "value": 8711.35,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2018,
-    "value": 9172.8,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2019,
-    "value": 9566.21,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2020,
-    "value": 9903.21,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2021,
-    "value": 10249.51,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2022,
-    "value": 10583.09,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Asuransi dan Dana Pensiun",
-    "year": 2023,
-    "value": 11234.12,
-    "sector_eng": "Insurance & Pension Funds",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2014,
-    "value": 8134.53,
+    "parent_sector_eng": "Financial & Insurance Activities",
     "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2015,
-    "value": 9032.07,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2016,
-    "value": 10228.49,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2017,
-    "value": 11024.63,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2018,
-    "value": 11868.72,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2019,
-    "value": 12574.52,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2020,
-    "value": 12518.96,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2021,
-    "value": 12803.15,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2022,
-    "value": 13844.79,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Keuangan Lainnya",
-    "year": 2023,
-    "value": 14473.02,
-    "sector_eng": "Other Financial Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
-  },
-  {
-    "sector_idn": "Jasa Penunjang Keuangan",
     "year": 2014,
-    "value": 90.44,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 44464.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2015,
-    "value": 99.26,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 48013.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2016,
-    "value": 111.18,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 52472.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2017,
-    "value": 121.53,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 57290.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2018,
-    "value": 137.55,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 61371,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2019,
-    "value": 149.7,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 67894.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2020,
-    "value": 153.79,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 67507.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2021,
-    "value": 160.92,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 65894.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2022,
-    "value": 173,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 68864.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Penunjang Keuangan",
+    "parent_sector_eng": "Financial & Insurance Activities",
+    "sector_eng": "Other Financial Services",
     "year": 2023,
-    "value": 187.56,
-    "sector_eng": "Financial Support Services",
-    "parent_sector_eng": "Financial Services & Insurance",
-    "parent_sector_order": 4,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 71638.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2014,
-    "value": 24123.31,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 72059.1,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2015,
-    "value": 27560.77,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 76532.1,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2016,
-    "value": 29907.42,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 77293,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2017,
-    "value": 32080.24,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 81832.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2018,
-    "value": 35576.47,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 89188.6,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2019,
-    "value": 38887.75,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 91716.9,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2020,
-    "value": 41103.05,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 97099.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2021,
-    "value": 42247.42,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 108267.3,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2022,
-    "value": 44748.26,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 124289.7,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Real Estate",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Basic Metals",
     "year": 2023,
-    "value": 46496.44,
-    "sector_eng": "Real Estate",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 141896,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2014,
-    "value": 12177.87,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 153191.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2015,
-    "value": 13538.46,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 164843,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2016,
-    "value": 14894.07,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 174469.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2017,
-    "value": 16255.93,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 182380.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2018,
-    "value": 18150.97,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 179791.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2019,
-    "value": 19835.39,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 195040.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2020,
-    "value": 18906.26,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 213360.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2021,
-    "value": 19817.89,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 233866,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2022,
-    "value": 21396.64,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 235475.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Perusahaan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Chemicals, Pharmaceuticals & Botanical Products",
     "year": 2023,
-    "value": 23816.58,
-    "sector_eng": "Business Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 1,
-    "recovery_category": "Recovered and grown"
+    "value": 235723.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2014,
-    "value": 35658.5,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 216750.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2015,
-    "value": 39137.39,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 214312,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2016,
-    "value": 43157.18,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 220392.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2017,
-    "value": 45740.72,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 219849.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2018,
-    "value": 50511.18,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 219831.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2019,
-    "value": 55243.85,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 217402.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2020,
-    "value": 57424.8,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 202603.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2021,
-    "value": 57422.17,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 203766.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2022,
-    "value": 58448.68,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 211339.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Coal & Refined Petroleum Products",
     "year": 2023,
-    "value": 60369.97,
-    "sector_eng": "Public Administration, Defense & Mandatory Social Security",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 220139.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2014,
-    "value": 41970.8,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 178544.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2015,
-    "value": 46006.23,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 192528,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2016,
-    "value": 49544.93,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 200860.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2017,
-    "value": 52974.12,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 206469.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2018,
-    "value": 56638.08,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 205216.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2019,
-    "value": 61329.09,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 204172.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2020,
-    "value": 65028.61,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 193026.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2021,
-    "value": 65993.12,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 189890,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2022,
-    "value": 67704.93,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 202637.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Pendidikan",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
     "year": 2023,
-    "value": 72605.58,
-    "sector_eng": "Education Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
-    "recovery_category": "Relatively unaffected"
+    "value": 230332.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2014,
-    "value": 9682.65,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 502856.2,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2015,
-    "value": 10654.13,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 540756.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2016,
-    "value": 11527.46,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 585786.3,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2017,
-    "value": 12611.73,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 639834.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2018,
-    "value": 13574.42,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 690462.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2019,
-    "value": 14886,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 744170.5,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2020,
-    "value": 16429.79,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 755914.9,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2021,
-    "value": 17799.68,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 775098.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2022,
-    "value": 18875.47,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 813062.4,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
   },
   {
-    "sector_idn": "Jasa Kesehatan dan Kegiatan Sosial",
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Food Products & Beverages",
     "year": 2023,
-    "value": 20144.16,
-    "sector_eng": "Health & Social Services",
-    "parent_sector_eng": "Other",
-    "parent_sector_order": 9,
-    "recovery_status": 3,
+    "value": 849395.7,
+    "recovery_status": 2,
     "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2014,
+    "value": 23179.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2015,
+    "value": 24377.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2016,
+    "value": 24489.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2017,
+    "value": 25383.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2018,
+    "value": 25946,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2019,
+    "value": 28113,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2020,
+    "value": 27167.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2021,
+    "value": 29385.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2022,
+    "value": 28800.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Furniture",
+    "year": 2023,
+    "value": 28212.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2014,
+    "value": 22967.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2015,
+    "value": 23879.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2016,
+    "value": 25875.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2017,
+    "value": 26449,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2018,
+    "value": 28941.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2019,
+    "value": 28654.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2020,
+    "value": 26142.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2021,
+    "value": 28169.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2022,
+    "value": 30805,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Leather & Related Products & Footwear",
+    "year": 2023,
+    "value": 30701.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2014,
+    "value": 26259.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2015,
+    "value": 28250.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2016,
+    "value": 29676.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2017,
+    "value": 31325,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2018,
+    "value": 34297.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2019,
+    "value": 32881,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2020,
+    "value": 29536.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2021,
+    "value": 32911.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2022,
+    "value": 36652.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Machinery & Equipment",
+    "year": 2023,
+    "value": 36639.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2014,
+    "value": 15925.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2015,
+    "value": 16668.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2016,
+    "value": 16161.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2017,
+    "value": 15889.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2018,
+    "value": 15758,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2019,
+    "value": 16572.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2020,
+    "value": 16426.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2021,
+    "value": 16157,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2022,
+    "value": 17139.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "year": 2023,
+    "value": 16778.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2014,
+    "value": 62706.8,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2015,
+    "value": 66485.2,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2016,
+    "value": 70118.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2017,
+    "value": 69512.9,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2018,
+    "value": 71424.4,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2019,
+    "value": 70690.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2020,
+    "value": 64239.2,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2021,
+    "value": 64812,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2022,
+    "value": 63514.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Other Non-Metallic Mineral Products",
+    "year": 2023,
+    "value": 66125.6,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2014,
+    "value": 70670.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2015,
+    "value": 70556.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2016,
+    "value": 72399.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2017,
+    "value": 72640.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2018,
+    "value": 73681.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2019,
+    "value": 80211,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2020,
+    "value": 80385.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2021,
+    "value": 78061.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2022,
+    "value": 80974.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Paper & Paper Products;\r\n\r\nPrinting & Reproduction of Recorded Media",
+    "year": 2023,
+    "value": 84637.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2014,
+    "value": 72777.3,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2015,
+    "value": 76442.1,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2016,
+    "value": 69940.9,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2017,
+    "value": 71666.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2018,
+    "value": 76627.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2019,
+    "value": 72398.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2020,
+    "value": 68337.7,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2021,
+    "value": 69072.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2022,
+    "value": 66242.6,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Rubber; Rubber Products & Plastics Products",
+    "year": 2023,
+    "value": 63837.6,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2014,
+    "value": 117723.4,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2015,
+    "value": 112078.9,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2016,
+    "value": 111978.2,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2017,
+    "value": 116261.6,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2018,
+    "value": 126406.8,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2019,
+    "value": 145804.6,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2020,
+    "value": 132851,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2021,
+    "value": 127429.1,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2022,
+    "value": 139326.5,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Textiles & Wearing Apparel",
+    "year": 2023,
+    "value": 136568.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2014,
+    "value": 78878.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2015,
+    "value": 83798.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2016,
+    "value": 85119.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2017,
+    "value": 84572.4,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2018,
+    "value": 87548.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2019,
+    "value": 90486.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2020,
+    "value": 85257.5,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2021,
+    "value": 84133.3,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2022,
+    "value": 82167.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Tobacco Products",
+    "year": 2023,
+    "value": 86111.6,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2014,
+    "value": 178022.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2015,
+    "value": 182289.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2016,
+    "value": 190523.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2017,
+    "value": 197527.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2018,
+    "value": 205907.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2019,
+    "value": 198853.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2020,
+    "value": 159359,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2021,
+    "value": 187750.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2022,
+    "value": 207792.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Transport Equipment",
+    "year": 2023,
+    "value": 223644.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2014,
+    "value": 61742.5,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2015,
+    "value": 60735.4,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2016,
+    "value": 61790.6,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2017,
+    "value": 61870.4,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2018,
+    "value": 62337.3,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2019,
+    "value": 59498.3,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2020,
+    "value": 58212.1,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2021,
+    "value": 56050.9,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2022,
+    "value": 56381.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Manufacturing",
+    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "year": 2023,
+    "value": 57056,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2014,
+    "value": 251073.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2015,
+    "value": 232725.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2016,
+    "value": 223098.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2017,
+    "value": 226478.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2018,
+    "value": 235561.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2019,
+    "value": 259598.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2020,
+    "value": 245498.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2021,
+    "value": 261709.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2022,
+    "value": 282943.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Coal & Lignite Mining",
+    "year": 2023,
+    "value": 311291.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2014,
+    "value": 307161.7,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2015,
+    "value": 307325.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2016,
+    "value": 313743.9,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2017,
+    "value": 302653,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2018,
+    "value": 298420.1,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2019,
+    "value": 289980.1,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2020,
+    "value": 272583.2,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2021,
+    "value": 260546.1,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2022,
+    "value": 247985.8,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Crude Petroleum, Natural Gas & Geothermal",
+    "year": 2023,
+    "value": 249801.4,
+    "recovery_status": 4,
+    "recovery_category": "Accelerated decline"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2014,
+    "value": 98257.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2015,
+    "value": 87702.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2016,
+    "value": 89303.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2017,
+    "value": 95150.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2018,
+    "value": 103719.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2019,
+    "value": 88003.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2020,
+    "value": 105829.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2021,
+    "value": 129999.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2022,
+    "value": 153412.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Iron Ore Mining",
+    "year": 2023,
+    "value": 166453.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2014,
+    "value": 137996.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2015,
+    "value": 139573.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2016,
+    "value": 148447.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2017,
+    "value": 155396.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2018,
+    "value": 158804.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2019,
+    "value": 168624.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2020,
+    "value": 166564,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2021,
+    "value": 169844,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2022,
+    "value": 173804.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Mining & Quarrying",
+    "sector_eng": "Other Mining & Quarrying",
+    "year": 2023,
+    "value": 183133.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2014,
+    "value": 948069.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2015,
+    "value": 977197,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2016,
+    "value": 1016672,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2017,
+    "value": 1061304,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2018,
+    "value": 1114300,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2019,
+    "value": 1167836,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2020,
+    "value": 1151731,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2021,
+    "value": 1187539,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2022,
+    "value": 1252140,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "year": 2023,
+    "value": 1313803,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2014,
+    "value": 229228.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2015,
+    "value": 229967.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2016,
+    "value": 239089.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2017,
+    "value": 250442.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2018,
+    "value": 262578.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2019,
+    "value": 272349.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2020,
+    "value": 233920.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2021,
+    "value": 262292.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2022,
+    "value": 277812.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Motor/Wholesale & Retail Trade; Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "year": 2023,
+    "value": 290311.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2014,
+    "value": 137795.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2015,
+    "value": 148395.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2016,
+    "value": 159321.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2017,
+    "value": 172763.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2018,
+    "value": 187691.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2019,
+    "value": 206936.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2020,
+    "value": 195671.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2021,
+    "value": 197106.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2022,
+    "value": 214399,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Business Activities",
+    "year": 2023,
+    "value": 232076.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2014,
+    "value": 826615.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2015,
+    "value": 879163.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2016,
+    "value": 925040.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2017,
+    "value": 987924.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2018,
+    "value": 1048083,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2019,
+    "value": 1108425,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2020,
+    "value": 1072335,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2021,
+    "value": 1102518,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2022,
+    "value": 1124725,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Construction",
+    "year": 2023,
+    "value": 1179989,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2014,
+    "value": 263685,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2015,
+    "value": 283020.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2016,
+    "value": 293887.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2017,
+    "value": 304810.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2018,
+    "value": 321133.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2019,
+    "value": 341349.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2020,
+    "value": 350272.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2021,
+    "value": 350660,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2022,
+    "value": 352673.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Education",
+    "year": 2023,
+    "value": 358952.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2014,
+    "value": 91357.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2015,
+    "value": 97465.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2016,
+    "value": 102490.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2017,
+    "value": 109497.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2018,
+    "value": 117322.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2019,
+    "value": 127487.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2020,
+    "value": 142227.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2021,
+    "value": 157085.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2022,
+    "value": 161397.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Human Health & Social Work Activities",
+    "year": 2023,
+    "value": 168926.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2014,
+    "value": 384475.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2015,
+    "value": 421769.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2016,
+    "value": 459208.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2017,
+    "value": 503420.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2018,
+    "value": 538762.7,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2019,
+    "value": 589536.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2020,
+    "value": 652062.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2021,
+    "value": 696506.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2022,
+    "value": 750319,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Information & Communication",
+    "year": 2023,
+    "value": 807304.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2014,
+    "value": 134070.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2015,
+    "value": 144904.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2016,
+    "value": 156507.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2017,
+    "value": 170174.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2018,
+    "value": 185405.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2019,
+    "value": 205011.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2020,
+    "value": 196608.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2021,
+    "value": 200773.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2022,
+    "value": 219778.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Other Services Activities",
+    "year": 2023,
+    "value": 242891.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2014,
+    "value": 296329.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2015,
+    "value": 310054.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2016,
+    "value": 319965,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2017,
+    "value": 326514.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2018,
+    "value": 349277.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2019,
+    "value": 365538.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2020,
+    "value": 365446,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2021,
+    "value": 364246.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2022,
+    "value": 373404,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Public Administration & Defence; Compulsory Social Security",
+    "year": 2023,
+    "value": 378989.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2014,
+    "value": 256440.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2015,
+    "value": 266979.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2016,
+    "value": 279500.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2017,
+    "value": 289568.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2018,
+    "value": 299648.2,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2019,
+    "value": 316901.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2020,
+    "value": 324259.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2021,
+    "value": 333282.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2022,
+    "value": 339014.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Real Estate Activities",
+    "year": 2023,
+    "value": 343864.8,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2014,
+    "value": 6882.5,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2015,
+    "value": 7369,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2016,
+    "value": 7634.6,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2017,
+    "value": 7985.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2018,
+    "value": 8429.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2019,
+    "value": 9004.9,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2020,
+    "value": 9449.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2021,
+    "value": 9919.3,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2022,
+    "value": 10240.1,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Others",
+    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "year": 2023,
+    "value": 10741.4,
+    "recovery_status": 2,
+    "recovery_category": "Relatively unaffected"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2014,
+    "value": 52255.1,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2015,
+    "value": 57671.8,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2016,
+    "value": 65295.4,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2017,
+    "value": 73084.2,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2018,
+    "value": 77493.4,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2019,
+    "value": 69926.9,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2020,
+    "value": 32826.9,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2021,
+    "value": 30198.9,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2022,
+    "value": 50402.8,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Air Transport",
+    "year": 2023,
+    "value": 64997.7,
+    "recovery_status": 3,
+    "recovery_category": "Has not recovered"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2014,
+    "value": 180367.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2015,
+    "value": 192631,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2016,
+    "value": 206218.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2017,
+    "value": 222587.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2018,
+    "value": 238457.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2019,
+    "value": 262208.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2020,
+    "value": 248208,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2021,
+    "value": 259493.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2022,
+    "value": 282147.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Land Transport",
+    "year": 2023,
+    "value": 309401.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2014,
+    "value": 2823.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2015,
+    "value": 2948.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2016,
+    "value": 3050.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2017,
+    "value": 3630.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2018,
+    "value": 4020,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2019,
+    "value": 4200.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2020,
+    "value": 2422,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2021,
+    "value": 2340.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2022,
+    "value": 3972.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Railways Transport",
+    "year": 2023,
+    "value": 4915.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2014,
+    "value": 10117.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2015,
+    "value": 10222.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2016,
+    "value": 10371.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2017,
+    "value": 10995.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2018,
+    "value": 11566.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2019,
+    "value": 12212.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2020,
+    "value": 10624.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2021,
+    "value": 10580,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2022,
+    "value": 17979.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "River, Lake & Ferry Transport",
+    "year": 2023,
+    "value": 20413.6,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2014,
+    "value": 29473.7,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2015,
+    "value": 30174,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2016,
+    "value": 30550.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2017,
+    "value": 31969.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2018,
+    "value": 34276.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2019,
+    "value": 37865.4,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2020,
+    "value": 36134.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2021,
+    "value": 37177,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2022,
+    "value": 39080,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Sea Transport",
+    "year": 2023,
+    "value": 45126.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2014,
+    "value": 51896.1,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2015,
+    "value": 55208.3,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2016,
+    "value": 59356.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2017,
+    "value": 64413.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2018,
+    "value": 69522.5,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2019,
+    "value": 76713,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2020,
+    "value": 63203.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2021,
+    "value": 66379.8,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2022,
+    "value": 93290.9,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
+  },
+  {
+    "parent_sector_eng": "Transportation & Storage",
+    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "year": 2023,
+    "value": 110000.2,
+    "recovery_status": 1,
+    "recovery_category": "Recovered and grown"
   }
 ]
   

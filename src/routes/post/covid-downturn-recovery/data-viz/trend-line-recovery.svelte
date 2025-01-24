@@ -154,21 +154,19 @@
 
   const getRecoverySymbol = (recovery_status) => {
           switch (recovery_status) {
-            case 0: return '↑';
             case 1: return '↗';
-            case 2: return '↺';
-            case 3: return '→';
-            case 4: return '↘';
+            case 2: return '→';
+            case 3: return '↘';
+            case 4: return '↓';
             default: return '';
           }
         };
 
   const getRecoveryColor = (recovery_status) => {
           switch (recovery_status) {
-            case 0: return '#1a9850';
-            case 1: return '#67bc63';
-            case 2: return '#f46c42';
-            case 3: return '#a7d96b';
+            case 1: return '#1a9850';
+            case 2: return '#67bc63';
+            case 3: return '#f46c42';
             case 4: return '#d63127';
             default: return '#aeaeae';
           }

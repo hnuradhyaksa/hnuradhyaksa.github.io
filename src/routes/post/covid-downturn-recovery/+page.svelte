@@ -57,7 +57,7 @@
 <footer>
     <hr>
     <p>
-        Soruce: Badan Pusat Statistik &lpar;BPS&rpar;&semi; PDRB Atas Dasar Harga Berlaku Menurut Subsektor Lapangan Usaha Tahunan
+        Soruce: Badan Pusat Statistik &lpar;BPS&rpar;&semi; PDRB Atas Dasar Harga Konstan Menurut Subsektor Lapangan Usaha Tahunan &lpar;Seri 2010&rpar;
     </p>
 </footer>
 
