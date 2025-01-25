@@ -120,7 +120,7 @@ export const data = [
     "rank_bottom": 14
   },
   {
-    "sector_eng": "Fabricated Metal Products; Electronic, Computer & Optical Products; & Electrical Equipment",
+    "sector_eng": "Fabricated Metal, Electronics & Electrical Equipment",
     "value_2019": 204172.5,
     "value_2020": 193026.6,
     "pct_change": -5.46,
@@ -160,7 +160,7 @@ export const data = [
     "rank_bottom": 9
   },
   {
-    "sector_eng": "Other Manufacturing; Repair & Installation of Machinery & Equipment",
+    "sector_eng": "Other Manufacturing & Machinery Repair",
     "value_2019": 16572.7,
     "value_2020": 16426.8,
     "pct_change": -0.88,
@@ -176,7 +176,7 @@ export const data = [
     "rank_bottom": 10
   },
   {
-    "sector_eng": "Paper & Paper Products;\r\nPrinting & Reproduction of Recorded Media",
+    "sector_eng": "Paper Products & Printing",
     "value_2019": 80211,
     "value_2020": 80385.3,
     "pct_change": 0.22,
@@ -216,7 +216,7 @@ export const data = [
     "rank_bottom": 4
   },
   {
-    "sector_eng": "Wood & Products of Wood & Cork; & Articles of Straw & Plaiting Materials",
+    "sector_eng": "Wood Products & Articles of Straw",
     "value_2019": 59498.3,
     "value_2020": 58212.1,
     "pct_change": -2.16,
@@ -256,7 +256,7 @@ export const data = [
     "rank_bottom": 28
   },
   {
-    "sector_eng": "Motor/Wholesale & Retail Trade Except of Motor Vehicles & Motorcycles",
+    "sector_eng": "Motor & Retail Trade (Excluding Vehicles)",
     "value_2019": 1167836,
     "value_2020": 1151731,
     "pct_change": -1.38,
@@ -264,7 +264,7 @@ export const data = [
     "rank_bottom": 27
   },
   {
-    "sector_eng": "Wholesale & Retail Trade & Repair of Motor Vehicles & Motorcycles",
+    "sector_eng": "Wholesale & Retail Trade of Motor Vehicles & Motorcycles",
     "value_2019": 272349.7,
     "value_2020": 233920.3,
     "pct_change": -14.11,
@@ -336,7 +336,7 @@ export const data = [
     "rank_bottom": 39
   },
   {
-    "sector_eng": "Water Supply; Sewerage, Waste Management & Remediation Activities",
+    "sector_eng": "Water Supply & Waste Management",
     "value_2019": 9004.9,
     "value_2020": 9449.3,
     "pct_change": 4.94,
@@ -384,7 +384,7 @@ export const data = [
     "rank_bottom": 22
   },
   {
-    "sector_eng": "Warehousing & Support Services for Transportation; Postal & Courier",
+    "sector_eng": "Warehousing, Postal & Courier Services",
     "value_2019": 76713,
     "value_2020": 63203.2,
     "pct_change": -17.61,

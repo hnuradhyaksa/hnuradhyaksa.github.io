@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
   import { data as fullData } from '../data/covid_downturn.js';
+  import {base} from '$app/paths';
 
   const margin = { top: 50, right: 50, bottom: 50, left: 320 };
   const width = 720 - margin.left - margin.right;
@@ -232,10 +233,10 @@
         .attr('stroke-width', 1);
     }
 
-  const toparrowExpand = '/icon/normal-down.svg';
-  const botarrowExpand = '/icon/normal-up.svg';
-  const toparrowCollapse = '/icon/normal-up.svg';
-  const botarrowCollapse = '/icon/normal-down.svg';
+  const toparrowExpand = `${base}/icon/normal-down.svg`;
+  const botarrowExpand = `${base}/icon/normal-up.svg`;
+  const toparrowCollapse = `${base}/icon/normal-up.svg`;
+  const botarrowCollapse = `${base}/icon/normal-down.svg`;
 
   const getTopArrowSVG = () => (isMiddleVisible ? toparrowExpand : toparrowCollapse);
   const getBottomArrowSVG = () => (isMiddleVisible ? botarrowExpand : botarrowCollapse);

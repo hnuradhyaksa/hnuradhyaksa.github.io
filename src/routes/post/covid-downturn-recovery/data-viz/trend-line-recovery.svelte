@@ -14,11 +14,13 @@
 
   let chartRefs = {};
 
+  let lastHovered = null;
+
   onMount(() => {
     // Area chart
     groupedData.forEach(([parent, sectors]) => {
       Object.entries(sectors).forEach(([sector, sectorData]) => {
-        const margin = { top: 20, right: 20, bottom: 30, left: 50 };
+        const margin = { top: 20, right: 20, bottom: 30, left: 40 };
         const width = 210 - margin.left - margin.right;
         const height = 160 - margin.top - margin.bottom;
 
@@ -46,80 +48,94 @@
           .domain(d3.extent(sectorData, d => d.value))
           .range([height, 0]);
 
-        // Append grid lines to the grid group
-        gridGroup.append('g')
-          .attr('class', 'grid x-grid')
-          .attr('transform', `translate(0,${height})`)
-          .call(
-            d3.axisBottom(x)
-              .ticks(3)
-              .tickSize(-height)
-              .tickFormat(() => '')
-          )
-          .selectAll('.tick line')
-          .attr('stroke', '#ccc')
-          .attr('stroke-dasharray', '2,2')
-          .attr('opacity', 0.7);
-
         gridGroup.append('g')
           .attr('class', 'grid y-grid')
           .call(
             d3.axisLeft(y)
-              .ticks(4)
+              .ticks(2)
               .tickSize(-width)
               .tickFormat(() => '')
           )
           .selectAll('.tick line')
           .attr('stroke', '#ccc')
           .attr('stroke-dasharray', '2,2')
-          .attr('opacity', 0.7);
+          .attr('opacity', 0.7)
+          .filter(d => y(d) !== y(0))
+          .remove();
+
+          
+          const barWidth = Math.min(10, x(sectorData[1].year) - x(sectorData[0].year) - 2);
+
+
+          let lastHovered = null; // Store the last hovered value
 
         // Append the area chart to the area group
-        lineGroup.append('path')
-          .datum(sectorData)
-          .attr('class', 'line')
-          .attr('fill', 'none')
-          .attr('stroke', color)
-          .attr('stroke-width', 2.5)
-          .attr('d', d3.line()
-            .x(d => x(d.year))
-            .y(d => y(d.value))
-          );
+        lineGroup.selectAll('.bar')
+          .data(sectorData)
+          .enter()
+          .append('rect')
+          .attr('class', 'bar')
+          .attr('x', d => x(d.year) - barWidth / 2)
+          .attr('y', d => d.value >= 0 ? y(d.value) : y(0))
+          .attr('width', barWidth)
+          .attr('height', d => Math.abs(y(d.value) - y(0)))
+          .attr('fill', color)
+          .on('mouseover', function (event, d) {
+            d3.select(this).attr('fill', d3.color(color).darker(1));
+
+            lastHovered = { year: d.year, normal_value: d.normal_value };
+
+            updateYearValue(sector, d.year, d.normal_value);
+          })
+          .on('mousemove', function (event, d) {
+            hoverCircle
+              .attr('cx', x(d.year))
+              .attr('cy', y(d.normal_value));
+
+            lastHovered = { year: d.year, normal_value: d.normal_value };
+          })
+          .on('mouseleave', function () {
+            d3.select(this).attr('fill', color);
+            hoverCircle.style('opacity', 0);
+
+            if (lastHovered) {
+              updateYearValue(sector, lastHovered.year, lastHovered.normal_value);
+            }
+          });
 
         let hoverCircle = svg.append('circle')
-          .attr('r', 3) 
+          .attr('r', 3)
           .attr('fill', color)
           .style('opacity', 0)
           .style('pointer-events', 'none');
 
         svg.on('mousemove', function (event) {
-          const mouseX = d3.pointer(event)[0]; // Get the x-coordinate of the mouse
-          const closestYear = Math.round(x.invert(mouseX)); // Snap to the nearest year
-          const closestData = sectorData.find(d => d.year === closestYear); // Find the data point for the closest year
+          const mouseX = d3.pointer(event)[0];
+          const closestYear = Math.round(x.invert(mouseX));
+          const closestData = sectorData.find(d => d.year === closestYear);
 
           if (closestData) {
             hoverCircle
               .attr('cx', x(closestData.year))
-              .attr('cy', y(closestData.value))
-              .style('opacity', 1); // Ensure the circle is visible
+              .attr('cy', y(closestData.normal_value))
+              .style('opacity', 1);
 
-            // Update the year and value dynamically for the hovered sector
-            updateYearValue(sector, closestData.year, closestData.value);
+            updateYearValue(sector, closestData.year, closestData.normal_value);
+
+            lastHovered = { year: closestData.year, normal_value: closestData.normal_value };
           }
-        })
-        .on('mouseleave', function () {
-          // Hide the circle only when the mouse leaves the chart area
+        }).on('mouseleave', function () {
           hoverCircle.style('opacity', 0);
 
-          // Reset to the most recent data point when not hovered
-          const mostRecentData = sectorData[sectorData.length - 1];
-          updateYearValue(sector, mostRecentData.year, mostRecentData.value);
+          if (lastHovered) {
+            updateYearValue(sector, lastHovered.year, lastHovered.normal_value);
+          }
         });
 
         // Append axes to the axis group
         axisGroup.append('g')
           .attr('transform', `translate(0,${height})`)
-          .call(d3.axisBottom(x).ticks(3).tickSize(5).tickFormat(d3.format('d')))
+          .call(d3.axisBottom(x).ticks(2).tickSize(5).tickFormat(d3.format('d')))
           .selectAll('text')
           .style('font-family', 'Roboto')
           .style('font-size', '10')
@@ -127,7 +143,7 @@
           .style('text-anchor', 'center');
 
         axisGroup.append('g')
-          .call(d3.axisLeft(y).ticks(4).tickSize(5))
+          .call(d3.axisLeft(y).ticks(4).tickSize(0).tickPadding(16).tickFormat(d => `${d > 0 ? '+' : ''}${d}%`))
           .selectAll('text')
           .style('font-family', 'Roboto')
           .style('font-size', '10')
@@ -138,9 +154,9 @@
           .style('stroke', '#ccc')
         
         lineGroup.append('rect')
-          .attr('x', x(2019))
+          .attr('x', x(2020) - barWidth / 2)
           .attr('y',0)
-          .attr('width', x(2020) - x(2019))
+          .attr('width', barWidth)
           .attr('height', height)
           .attr('fill', bandColor)
           .attr('opacity', 0.07);
@@ -172,7 +188,7 @@
           }
         };
 
-  function updateYearValue(sector, year, value) {
+  function updateYearValue(sector, year, normal_value) {
   const sectorElement = document.querySelector(`.sector[data-sector="${sector}"]`);
   if (sectorElement) {
     const yearElement = sectorElement.querySelector('.year-display');
@@ -183,7 +199,7 @@
     }
 
     if (valueElement) {
-      valueElement.textContent = `${value.toLocaleString('en-US')} Billion Rupiah`;
+      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah`;
     }
   }
 }
@@ -208,7 +224,7 @@
             </div>
             <div class="value">
               <p class="year-display">GRDP in {sectorData[sectorData.length - 1]?.year}:</p>
-              <p class="value-display">{sectorData[sectorData.length - 1]?.value?.toLocaleString('en-US')} Billion Rupiah</p>
+              <p class="value-display">{sectorData[sectorData.length - 1]?.normal_value?.toLocaleString('en-US')} Billion Rupiah</p>
             </div>
             <svg bind:this={chartRefs[sector]} data-sector="{sector}"></svg>
           </div>
@@ -237,7 +253,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.2rem;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: flex-start;
   }
