@@ -234,8 +234,7 @@
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -260,9 +259,10 @@
     align-items: flex-start;
   }
   .recovery-status {
-    font-family: 'Inter';
+    font-family: Inter, sans-seriff;
+    font-feature-settings: 'liga' 1, 'calt' 1;
     font-size: 0.7rem;
-    font-weight: 350;
+    font-weight: 400;
     line-height: 0.8rem;
   }
   .value {

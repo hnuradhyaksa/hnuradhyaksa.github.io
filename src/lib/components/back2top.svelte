@@ -22,12 +22,11 @@
   
   <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
     .to-top-button {
-      font-family: 'Inter';
+      font-family: Inter, sans-seriff;
+      font-feature-settings: 'liga' 1, 'calt' 1;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       position: fixed;
       bottom: 20px;
       right: 20px;
