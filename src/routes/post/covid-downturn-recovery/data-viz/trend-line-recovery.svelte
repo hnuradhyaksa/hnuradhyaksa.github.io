@@ -83,23 +83,23 @@
           .on('mouseover', function (event, d) {
             d3.select(this).attr('fill', d3.color(color).darker(1));
 
-            lastHovered = { year: d.year, normal_value: d.normal_value };
+            lastHovered = { year: d.year, normal_value: d.normal_value, value : d.value };
 
-            updateYearValue(sector, d.year, d.normal_value);
+            updateYearValue(sector, d.year, d.normal_value, d.value);
           })
           .on('mousemove', function (event, d) {
             hoverCircle
               .attr('cx', x(d.year))
               .attr('cy', y(d.normal_value));
 
-            lastHovered = { year: d.year, normal_value: d.normal_value };
+            lastHovered = { year: d.year, normal_value: d.normal_value, value : d.value };
           })
           .on('mouseleave', function () {
             d3.select(this).attr('fill', color);
             hoverCircle.style('opacity', 0);
 
             if (lastHovered) {
-              updateYearValue(sector, lastHovered.year, lastHovered.normal_value);
+              updateYearValue(sector, lastHovered.year, lastHovered.normal_value, lastHovered.value);
             }
           });
 
@@ -120,15 +120,15 @@
               .attr('cy', y(closestData.normal_value))
               .style('opacity', 1);
 
-            updateYearValue(sector, closestData.year, closestData.normal_value);
+            updateYearValue(sector, closestData.year, closestData.normal_value, closestData.value);
 
-            lastHovered = { year: closestData.year, normal_value: closestData.normal_value };
+            lastHovered = { year: closestData.year, normal_value: closestData.normal_value, value : closestData.value };
           }
         }).on('mouseleave', function () {
           hoverCircle.style('opacity', 0);
 
           if (lastHovered) {
-            updateYearValue(sector, lastHovered.year, lastHovered.normal_value);
+            updateYearValue(sector, lastHovered.year, lastHovered.normal_value, lastHovered.value);
           }
         });
 
@@ -188,18 +188,23 @@
           }
         };
 
-  function updateYearValue(sector, year, normal_value) {
+  function updateYearValue(sector, year, normal_value, value) {
   const sectorElement = document.querySelector(`.sector[data-sector="${sector}"]`);
   if (sectorElement) {
     const yearElement = sectorElement.querySelector('.year-display');
     const valueElement = sectorElement.querySelector('.value-display');
+    const annotElement = sectorElement.querySelector('.annot-display');
 
     if (yearElement) {
       yearElement.textContent = `GRDP in ${year}:`;
     }
 
     if (valueElement) {
-      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah`;
+      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah (${value > 0 ? '+' : ''}${value.toLocaleString('en-US')}% vs 2020)`;
+    }
+
+    if (annotElement) {
+      annotElement.textContent = `${value > 0 ? '+' : ''}${value.toLocaleString('en-US')}% vs 2020`;
     }
   }
 }
@@ -223,8 +228,15 @@
               </span>
             </div>
             <div class="value">
-              <p class="year-display">GRDP in {sectorData[sectorData.length - 1]?.year}:</p>
-              <p class="value-display">{sectorData[sectorData.length - 1]?.normal_value?.toLocaleString('en-US')} Billion Rupiah</p>
+              <p class="year-display">
+                GRDP in {sectorData[sectorData.length - 1]?.year}:
+              </p>
+              <p class="value-display">
+                {sectorData[sectorData.length - 1]?.normal_value?.toLocaleString('en-US')} Billion Rupiah
+              </p>
+              <p class="annot-display">
+                {sectorData[sectorData.length - 1]?.value > 0 ? '+' : ''}{sectorData[sectorData.length - 1]?.value?.toLocaleString('en-US')}% vs 2020
+              </p>
             </div>
             <svg bind:this={chartRefs[sector]} data-sector="{sector}"></svg>
           </div>
@@ -236,11 +248,14 @@
 <style>
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 720px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 720px;
+      grid-auto-flow: row;
+      justify-items: start;
   }
+
   .parent-group {
     margin-bottom: 20px;
     font-family: 'Vollkorn';
@@ -259,10 +274,9 @@
     align-items: flex-start;
   }
   .recovery-status {
-    font-family: Inter, sans-seriff;
-    font-feature-settings: 'liga' 1, 'calt' 1;
+    font-family: 'Inter', seriff;
     font-size: 0.7rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 0.8rem;
   }
   .value {
@@ -271,10 +285,26 @@
     font-size: 0.7rem;
     font-weight: 350;
     line-height: 0.4rem;
+
+    .annot-display {
+      color: #666;
+    }
   }
   svg {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

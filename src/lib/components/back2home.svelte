@@ -5,10 +5,9 @@
 <style>
   
   .back-to-home {
-      font-family: Inter, sans-seriff;
-      font-feature-settings: 'liga' 1, 'calt' 1;
+      font-family: 'Inter', seriff;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       font-display: swap;
       position: fixed;
       top: 20px;

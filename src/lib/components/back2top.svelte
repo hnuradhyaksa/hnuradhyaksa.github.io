@@ -23,10 +23,9 @@
   <style>
 
     .to-top-button {
-      font-family: Inter, sans-seriff;
-      font-feature-settings: 'liga' 1, 'calt' 1;
+      font-family: 'Inter', seriff;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       position: fixed;
       bottom: 20px;
       right: 20px;
