@@ -200,7 +200,7 @@
     }
 
     if (valueElement) {
-      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah (${value > 0 ? '+' : ''}${value.toLocaleString('en-US')}% vs 2020)`;
+      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah`;
     }
 
     if (annotElement) {
@@ -300,11 +300,17 @@
     .grid {
       grid-template-columns: repeat(2, 1fr);
     }
+    .sector {
+      font-size: 0.8rem;
+    }
   }
 
   @media (max-width: 480px) {
     .grid {
       grid-template-columns: 1fr;
+    }
+    .sector {
+      font-size: 0.68rem;
     }
   }
 </style>
