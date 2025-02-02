@@ -31,7 +31,7 @@
                 Which Industries Were Most Affected By Covid?
             </div>
             <div class="subtitle">
-                Changes &lpar;&percnt;&rpar; in Gross Regional Domestic Product at constant prices from 2019 to 2020
+                Changes &lpar;&percnt;&rpar; in 2020 Gross Regional Domestic Product at constant prices compared to 2019
             </div>
         </div>
         <div class="chart">
