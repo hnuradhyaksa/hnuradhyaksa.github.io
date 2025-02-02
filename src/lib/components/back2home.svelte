@@ -13,7 +13,7 @@
       top: 20px;
       left: 20px;
       padding: 10px 20px;
-      color: #bbbbbb;
+      color: #bbb;
       font-size: 1.5rem;
       text-decoration: none;
       cursor: pointer;

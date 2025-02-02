@@ -3,7 +3,8 @@
   import * as d3 from 'd3';
   import { data } from '../data/recovery_trend.js';
 
-    let groupedData = Object.entries(
+  // Group the data by parent sector and then by sector.
+  let groupedData = Object.entries(
     data.reduce((acc, d) => {
       acc[d.parent_sector_eng] = acc[d.parent_sector_eng] || {};
       acc[d.parent_sector_eng][d.sector_eng] = acc[d.parent_sector_eng][d.sector_eng] || [];
@@ -17,11 +18,16 @@
   let lastHovered = null;
 
   onMount(() => {
-    // Area chart
+    // Determine if we're on a small screen (≤480px)
+    const isSmallScreen = window.innerWidth <= 480;
+    // Use a slightly smaller base width for the chart container on small screens.
+    const baseChartWidth = isSmallScreen ? 180 : 210;
+    
     groupedData.forEach(([parent, sectors]) => {
       Object.entries(sectors).forEach(([sector, sectorData]) => {
         const margin = { top: 20, right: 20, bottom: 30, left: 40 };
-        const width = 210 - margin.left - margin.right;
+        // Adjust the chart width based on screen size.
+        const width = baseChartWidth - margin.left - margin.right;
         const height = 160 - margin.top - margin.bottom;
 
         const svg = d3.select(chartRefs[sector])
@@ -31,11 +37,10 @@
           .attr('transform', `translate(${margin.left},${margin.top})`);
         
         const recovery_status = sectorData[sectorData.length - 1]?.recovery_status;
-      
         const color = getRecoveryColor(recovery_status);
         const bandColor = '#d63127';
 
-      // Create distinct groups for layering
+        // Create distinct groups for layering.
         const gridGroup = svg.append('g').attr('class', 'grid-group');
         const lineGroup = svg.append('g').attr('class', 'area-group');
         const axisGroup = svg.append('g').attr('class', 'axis-group');
@@ -63,13 +68,10 @@
           .filter(d => y(d) !== y(0))
           .remove();
 
-          
-          const barWidth = Math.min(10, x(sectorData[1].year) - x(sectorData[0].year) - 2);
+        // Calculate bar width so that it doesn’t exceed 10 pixels
+        const barWidth = Math.min(10, x(sectorData[1].year) - x(sectorData[0].year) - 2);
 
-
-          let lastHovered = null; // Store the last hovered value
-
-        // Append the area chart to the area group
+        // Append the bars to the chart.
         lineGroup.selectAll('.bar')
           .data(sectorData)
           .enter()
@@ -82,22 +84,18 @@
           .attr('fill', color)
           .on('mouseover', function (event, d) {
             d3.select(this).attr('fill', d3.color(color).darker(1));
-
-            lastHovered = { year: d.year, normal_value: d.normal_value, value : d.value };
-
+            lastHovered = { year: d.year, normal_value: d.normal_value, value: d.value };
             updateYearValue(sector, d.year, d.normal_value, d.value);
           })
           .on('mousemove', function (event, d) {
             hoverCircle
               .attr('cx', x(d.year))
               .attr('cy', y(d.normal_value));
-
-            lastHovered = { year: d.year, normal_value: d.normal_value, value : d.value };
+            lastHovered = { year: d.year, normal_value: d.normal_value, value: d.value };
           })
           .on('mouseleave', function () {
             d3.select(this).attr('fill', color);
             hoverCircle.style('opacity', 0);
-
             if (lastHovered) {
               updateYearValue(sector, lastHovered.year, lastHovered.normal_value, lastHovered.value);
             }
@@ -113,26 +111,22 @@
           const mouseX = d3.pointer(event)[0];
           const closestYear = Math.round(x.invert(mouseX));
           const closestData = sectorData.find(d => d.year === closestYear);
-
           if (closestData) {
             hoverCircle
               .attr('cx', x(closestData.year))
               .attr('cy', y(closestData.normal_value))
               .style('opacity', 1);
-
             updateYearValue(sector, closestData.year, closestData.normal_value, closestData.value);
-
-            lastHovered = { year: closestData.year, normal_value: closestData.normal_value, value : closestData.value };
+            lastHovered = { year: closestData.year, normal_value: closestData.normal_value, value: closestData.value };
           }
         }).on('mouseleave', function () {
           hoverCircle.style('opacity', 0);
-
           if (lastHovered) {
             updateYearValue(sector, lastHovered.year, lastHovered.normal_value, lastHovered.value);
           }
         });
 
-        // Append axes to the axis group
+        // Append the axes ensuring they are fully visible.
         axisGroup.append('g')
           .attr('transform', `translate(0,${height})`)
           .call(d3.axisBottom(x).ticks(2).tickSize(5).tickFormat(d3.format('d')))
@@ -140,7 +134,7 @@
           .style('font-family', 'Roboto')
           .style('font-size', '10')
           .style('fill', '#666')
-          .style('text-anchor', 'center');
+          .style('text-anchor', 'middle');
 
         axisGroup.append('g')
           .call(d3.axisLeft(y).ticks(4).tickSize(0).tickPadding(16).tickFormat(d => `${d > 0 ? '+' : ''}${d}%`))
@@ -151,11 +145,11 @@
           .style('text-anchor', 'end');
 
         axisGroup.selectAll('.tick line')
-          .style('stroke', '#ccc')
+          .style('stroke', '#ccc');
         
         lineGroup.append('rect')
           .attr('x', x(2020) - barWidth / 2)
-          .attr('y',0)
+          .attr('y', 0)
           .attr('width', barWidth)
           .attr('height', height)
           .attr('fill', bandColor)
@@ -169,45 +163,45 @@
   });
 
   const getRecoverySymbol = (recovery_status) => {
-          switch (recovery_status) {
-            case 1: return '↗';
-            case 2: return '→';
-            case 3: return '↘';
-            case 4: return '↓';
-            default: return '';
-          }
-        };
+    switch (recovery_status) {
+      case 1: return '↗';
+      case 2: return '→';
+      case 3: return '↘';
+      case 4: return '↓';
+      default: return '';
+    }
+  };
 
   const getRecoveryColor = (recovery_status) => {
-          switch (recovery_status) {
-            case 1: return '#1a9850';
-            case 2: return '#67bc63';
-            case 3: return '#f46c42';
-            case 4: return '#d63127';
-            default: return '#aeaeae';
-          }
-        };
+    switch (recovery_status) {
+      case 1: return '#1a9850';
+      case 2: return '#67bc63';
+      case 3: return '#f46c42';
+      case 4: return '#d63127';
+      default: return '#aeaeae';
+    }
+  };
 
   function updateYearValue(sector, year, normal_value, value) {
-  const sectorElement = document.querySelector(`.sector[data-sector="${sector}"]`);
-  if (sectorElement) {
-    const yearElement = sectorElement.querySelector('.year-display');
-    const valueElement = sectorElement.querySelector('.value-display');
-    const annotElement = sectorElement.querySelector('.annot-display');
+    const sectorElement = document.querySelector(`.sector[data-sector="${sector}"]`);
+    if (sectorElement) {
+      const yearElement = sectorElement.querySelector('.year-display');
+      const valueElement = sectorElement.querySelector('.value-display');
+      const annotElement = sectorElement.querySelector('.annot-display');
 
-    if (yearElement) {
-      yearElement.textContent = `GRDP in ${year}:`;
-    }
+      if (yearElement) {
+        yearElement.textContent = `GRDP in ${year}:`;
+      }
 
-    if (valueElement) {
-      valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah`;
-    }
+      if (valueElement) {
+        valueElement.textContent = `${normal_value.toLocaleString('en-US')} Billion Rupiah`;
+      }
 
-    if (annotElement) {
-      annotElement.textContent = `${value > 0 ? '+' : ''}${value.toLocaleString('en-US')}% vs 2020`;
+      if (annotElement) {
+        annotElement.textContent = `${value > 0 ? '+' : ''}${value.toLocaleString('en-US')}% vs 2020`;
+      }
     }
   }
-}
 </script>
 
 <div>
@@ -215,45 +209,45 @@
     <div class="parent-group">
       <p>{parent}</p>
     </div>
-      <div class="grid">
-        {#each Object.entries(sectors) as [sector, sectorData]}
-          <div class="sector" data-sector="{sector}">
-            <p>{sector}</p>
-            <div class="recovery-status">
-              <span style="color: {getRecoveryColor(sectorData[sectorData.length - 1]?.recovery_status)}">
-                {getRecoverySymbol(sectorData[sectorData.length - 1]?.recovery_status)} &ThinSpace;
-              </span>
-              <span class="value" style="font-weight: 500">
-                {sectorData[sectorData.length - 1]?.recovery_category}
-              </span>
-            </div>
-            <div class="value">
-              <p class="year-display">
-                GRDP in {sectorData[sectorData.length - 1]?.year}:
-              </p>
-              <p class="value-display">
-                {sectorData[sectorData.length - 1]?.normal_value?.toLocaleString('en-US')} Billion Rupiah
-              </p>
-              <p class="annot-display">
-                {sectorData[sectorData.length - 1]?.value > 0 ? '+' : ''}{sectorData[sectorData.length - 1]?.value?.toLocaleString('en-US')}% vs 2020
-              </p>
-            </div>
-            <svg bind:this={chartRefs[sector]} data-sector="{sector}"></svg>
+    <div class="grid">
+      {#each Object.entries(sectors) as [sector, sectorData]}
+        <div class="sector" data-sector="{sector}">
+          <p>{sector}</p>
+          <div class="recovery-status">
+            <span style="color: {getRecoveryColor(sectorData[sectorData.length - 1]?.recovery_status)}">
+              {getRecoverySymbol(sectorData[sectorData.length - 1]?.recovery_status)} &ThinSpace;
+            </span>
+            <span class="value" style="font-weight: 500">
+              {sectorData[sectorData.length - 1]?.recovery_category}
+            </span>
           </div>
-        {/each}
-      </div>
+          <div class="value">
+            <p class="year-display">
+              GRDP in {sectorData[sectorData.length - 1]?.year}:
+            </p>
+            <p class="value-display">
+              {sectorData[sectorData.length - 1]?.normal_value?.toLocaleString('en-US')} Billion Rupiah
+            </p>
+            <p class="annot-display">
+              {sectorData[sectorData.length - 1]?.value > 0 ? '+' : ''}{sectorData[sectorData.length - 1]?.value?.toLocaleString('en-US')}% vs 2020
+            </p>
+          </div>
+          <svg bind:this={chartRefs[sector]} data-sector="{sector}"></svg>
+        </div>
+      {/each}
+    </div>
   {/each}
 </div>
 
 <style>
-
+  /* The grid is set to three columns by default */
   .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      max-width: 720px;
-      grid-auto-flow: row;
-      justify-items: start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 720px;
+    grid-auto-flow: row;
+    justify-items: start;
   }
 
   .parent-group {
@@ -263,6 +257,7 @@
     font-size: 1.3rem;
     font-weight: 500;
   }
+
   .sector {
     margin-bottom: 10px;
     font-family: 'Roboto';
@@ -273,29 +268,33 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .recovery-status {
     font-family: 'Inter', seriff;
     font-size: 0.7rem;
     font-weight: 500;
     line-height: 0.8rem;
   }
+
   .value {
     margin-bottom: 5px;
     font-family: 'Roboto';
     font-size: 0.7rem;
     font-weight: 350;
     line-height: 0.4rem;
-
-    .annot-display {
-      color: #666;
-    }
   }
+  .value .annot-display {
+    color: #666;
+  }
+
   svg {
     display: block;
+    /* Although d3 sets the width attribute, this ensures the svg scales with its container */
     width: 100%;
     height: auto;
   }
 
+  /* For viewports ≤720px, show two columns */
   @media (max-width: 720px) {
     .grid {
       grid-template-columns: repeat(2, 1fr);
@@ -305,9 +304,10 @@
     }
   }
 
+  /* For viewports ≤480px, continue using two columns */
   @media (max-width: 480px) {
     .grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
     .sector {
       font-size: 0.68rem;

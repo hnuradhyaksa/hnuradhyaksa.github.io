@@ -29,16 +29,13 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #fff;
+      background-color: white;
       color: #bbb;
       border: none;
       border-radius: 50%;
       width: 50px;
       height: 50px;
       font-size: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }

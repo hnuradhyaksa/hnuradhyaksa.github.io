@@ -93,6 +93,7 @@
   .post-title {
     font-size: 1.2rem;
     font-weight: bold;
+    line-height: 1.7rem;
     margin-bottom: 0.5rem;
   }
 

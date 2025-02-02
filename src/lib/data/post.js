@@ -11,4 +11,14 @@ export const posts = [
     link: `${base}/post/covid-downturn-recovery`,
     author: 'Nur Adhyaksa Hamid',
   },
+  // {
+  //   id: 2,
+  //   thumbnail: `${base}/thumbnails/.png`,
+  //   date: 'FEBRUARY 2025',
+  //   client: '',
+  //   title: 'Why Is Shin Tae-Yong Adored by Indonesians?',
+  //   summary: '',
+  //   link: `${base}/post/coach-nim-shin`,
+  //   author: 'Nur Adhyaksa Hamid',
+  // },
 ];

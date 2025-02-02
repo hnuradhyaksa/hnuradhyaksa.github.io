@@ -7,28 +7,28 @@
   <style>
 
 	.completeright {
-	  margin-left: 0.5rem;
-	  margin-right: 0.5rem;
-  
-		@media screen and (min-width: 700px) {
 		margin-left: 25%;
 		margin-right: 25%;
-		}
+		margin-top: 8%;
+		margin-bottom: 8%;
 	}
   
 	.intro {
-		margin-top: 117px;
-		margin-bottom: 4rem;
 		max-width: 800px;
+		margin-bottom: 4rem;
+	}
+
+	h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 500;
+        margin: 0;
+        font-family: 'Vollkorn';
 	}
   
     h2 {
-        @media screen and (max-width: 700px) {
         font-size: 2rem;
-        line-height: 2.75rem;
-        }
-        font-size: 3rem;
-        line-height: 4rem;
+        line-height: 2.2rem;
         font-weight: 500;
         margin: 0;
         font-family: 'Vollkorn';
@@ -70,13 +70,6 @@
 	}
   
 	.category-header   {
-
-		h2 {
-			font-size: 2rem;
-			line-height: 3rem;
-			font-weight: 500;
-			margin: 0;
-		}
 		
         margin-bottom: 4rem;
         margin-top: 3rem;
@@ -100,15 +93,57 @@
         color: #fff;
     }
 
+	
+  
+	@media screen and (max-width: 720px) {
+
+		.completeright{
+			margin-left: 12%;
+			margin-right: 12%;
+			margin-top: 8%;
+			margin-bottom: 8%;
+		}
+		
+		h1{
+			font-size: 2.4rem;
+			line-height: 3.12rem;
+		}
+
+		h2{
+			font-size: 1.6rem;
+			line-height: 2.08rem;
+		}
+	}	
+		
+	@media screen and (max-width: 480px) {
+
+		.completeright{
+			margin-left: 6%;
+			margin-right: 6%;
+			margin-top: 4%;
+			margin-bottom: 4%;
+		}
+
+		h1{
+			font-size: 2.1rem;
+			line-height: 2.73rem;
+		}
+
+		h2{
+			font-size: 1.3rem;
+			line-height: 1.69rem;
+		}
+	}
+
   </style>
   
 	<div class="completeright">
 	  <div class="intro">
-		<h2>
+		<h1>
 		  <i>
 			Hi, I'm Adhyaksa. This is where I share my collection of short visualization essays—most of which are provoked by everyday events I observe.
 		  </i>
-		</h2>
+		</h1>
 		<br />
 		<div class="sidebar-text">
 		  <a href="#aboutme">GET TO KNOW ME!</a>
