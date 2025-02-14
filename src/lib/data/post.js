@@ -13,7 +13,7 @@ export const posts = [
   },
   // {
   //   id: 2,
-  //   thumbnail: `${base}/thumbnails/.png`,
+  //   thumbnail: `${base}/thumbnails/coach-nim-shin.png`,
   //   date: 'FEBRUARY 2025',
   //   client: '',
   //   title: 'Why Is Shin Tae-Yong Adored by Indonesians?',

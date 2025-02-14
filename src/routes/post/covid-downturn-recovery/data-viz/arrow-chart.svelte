@@ -56,48 +56,45 @@
     });
   };
 
-  // Main function to render the chart.
+
   const renderChart = () => {
-    // Group the data.
+
     const top5 = displayedData.filter((d) => d.rank_top <= 5);
     const bottom5 = displayedData.filter((d) => d.rank_bottom <= 5);
     const middle = isMiddleVisible
       ? displayedData.filter((d) => !top5.includes(d) && !bottom5.includes(d))
       : [];
-    // Determine chart height based on number of rows.
+
     const numRows = displayedData.length;
-    const rowHeight = 20; // Fixed row height
+    const rowHeight = 20;
     const height = numRows * rowHeight + margin.top + margin.bottom;
 
-    // Sort data for consistent ordering.
+
     const sortedData = displayedData.sort((b, a) => a.pct_change - b.pct_change);
 
-    // Compute the xScale domain.
+
     const domainMin = d3.min(sortedData, (d) => d.pct_change) - 4;
     const domainMax = d3.max(sortedData, (d) => d.pct_change) + 4;
-    // Choose a tick interval based on totalWidth.
+
     const tickInterval = totalWidth >= 720 ? 10 : 20;
-    // Generate tick values.
+
     const tickValues = d3.range(
       Math.ceil(domainMin / tickInterval) * tickInterval,
       domainMax + tickInterval,
       tickInterval
     );
 
-    // Define the xScale using the plotting area's width.
     const xScale = d3
       .scaleLinear()
       .domain([domainMin, domainMax])
       .range([0, chartWidth]);
 
-    // Define the yScale using the sorted data.
     const yScale = d3
       .scaleBand()
       .domain(sortedData.map((d) => d.sector_eng))
       .range([0, numRows * rowHeight])
       .padding(0.5);
 
-    // Clear previous SVG content.
     d3.select(svg).selectAll('*').remove();
 
     const svgElement = d3
@@ -124,7 +121,6 @@
       .attr('stroke-dasharray', (d) => (d === 0 ? 'none' : '2,2'))
       .attr('opacity', 0.7);
 
-    // ---- X-Axis (Bottom) ----
     svgElement
       .append('g')
       .call(
@@ -141,7 +137,6 @@
       .style('fill', '#666')
       .style('text-anchor', 'middle');
 
-    // ---- X-Axis (Top) ----
     svgElement
       .append('g')
       .call(
@@ -158,8 +153,6 @@
       .style('fill', '#666')
       .style('text-anchor', 'middle');
 
-    // ---- Y-Axis Grid Lines ----
-    // Grid lines span the plotting area (chartWidth).
     svgElement
       .append('g')
       .attr('class', 'grid')
@@ -174,8 +167,6 @@
       .attr('stroke-dasharray', '2,2')
       .attr('opacity', 0.7);
 
-    // ---- Y-Axis with Truncated Labels ----
-    // Instead of wrapping, we truncate the text if it exceeds labelMaxWidth.
     const yAxisGroup = svgElement
       .append('g')
       .call(
@@ -192,10 +183,8 @@
       .style('text-anchor', 'end')
       .call(truncateText, labelMaxWidth);
 
-    // Remove the default domain path.
     d3.select(svgElement.node()).selectAll('.domain').remove();
 
-    // ---- Define Markers for Arrowheads ----
     svgElement
       .append('defs')
       .append('marker')
@@ -222,7 +211,6 @@
       .append('path')
       .attr('d', 'M-6,-6 L3,0 L-6,6');
 
-    // ---- Draw Arrows for Each Data Entry ----
     svgElement
       .selectAll('.arrow')
       .data(sortedData)
