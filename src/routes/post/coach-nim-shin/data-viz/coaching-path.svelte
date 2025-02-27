@@ -46,11 +46,14 @@
         </feMerge>
       `);
 
-    let xi = 40;
-    let yi = 40;
-    const ch = 20;
+    let xi = 0;
+    let yi = 0;
+    let unitoff =32;
+    let strokewidth = 24;
+    const ch = unitoff;
     let lastX = xi;
     let lastY = yi;
+    let pathfont = 14;
 
     // Sort data if needed
     data.sort((a, b) => a.period_start - b.period_start);
@@ -62,9 +65,9 @@
       const { arcsinh_period, rank_start, rank_finish, direction_start, direction_finish } = coach;
       const period_length = arcsinh_period;
       const rank_difference = rank_finish - rank_start;
-      let cvs = 20 * (direction_start === "up" ? -1 : 1);
-      let cve = 20 * (direction_finish === "up" ? -1 : 1);
-      let rank_offset = 5 * rank_difference + (direction_finish === "up" ? -2 : 2) * ch;
+      let cvs = unitoff * (direction_start === "up" ? -1 : 1);
+      let cve = unitoff * (direction_finish === "up" ? -1 : 1);
+      let rank_offset = 9.5 * rank_difference + (direction_finish === "up" ? -2 : 2) * 9.5;
 
       if (index !== 0) {
         xi = lastX;
@@ -105,7 +108,7 @@
           h${period_length}
         `)
         .attr("stroke", `url(#connectingGradient-${sanitizedCoachName}-${index})`)
-        .attr("stroke-width", 14)
+        .attr("stroke-width", strokewidth)
         .attr("fill", "none")
         .attr("stroke-linecap", "butt");
 
@@ -118,15 +121,15 @@
           v${rank_offset - 2 * cve}
         `)
         .attr("stroke", direction_finish === "up" ? "#e64c3d" : "#018dd6")
-        .attr("stroke-width", 14)
+        .attr("stroke-width", strokewidth)
         .attr("fill", "none")
         .attr("stroke-linecap", "butt");
 
       // Draw the arrow polygon (for the finishing path)
       const arrowX = x_end + ch;
       const arrowY = y_curve_end + rank_offset - 2 * cve;
-      const arrowHalfWidth = 13;
-      const arrowHeight = 20;
+      const arrowHalfWidth = strokewidth;
+      const arrowHeight = unitoff;
       let arrowPoints;
       if (direction_finish === "up") {
         arrowPoints = `
@@ -166,7 +169,7 @@
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("font-family", "Roboto")
-        .attr("font-size", 9)
+        .attr("font-size", pathfont)
         .attr("fill", "black")
         .attr("stroke", "white")
         .attr("stroke-linejoin", "round")
@@ -187,7 +190,7 @@
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("font-family", "Roboto")
-        .attr("font-size", 9)
+        .attr("font-size", pathfont)
         .attr("fill", "black")
         .attr("stroke", "white")
         .attr("stroke-linejoin", "round")
@@ -197,12 +200,12 @@
       firstCoachText.append("tspan")
         .attr("x", midPointFinishing.x)
         .attr("dy", "0em")
-        .text("The ranking before");
+        .text("Before FIFA");
 
       firstCoachText.append("tspan")
         .attr("x", midPointFinishing.x)
         .attr("dy", "1em")
-        .text("FIFA sanctioned PSSI: ");
+        .text("sanctioned PSSI: ");
       
       firstCoachText.append("tspan")
         .attr("baseline-shift", "baseline")
@@ -227,7 +230,7 @@
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("font-family", "Roboto")
-        .attr("font-size", 9)
+        .attr("font-size", pathfont)
         .attr("fill", "black")
         .attr("stroke", "white")
         .attr("stroke-linejoin", "round")
@@ -237,12 +240,12 @@
       firstCoachText.append("tspan")
         .attr("x", midPointFinishing.x)
         .attr("dy", "0em")
-        .text("The ranking when");
+        .text("When Alfred Riedl");
 
       firstCoachText.append("tspan")
         .attr("x", midPointFinishing.x)
         .attr("dy", "1em")
-        .text("Alfred Riedl took over: ");
+        .text("took over: ");
       
       firstCoachText.append("tspan")
         .attr("baseline-shift", "baseline")
@@ -267,7 +270,7 @@
         .attr("text-anchor", "middle")
         .attr("dominant-baseline", "middle")
         .attr("font-family", "Roboto")
-        .attr("font-size", 9)
+        .attr("font-size", pathfont)
         .attr("fill", "black")
         .attr("stroke", "white")
         .attr("stroke-linejoin", "round")
@@ -277,7 +280,7 @@
       lastCoachText.append("tspan")
         .attr("x", midPointFinishing.x)
         .attr("dy", "0em")
-        .text("The ranking when Shin Tae-Yong");
+        .text("When Shin Tae-Yong");
 
       lastCoachText.append("tspan")
         .attr("x", midPointFinishing.x)

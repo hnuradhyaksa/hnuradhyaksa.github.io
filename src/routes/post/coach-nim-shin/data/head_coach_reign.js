@@ -52,24 +52,12 @@ export const coachesData = [
     "citizenship": "GBR",
     "authority": "head",
     "period_start": 1251,
-    "period_finish": 1568,
+    "period_finish": 1614,
     "rank_start": 159,
-    "rank_finish": 171,
+    "rank_finish": 173,
     "direction_start": "up",
     "direction_finish": "down",
-    "arcsinh_period": 17.28
-  },
-  {
-    "head_coach": "Yeyen Tumena",
-    "citizenship": "IDN",
-    "authority": "interim",
-    "period_start": 1568,
-    "period_finish": 1614,
-    "rank_start": 171,
-    "rank_finish": 173,
-    "direction_start": "down",
-    "direction_finish": "down",
-    "arcsinh_period": 2.52
+    "arcsinh_period": 19.76
   },
   {
     "head_coach": "Shin Tae-Yong",

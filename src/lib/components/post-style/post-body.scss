@@ -30,7 +30,7 @@ body{
 
         .article-text-center {
             background: #fff;
-            font-family: 'Roboto';
+            font-family: 'Noto Serif';
             font-size: 0.9rem;
             font-weight: 350;
             text-align: center;
@@ -41,6 +41,15 @@ body{
         ::selection {
             background: #0084db;
             color: #fff;
+        }
+
+        .picture {
+
+            @media screen and (min-width: 900px) {
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 1.8rem;
+            }
         }
     }
 
