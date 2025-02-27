@@ -17,7 +17,7 @@ export const posts = [
     date: 'FEBRUARY 2025',
     client: '',
     title: 'Why Is Shin Tae-Yong Adored by Indonesians?',
-    summary: '',
+    summary: "Looking back at Shin Tae-Yong's tenure with the Indonesian national team through numbers and achievements.",
     link: `${base}/post/coach-nim-shin`,
     author: 'Nur Adhyaksa Hamid',
   },

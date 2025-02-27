@@ -38,7 +38,7 @@
               </h2>
               <p>
                 Under coach Shin, the national team is on a positive trajectory, as reflected in the FIFA rankings. 
-                However, the Indonesian football community values more than just rankings; their trust has been earned through a series of convincing performances, with each game reinforcing the team's growing stature on the international stage.
+                However, the Indonesian football community values more than just rankings. Their trust has been earned through a series of convincing performances, with each game reinforcing the team's growing stature on the international stage.
               <p> 
                 Coach Shin's tenure has been defined by milestones that have reignited belief in Indonesian football.
               </p>
@@ -101,7 +101,8 @@
   <footer>
     <hr>
     <p>
-        Data is sourced from: Badan Pusat Statistik &lpar;BPS&rpar;&semi; PDRB Atas Dasar Harga Konstan Menurut Subsektor Lapangan Usaha Tahunan &lpar;Seri 2010&rpar;
+        About the data: Indonesia's FIFA ranking is obtained from the official FIFA World Ranking website for men.
+        The national team's achievement data is sourced from the AFC website.
     </p>
 </footer>
 
