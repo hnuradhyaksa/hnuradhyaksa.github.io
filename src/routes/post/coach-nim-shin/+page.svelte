@@ -120,5 +120,12 @@
     align-items: center;
     min-height: 60vh;
   }
+
+  @media (max-width: 600px) {
+      .scrollytelling-wrapper {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  }
 </style>
   
