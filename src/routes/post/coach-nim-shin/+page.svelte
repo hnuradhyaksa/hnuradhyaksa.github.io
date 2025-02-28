@@ -57,8 +57,7 @@
             More than the scoresheet
           </h2>
         <p>
-          Shin Tae-Yong's impact extends beyond tactics and results. 
-          He didn't just build a team—he built a bond with Indonesia's football community. 
+          Shin Tae-Yong didn't just build a team—he built a bond with Indonesia's football community. 
           He emphasizes that national players must always give 100% on the field to appreciate supporters.
           </p>
       </div>
@@ -91,8 +90,8 @@
     <div class="completeright">
       <div class="body article-text-center">
       <p>
-        He reinforced this by ensuring his squad showed their appreciation. 
-        Win or lose, he encouraged players and staff to approach the supporters, acknowledging their support together.
+        To reinforce this, he instilled a culture of gratitude within his squad.
+        He encouraged players and staff to acknowledge the fans together. Win or lose.
       </p>
     </div>
 
@@ -102,7 +101,8 @@
     <hr>
     <p>
         About the data: Indonesia's FIFA ranking is obtained from the official FIFA World Ranking website for men.
-        The national team's achievement data is sourced from the AFC website.
+        The national team's achievement data is sourced from the AFC website. 
+        The coach's tenure data was obtained from the coaching history section on the Transfermarkt website.
     </p>
 </footer>
 

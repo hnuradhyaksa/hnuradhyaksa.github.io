@@ -52,7 +52,7 @@ export const milestone = [
     {
         "id" : 6,
         "date" : "2024-06-11",
-        "milestone": "Through the FIFA World Cup round 3",
+        "milestone": "Through the FIFA World Cup Qualification Round 3",
         "versus" : "Philippines", 
         "score_for" : 2,
         "score_against" : 0,

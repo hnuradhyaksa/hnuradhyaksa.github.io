@@ -427,6 +427,17 @@
 		font-size: 0.8rem;
 		line-height: 1.4rem;
 	  }
+	  .narrative-block {
+		position: relative;
+		height: 120vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		width: 100%;
+		background: transparent;
+
+	  }
 	}
   </style>
   
