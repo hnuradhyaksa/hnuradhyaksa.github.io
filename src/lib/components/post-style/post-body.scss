@@ -12,6 +12,16 @@ body{
             }
         }
 
+        a {
+            color: #000
+        }
+
+        a:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
         .h1 {
             font-family: 'Vollkorn';
             font-size: 1.4rem;
@@ -33,13 +43,13 @@ body{
             font-family: 'Noto Serif';
             font-size: 0.9rem;
             font-weight: 350;
-            text-align: center;
+            text-align: left;
             line-height: 1.4rem;
             margin-bottom: 1.8rem;
         }
 
         ::selection {
-            background: #0084db;
+            background: black;
             color: #fff;
         }
 

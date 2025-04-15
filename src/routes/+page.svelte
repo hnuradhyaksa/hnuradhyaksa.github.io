@@ -64,7 +64,7 @@
 		}
 
 		a:hover {
-			color: #0084db;
+			color: black;
 			text-decoration: none;
 		}
 	}
@@ -73,11 +73,6 @@
 		
         margin-bottom: 4rem;
         margin-top: 3rem;
-	}
-  
-	.blogcontainer {
-		margin-bottom: 50px;
-		margin-top: 50px;
 	}
 
     hr {
@@ -89,7 +84,7 @@
     }
 
     ::selection {
-        background: #0084db;
+        background: black;
         color: #fff;
     }
 
@@ -100,8 +95,8 @@
 		.completeright{
 			margin-left: 12%;
 			margin-right: 12%;
-			margin-top: 8%;
-			margin-bottom: 8%;
+			margin-top: 12%;
+			margin-bottom: 12%;
 		}
 		
 		h1{
@@ -118,10 +113,10 @@
 	@media screen and (max-width: 480px) {
 
 		.completeright{
-			margin-left: 6%;
-			margin-right: 6%;
-			margin-top: 4%;
-			margin-bottom: 4%;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 10%;
+			margin-bottom: 10%;
 		}
 
 		h1{

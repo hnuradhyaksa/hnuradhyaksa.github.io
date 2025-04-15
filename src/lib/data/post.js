@@ -21,4 +21,14 @@ export const posts = [
     link: `${base}/post/coach-nim-shin`,
     author: 'Nur Adhyaksa Hamid',
   },
+  {
+    id: 3,
+    thumbnail: `${base}/thumbnails/coal-plant-2040.png`,
+    date: 'MARCH 2025',
+    client: '',
+    title: "Indonesia Bets on Geothermal to Exit Coal by 2040. Can It Deliver?",
+    summary: "",
+    link: `${base}/post/coal-plant-2040`,
+    author: 'Nur Adhyaksa Hamid',
+  },
 ];

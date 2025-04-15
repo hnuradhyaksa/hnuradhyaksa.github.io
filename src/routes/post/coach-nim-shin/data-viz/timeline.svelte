@@ -418,13 +418,13 @@
 	/* Responsive font sizes */
 	@media (max-width: 600px) {
 	  :global(.chart-title) {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	  }
 	  :global(.rank-text) {
 		font-size: 0.8rem;
 	  }
 	  .narrative-content p {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		line-height: 1.4rem;
 	  }
 	  .narrative-block {
