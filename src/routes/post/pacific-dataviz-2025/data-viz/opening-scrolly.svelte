@@ -4,13 +4,18 @@
 
 	const dataSteps = [
 		{
-			description: 'As the planet warms, climate extremes grow more common. Each country has different exposure levels and preparedness capacities',
+			description:
+				'As the planet warms, climate extremes grow more common. Each country has different exposure levels and preparedness capacities',
 			value: 30,
 			color: '#4682b4'
 		},
 		{ description: 'Some countries are more vulnerable than others', value: 60, color: '#d9534f' },
 		{ description: 'including Pacific island nations...', value: 100, color: '#5cb85c' },
-		{ description: '...despite having such a small CO₂ footprint...', value: 100, color: '#5cb85c' },
+		{
+			description: '...despite having such a small CO₂ footprint...',
+			value: 100,
+			color: '#5cb85c'
+		},
 		{ description: '...that barely contributing at all', value: 100, color: '#5cb85c' }
 	];
 
@@ -535,27 +540,53 @@
 			if (hasHighlightedPI) return;
 			hasHighlightedPI = true;
 
+			// Fade non-Pacific islands
 			circles
-				.filter((d, i) => pacificCodes.has(nodes[i].iso3))
+				.filter((d) => !pacificCodes.has(d.iso3))
 				.transition()
 				.duration(500)
-				.attr('stroke', '#000')
+				.attr('fill', '#ccc')
+				.attr('opacity', 0.4);
+
+			// Emphasize Pacific islands
+			circles
+				.filter((d) => pacificCodes.has(d.iso3))
+				.transition()
+				.duration(500)
+				.attr('fill', (d) => {
+					// your bivariate palette
+					const xi = xClass(d.historical_emission);
+					const yi = yClass(d.vulnerability);
+					return bivariatePalette[yi][xi];
+				})
+				.attr('opacity', 1) // fully opaque
+				.attr('stroke', '#000') // black outline
 				.attr('stroke-width', 1.5);
+
+			// Show country labels
 			labels.transition().delay(200).duration(500).attr('opacity', 1);
 		}
 
+		// 2) Revert highlight so every circle goes back to its original style
 		function revertHighlightPacific() {
 			if (!hasHighlightedPI) return;
 			hasHighlightedPI = false;
 
-			labels.transition().duration(500).attr('opacity', 0);
+			// Restore all circles to bivariate fill, full opacity, no stroke
 			circles
-				.filter((d, i) => pacificCodes.has(nodes[i].iso3))
 				.transition()
-				.delay(200)
 				.duration(500)
+				.attr('fill', (d) => {
+					const xi = xClass(d.historical_emission);
+					const yi = yClass(d.vulnerability);
+					return bivariatePalette[yi][xi];
+				})
+				.attr('opacity', 1)
 				.attr('stroke', null)
 				.attr('stroke-width', 0);
+
+			// Hide labels again
+			labels.transition().duration(500).attr('opacity', 0);
 		}
 
 		let hasShownScatter = false;
