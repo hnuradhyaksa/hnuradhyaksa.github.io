@@ -4,7 +4,7 @@ export const posts = [
   {
     id: 1,
     thumbnail: `${base}/thumbnails/covid-downturn-thumbnail.png`,
-    date: 'JANUARY 2025',
+    date: 'January 2025',
     client: '',
     title: 'After Crisis: How Are Industries Post-Covid?',
     summary: 'Explore the performance of industries in Indonesia post-Covid through trends and arrow charts.',
@@ -14,7 +14,7 @@ export const posts = [
   {
     id: 2,
     thumbnail: `${base}/thumbnails/coach-nim-shin.png`,
-    date: 'FEBRUARY 2025',
+    date: 'February 2025',
     client: '',
     title: 'Why Is Shin Tae-Yong Adored by Indonesians?',
     summary: "Looking back at Shin Tae-Yong's tenure with the Indonesian national team through numbers and achievements.",
@@ -24,11 +24,22 @@ export const posts = [
   {
     id: 3,
     thumbnail: `${base}/thumbnails/coal-plant-2040.png`,
-    date: 'MARCH 2025',
+    date: 'March 2025',
     client: '',
     title: "Indonesia Bets on Geothermal to Exit Coal by 2040. Can It Deliver?",
     summary: "",
     link: `${base}/post/coal-plant-2040`,
+    author: 'Nur Adhyaksa Hamid',
+  },
+  {
+    id: 4,
+    thumbnail: `${base}/thumbnails/pacific-dataviz-2025.png`,
+    date: 'June 2025',
+    client: '',
+    title: "Paying the Heaviest of the Carbon Debt Never Incurred",
+    // subtitle: "When a low-polluting region faces the high cost of global warming, strong partnerships are needed",
+    summary: "Explore my entry for Pacific Dataviz Challenge 2025",
+    link: `${base}/post/pacific-dataviz-2025`,
     author: 'Nur Adhyaksa Hamid',
   },
 ];

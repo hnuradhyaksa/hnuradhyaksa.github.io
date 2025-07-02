@@ -9,8 +9,11 @@
 {#if post}
   <header>
       <h1 class="post-title">{post.title}</h1>
+      <p class="post-subtitle">
+        <span>{post.subtitle}</span>
+      </p>
       <p class="post-author">
-          <span>By {post.author}</span>
+          By <span class="author-name"> {post.author}</span>
       </p>
       <p class="post-date">
           <span>{post.date}</span>
@@ -28,29 +31,41 @@
   }
 
   .post-title {
-      font-family: 'Vollkorn';
+      font-family: 'Lora';
       font-size: 2rem;
       font-weight: 600;
-      font-style: italic;
       color: black;
-      line-height: 2.4rem;
+      line-height: 2.8rem;
       margin-bottom: 1rem;
   }
 
+  .post-subtitle {
+      font-family: 'Inter';
+      font-size: 1rem;
+      font-weight: 250;
+      color: black;
+      line-height: 1.6rem;
+      margin-bottom: 0.4rem;
+  }
+
   .post-author {
-      font-family: 'Roboto';
+      font-family: 'Inter';
       font-size: 1rem;
       font-weight: 500;
       color: black;
       margin-bottom: 0.4rem;
   }
 
+  .author-name{
+      text-decoration: underline;
+  }
+
   .post-date {
-      font-family: 'Roboto';
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: #808080;
-      letter-spacing: 1px;
+      font-family: 'Inter';
+      font-size: 0.86rem;
+      font-weight: 400;
+      color: black;
+      opacity: 0.6;
       margin-top: 0.4rem;
   }
 
