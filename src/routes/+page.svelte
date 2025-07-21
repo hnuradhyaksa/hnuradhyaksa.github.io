@@ -1,183 +1,336 @@
 <script>
-	import Grid from '$lib/components/grid.svelte';
-	import {posts} from '$lib/data/post.js';
-	import BacktoTop from '$lib/components/back2top.svelte'
+	import { posts } from '$lib/data/post.js';
+	import PostCard from '$lib/components/post-card.svelte';
+	import { fade } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
+	import { cubicOut as ease } from 'svelte/easing';
+	import { tick } from 'svelte';
+
+	const sorted = [...posts].sort((a, b) => b.id - a.id);
+	let offset = 0;
+	const windowSize = 2;
+
+	const fadeDur = 100;
+	const slideDur = 200;
+
+	let displayedPosts = [];
+	let newIds = [],
+		prevWindow = [];
+
+	$: {
+		const curr = displayedPosts.map((p) => p.id);
+		newIds = curr.filter((id) => !prevWindow.includes(id));
+		prevWindow = curr;
+	}
+
+	$: if (!displayedPosts.length) {
+		displayedPosts = sorted.slice(offset, offset + windowSize);
+	}
+
+	async function showNext() {
+		if (offset + windowSize >= sorted.length) return;
+
+		const leavingId = displayedPosts[0].id;
+		displayedPosts = displayedPosts.filter((p) => p.id !== leavingId);
+		await tick();
+
+		setTimeout(async () => {
+			offset += 1;
+			displayedPosts = sorted.slice(offset, offset + windowSize);
+			await tick();
+		}, fadeDur);
+	}
+
+	async function showPrev() {
+		if (offset === 0) return;
+
+		const leavingId = displayedPosts[displayedPosts.length - 1].id;
+		displayedPosts = displayedPosts.filter((p) => p.id !== leavingId);
+		await tick();
+
+		setTimeout(async () => {
+			offset -= 1;
+			displayedPosts = sorted.slice(offset, offset + windowSize);
+			await tick();
+		}, fadeDur);
+	}
 </script>
 
-  <style>
+<div class="wrapper">
+	<header>
+		<div class="logo">
+			<img src="/icon/logo.svg" alt="Adhyaksa logo" width="32" height="32" />
+		</div>
+		<div class="cta">MORE ABOUT ME ↗</div>
+	</header>
 
-	.completeright {
-		margin-left: 25%;
-		margin-right: 25%;
-		margin-top: 8%;
-		margin-bottom: 8%;
+	<main>
+		<section class="greeting">
+			<div class="text">
+				<p>Hi, I'm <span class="name">Adhyaksa</span></p>
+				<p class="swap-hover">
+					<span class="default"
+						>I create vectors from numbers and do my best not to confuse people</span
+					>
+					<span class="hovered">A data visualization specialist</span>
+				</p>
+				<p>
+					Here you'll find my data visualization projects—some exploration, some competitive, but
+					mostly out of my curiosity. Enjoy exploring!
+				</p>
+			</div>
+			<div class="social">
+				<a href="mailto:hnuradhyaksa@gmail.com">EMAIL</a>
+				<a href="https://www.linkedin.com/in/nuradhyaksa/" target="_blank">LINKEDIN</a>
+				<a href="https://bsky.app/profile/nuradhyaksa.bsky.social" target="_blank">BLUESKY</a>
+				<a href="https://github.com/hnuradhyaksa" target="_blank">GITHUB</a>
+			</div>
+		</section>
+
+		<section class="posts-panel">
+			<div class="grid-area">
+				{#each displayedPosts as post (post.id)}
+					<div
+						out:fade={{ duration: fadeDur }}
+						animate:flip={{ delay: fadeDur, duration: slideDur, easing: ease }}
+						in:fade={{
+							delay: newIds.includes(post.id) ? fadeDur + slideDur : 0,
+							duration: fadeDur
+						}}
+					>
+						<PostCard {post} />
+					</div>
+				{/each}
+			</div>
+
+			<div class="control">
+				<div class="control-half recent">
+					{#if offset > 0}
+						<div class="control-row recent" on:click={showPrev}>
+							<div class="icon">↑</div>
+							<div class="label">RECENT POST</div>
+						</div>
+					{/if}
+				</div>
+
+				<!-- Bottom half: only when you can go forward -->
+				<div class="control-half explore">
+					{#if offset + windowSize < sorted.length}
+						<div class="control-row explore" on:click={showNext}>
+							<div class="icon">↓</div>
+							<div class="label">EXPLORE MORE</div>
+						</div>
+					{/if}
+				</div>
+			</div>
+		</section>
+	</main>
+</div>
+
+<style>
+	:root {
+		--header-h: 80px;
 	}
-  
-	.intro {
-		max-width: 800px;
-		margin-bottom: 4rem;
+	.wrapper {
+		margin: 24px 40px 40px 40px;
+		display: flex;
+		flex-direction: column;
+		height: calc(100vh - var(--header-h));
+		overflow: hidden;
 	}
 
-	h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-        font-weight: 500;
-        margin: 0;
-        font-family: 'Vollkorn';
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: var(--header-h);
+		flex: 0 0 var(--header-h);
 	}
-  
-    h2 {
-        font-size: 2rem;
-        line-height: 2.2rem;
-        font-weight: 500;
-        margin: 0;
-        font-family: 'Vollkorn';
-    }
+	header .logo {
+		width: 80px;
+		height: 80px;
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	header .logo img {
+		width: 60%;
+		height: 60%;
+		display: block;
+		object-fit: contain;
+	}
+	header .cta {
+		font-family: Inter;
+		font-size: 0.8rem;
+		color: #d5d5d5;
+		letter-spacing: 0.2rem;
+	}
 
-	.container {
-		max-width: 1200px;
-		margin: 0 auto;
-		font-family: 'Roboto';
-  	}
+	main {
+		flex: 1 1 auto;
+		display: flex;
+		overflow: hidden;
+		margin: 0 20px 80px 80px;
+		min-height: 0;
+	}
 
-    .article-text {
-        margin-top: 0.8em;
-        font-family: 'Vollkorn';
-        font-size: 1.15rem;
-        line-height: 1.82rem;
-        display: inline;
-    }
+	.greeting {
+		flex: 4;
+		display: flex;
+		flex-direction: column;
+		padding-right: 2rem;
+		overflow-y: auto;
+	}
+	.greeting .text {
+		flex: 9;
+		font-family: Inter;
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 1.4;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.greeting .text .name {
+		font-family: 'Lora';
+		font-style: italic;
+		font-size: 2.1rem;
+		font-weight: 600;
+		line-height: inherit;
+	}
+	.greeting .social {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		font-family: Inter;
+		font-size: 0.8rem;
+		letter-spacing: 0.2rem;
+		gap: 4.8rem;
+	}
+	.posts-panel {
+		flex: 4;
+		display: flex;
+		flex-direction: row;
+		overflow: visible;
+		padding-left: 2rem;
+		margin-top: 80px;
+	}
+	.grid-area {
+		display: flex;
+		flex-direction: column;
+	}
 
-	.sidebar-text {
-		
-		font-size: 0.7rem;
-		font-weight: 500;
-		color: #808080;
-		letter-spacing: 2px;
-		line-height: 1.2rem;
+	.grid-area > div {
+		position: relative;
+		min-height: 0;
+	}
+	.posts-panel .grid-area {
+		flex: 7;
+		display: grid;
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		height: 100%;
+		min-height: 0;
+		flex-direction: column;
+		gap: 1.8rem;
+		margin-left: 120px;
+		margin-right: 40px;
+	}
+	.posts-panel .control {
+		font-family: Inter;
+		font-size: 0.8rem;
+		flex: 3;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+	.control {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+	.control-row {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 240px;
+	}
+	.control-row .icon {
+		font-size: 2rem;
+		font-weight: 200;
+		flex: 0 0 auto;
+		margin-right: 0.5rem;
+	}
+	.control-row .label {
+		flex: 0 1 auto;
+		font-family: Inter;
+		font-size: 0.8rem;
+		letter-spacing: 0.2rem;
+		align-items: center;
+	}
+	.control-row.explore .label {
+		transform-origin: bottom left;
+		transform: translate(50%) rotate(-90deg);
+	}
+	.control-row.recent .label {
+		transform-origin: top left;
+		transform: translate(50%) rotate(90deg);
+	}
+	.control-row:hover .label {
 		text-decoration: none;
-		font-family: 'Roboto';
-
-		a {
-			color: #808080;
-			text-decoration: none;
-		}
-
-		a:hover {
-			color: black;
-			text-decoration: none;
-		}
 	}
-  
-	.category-header   {
-		
-        margin-bottom: 4rem;
-        margin-top: 3rem;
+	.swap-hover {
+		display: inline-grid;
+		grid-template-areas: 'swap';
 	}
 
-    hr {
-        border: 0;
-        height: 2px;
-        width: 80px;
-        margin-left: 0;
-        background: #000;
-    }
+	.swap-hover .default,
+	.swap-hover .hovered {
+		grid-area: swap;
+		transition:
+			opacity 0.2s ease,
+			filter 0.2s ease;
+	}
 
-    ::selection {
-        background: black;
-        color: #fff;
-    }
-
-	
-  
-	@media screen and (max-width: 720px) {
-
-		.completeright{
-			margin-left: 12%;
-			margin-right: 12%;
-			margin-top: 12%;
-			margin-bottom: 12%;
+	@keyframes blurOut {
+		from {
+			filter: blur(8px);
 		}
-		
-		h1{
-			font-size: 2.4rem;
-			line-height: 3.12rem;
-		}
-
-		h2{
-			font-size: 1.6rem;
-			line-height: 2.08rem;
-		}
-	}	
-		
-	@media screen and (max-width: 480px) {
-
-		.completeright{
-			margin-left: 10%;
-			margin-right: 10%;
-			margin-top: 10%;
-			margin-bottom: 10%;
-		}
-
-		h1{
-			font-size: 2.1rem;
-			line-height: 2.73rem;
-		}
-
-		h2{
-			font-size: 1.3rem;
-			line-height: 1.69rem;
+		to {
+			filter: blur(0);
 		}
 	}
 
-  </style>
-  
-	<div class="completeright">
-	  <div class="intro">
-		<h1>
-		  <i>
-			Hi, I'm Adhyaksa. This is where I share my collection of short visualization essays—most of which are provoked by everyday events I observe.
-		  </i>
-		</h1>
-		<br />
-		<div class="sidebar-text">
-		  <a href="#aboutme">GET TO KNOW ME!</a>
-		</div>
-	  </div>
+	.swap-hover .default {
+		opacity: 1;
+		filter: blur(0);
+	}
+	.swap-hover .hovered {
+		opacity: 0;
+		filter: blur(8px);
+		transition:
+			opacity 0.2s ease 0s,
+			filter 0.3s ease 0.1s;
+	}
 
-		<div class="container">
-			<Grid {posts} />
-		</div>
-  
-	  <div class="category-header">
-		<hr />
-		<div id="aboutme">
-		  <h2>Here's a bit about me!</h2>
-		</div>
-  
-		<div class="blogcontainer article-text">
-		  <p>
-			I'm a Business Intelligence Analyst at GovTech Health Indonesia, where I explore, analyze, and visualize public health data to help promote more informed policymaking.
-		  </p>
-		  <p>
-			I'm especially interested in the power of data visualization because I believe it enhances the impact of data. I believe that fully interactive storytelling could do justice to the potential of the data.
-		  </p>
-		</div>
-  
-		<br />
-  
-		<h2> Let's connect! </h2>
-		<br />
-  
-		<div class="sidebar-text">
-		  <a href="mailto:hnuradhyaksa@gmail.com">EMAIL</a>&emsp;
-		  <a href="https://www.linkedin.com/in/nuradhyaksa/" target="_blank">LINKEDIN</a>&emsp;
-		  <a href="https://public.tableau.com/app/profile/nur.adhyaksa.hamid/vizzes" target="_blank">TABLEAU PUBLIC</a>&emsp;
-		  <a href="https://bsky.app/profile/nuradhyaksa.bsky.social" target="_blank">BLUESKY</a>&emsp;
-		  <a href="https://github.com/hnuradhyaksa" target="_blank">GITHUB</a>&emsp;
-		</div>
-	  </div>
-	</div>
-  
+	.swap-hover:hover .default {
+		opacity: 0;
+		filter: blur(8px);
+	}
+	.swap-hover:hover .hovered {
+		opacity: 1;
+		filter: blur(0);
+	}
 
-	<BacktoTop />
+	.greeting .social a {
+		color: #555;
+		text-decoration: none;
+		transition: color 0.8s ease;
+	}
+
+	.greeting .social a:hover {
+		color: rgb(13, 150, 249);
+	}
+</style>

@@ -221,7 +221,7 @@
 	<div class="completeright">
 		<div class="body article-text-center">
 			<p>
-				The Oceania region spans over 30 percent of Earth's sea surface, making the ocean not just a
+				The Pacific island nations spans over 10 percent of Earth's sea surface, making the ocean not just a
 				geographic feature, but the foundation of life for its people. Cultures, livelihoods, and
 				identities across Pacific Island nations are deeply tied to the ocean's rhythms and
 				resources.

@@ -199,15 +199,48 @@
 	}
 
 	function handleMouseOver(event, d) {
+		if (selectedCountryName && d.country !== selectedCountryName) return;
+
 		hoveredChild = d;
 		updateTooltipPosition(event);
-		d3.select(event.currentTarget).attr('stroke', '#000').attr('stroke-width', 1);
+
+		circles
+			.transition()
+			.duration(150)
+			.ease(d3.easeCubic)
+			.attr('opacity', (dd) => (dd === d ? 1 : 0.4))
+			.attr('stroke', (dd) => (dd === d ? '#000' : '#fff'))
+			.attr('stroke-width', 1);
+
+		countryLabel
+			.text(d.country)
+			.attr('x', xScaleLog(d.historical_emission))
+			.attr('y', margin.top + yScale(d.climate_vulnerability_index) - 10)
+			.style('opacity', 1)
+			.attr('fill', '#333')
+			.attr('stroke', 'white')
+			.attr('stroke-linejoin', 'round')
+			.attr('stroke-width', 3)
+			.attr('paint-order', 'stroke fill');
+
+		pacificLabelsG.style('opacity', 0);
 	}
 	function handleMouseOut(event, d) {
+		if (selectedCountryName && d.country !== selectedCountryName) return;
+
 		hoveredChild = null;
-		d3.select(event.currentTarget)
-			.attr('stroke', pacific.has(d.country_iso3) ? '#000' : '#fff')
+
+		circles
+			.transition()
+			.duration(150)
+			.ease(d3.easeCubic)
+			.attr('fill', originalFill)
+			.attr('opacity', (dd) => (pacific.has(dd.country_iso3) ? 1 : 0.4))
+			.attr('stroke', (dd) => (pacific.has(dd.country_iso3) ? '#000' : '#fff'))
 			.attr('stroke-width', 1);
+
+		countryLabel.style('opacity', 0);
+		pacificLabelsG.style('opacity', 1);
 	}
 	function updateTooltipPosition(event) {
 		tooltipX = event.clientX + 10;
@@ -245,6 +278,28 @@
 			.ease(d3.easeCubic)
 			.attr('opacity', (ld) => (ld.xi === xi && ld.yi === yi ? 1 : 0.4))
 			.attr('stroke', (ld) => (ld.xi === xi && ld.yi === yi ? '#000' : '#fff'))
+			.attr('stroke-width', (ld) => (ld.xi === xi && ld.yi === yi ? 1 : 0));
+
+		xLabels
+			.transition()
+			.duration(300)
+			.ease(d3.easeCubic)
+			.attr('opacity', (d) => (d.xi === xi ? 0.4 : 0));
+
+		yLabels
+			.transition()
+			.duration(300)
+			.ease(d3.easeCubic)
+			.attr('opacity', (d) => (d.yi === yi ? 0.4 : 0));
+	}
+
+	function highlightLegendCell(xi, yi) {
+		legendRects
+			.transition()
+			.duration(300)
+			.ease(d3.easeCubic)
+			.attr('opacity', (ld) => (ld.xi === xi && ld.yi === yi ? 1 : 0.4))
+			.attr('stroke', (ld) => (ld.xi === xi && ld.yi === yi ? '#000' : 'none'))
 			.attr('stroke-width', (ld) => (ld.xi === xi && ld.yi === yi ? 1 : 0));
 
 		xLabels
@@ -524,9 +579,39 @@
 			.attr('stroke', (d) => (pacific.has(d.country_iso3) ? '#000' : 'fff'))
 			.attr('stroke-width', 1)
 			.attr('opacity', (d) => (pacific.has(d.country_iso3) ? 1 : 0.4))
-			.on('mouseover', (e, d) => handleMouseOver(e, d))
-			.on('mousemove', updateTooltipPosition)
-			.on('mouseout', (e, d) => handleMouseOut(e, d));
+			.on('mouseover', (e, d) => {
+				if (selectedCountryName && d.country !== selectedCountryName) return;
+				handleMouseOver(e, d);
+				const xi = xClass(d.historical_emission);
+				const yi = yClass(d.climate_vulnerability_index);
+				highlightLegendCell(xi, yi);
+			})
+			.on('mousemove', (e, d) => {
+				if (selectedCountryName && d.country !== selectedCountryName) return;
+				updateTooltipPosition(e);
+			})
+			.on('mouseout', (e, d) => {
+				if (selectedCountryName) {
+					if (d.country === selectedCountryName) {
+						hoveredChild = null;
+					}
+					return;
+				}
+
+				handleMouseOut(e, d);
+				if (legendActive === null) {
+					resetView();
+				} else {
+					highlightLegend(legendActive.xi, legendActive.yi);
+				}
+			});
+
+		svg.on('click', (e) => {
+			if (e.target.tagName.toLowerCase() !== 'circle') {
+				legendActive = null;
+				resetView();
+			}
+		});
 
 		vizG
 			.selectAll('.pacific-label')
@@ -695,7 +780,7 @@
 			.attr('transform', `rotate(-90, ${cellSize * -0.5 - 24}, ${cellSize * 1.5})`)
 			.text('Vulnerability');
 
-		pacificLabelsG.raise()
+		pacificLabelsG.raise();
 	});
 </script>
 

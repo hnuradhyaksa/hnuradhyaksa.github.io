@@ -22,12 +22,11 @@
 
 	function renderPack(data, selector, fillColor, label) {
 		const root = hierarchy(data).sum(() => 1);
-
 		pack()
 			.radius(() => R)
 			.padding(1)(root);
-
 		const size = root.r * 2;
+
 		select(selector).attr('width', size).attr('height', size).selectAll('*').remove();
 
 		const g = select(selector).append('g').attr('transform', `translate(${root.r},${root.r})`);
@@ -59,22 +58,97 @@
 		renderPack(dataTotal, '#chart-total', colorTotal, labelTotal);
 		renderPack(dataAccessed, '#chart-accessed', colorAccessed, labelAccessed);
 		renderPack(dataUntapped, '#chart-untapped', colorUntapped, labelUntapped);
+
+		select('#chart-untapped').style('overflow', 'visible');
+
+		const rootUntapped = hierarchy(dataUntapped).sum(() => 1);
+		pack()
+			.radius(() => R)
+			.padding(1)(rootUntapped);
+		const leaves = rootUntapped.leaves();
+
+		const highlight = (() => {
+			const quad = leaves.filter((d) => d.x < 0 && d.y > 0);
+			const cx = -rootUntapped.r / 2;
+			const cy = rootUntapped.r / 2;
+			return quad.length
+				? quad.reduce((best, cur) => {
+						const db = Math.hypot(best.x - cx, best.y - cy);
+						const dc = Math.hypot(cur.x - cx, cur.y - cy);
+						return dc < db ? cur : best;
+					})
+				: leaves[0];
+		})();
+
+		const gUntapped = select('#chart-untapped').select('g');
+
+		gUntapped
+			.append('circle')
+			.attr('cx', highlight.x)
+			.attr('cy', highlight.y)
+			.attr('r', highlight.r)
+			.attr('fill', colorUntapped)
+			.attr('stroke', '#333')
+			.attr('stroke-width', 1);
+
+		const segLen1 = R * 6;
+		const segLen2 = R * 18;
+		const angle1 = (135 * Math.PI) / 180;
+		const x1 = highlight.x + Math.cos(angle1) * segLen1;
+		const y1 = highlight.y + Math.sin(angle1) * segLen1;
+
+		const angle2 = angle1 + (45 * Math.PI) / 180;
+		const x2 = x1 + Math.cos(angle2) * segLen2;
+		const y2 = y1 + Math.sin(angle2) * segLen2;
+
+		const startX = highlight.x + Math.cos(angle1) * highlight.r;
+		const startY = highlight.y + Math.sin(angle1) * highlight.r;
+
+		gUntapped
+			.append('line')
+			.attr('x1', startX)
+			.attr('y1', startY)
+			.attr('x2', x1)
+			.attr('y2', y1)
+			.attr('stroke', '#333')
+			.attr('stroke-width', 1);
+
+		gUntapped
+			.append('line')
+			.attr('x1', x1)
+			.attr('y1', y1)
+			.attr('x2', x2)
+			.attr('y2', y2)
+			.attr('stroke', '#333')
+			.attr('stroke-width', 1);
+
+		gUntapped
+			.append('text')
+			.attr('x', x2 - 4)
+			.attr('y', y2 + 4)
+			.text('One circle represents 1 Million US$')
+			.style('font-family', 'Inter, sans-serif')
+			.style('font-size', '0.75rem')
+			.attr('fill', '#333')
+			.attr('text-anchor', 'end');
 	});
 </script>
 
 <div class="grid-container">
 	<div class="chart-container top">
-		<div class="title">Finance need for climate adaptation, mitigation, and loss and damage</div>
+		<div class="title">
+			Finance need for climate adaptation, mitigation, and loss and damage (US$)
+		</div>
 		<svg id="chart-total"></svg>
 	</div>
 
 	<div class="chart-container">
-		<div class="title">Fund accessed</div>
+		<div class="title">Fund accessed (US$)</div>
 		<svg id="chart-accessed"></svg>
 	</div>
 
 	<div class="chart-container">
-		<div class="title">Remaining need</div>
+		<div class="title">Remaining need (US$)</div>
 		<svg id="chart-untapped"></svg>
 	</div>
 </div>
@@ -91,7 +165,7 @@
 		text-align: center;
 	}
 	.chart-container svg {
-		margin: 1.4rem auto 1.4rem;
+		margin: 1.4rem auto;
 	}
 	.chart-container.top {
 		grid-column: 1 / -1;
