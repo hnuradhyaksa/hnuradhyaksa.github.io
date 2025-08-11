@@ -221,10 +221,10 @@
 	<div class="completeright">
 		<div class="body article-text-center">
 			<p>
-				The Pacific island nations spans over 10 percent of Earth's sea surface, making the ocean not just a
-				geographic feature, but the foundation of life for its people. Cultures, livelihoods, and
-				identities across Pacific Island nations are deeply tied to the ocean's rhythms and
-				resources.
+				The Pacific island nations spans over 10 percent of Earth's sea surface, making the ocean
+				not just a geographic feature, but the foundation of life for its people. Cultures,
+				livelihoods, and identities across Pacific Island nations are deeply tied to the ocean's
+				rhythms and resources.
 			</p>
 			<p>
 				As climate change intensifies, that connection is under threat. Extreme sea level rise may
@@ -393,6 +393,16 @@
 		<a href="https://github.com/the-dataface/figma2html">figma2html</a>, a tool that converts Figma
 		designs into HTML snippets. The data sources for each visualization can be found below their
 		respective sections, with all datasets being open source.
+	</p>
+	<p>
+		The source code is available on
+		<strong>
+			<a
+				href="https://github.com/hnuradhyaksa/hnuradhyaksa.github.io/tree/master/src/routes/post/pacific-dataviz-2025"
+			>
+				GitHub
+			</a>
+		</strong>
 	</p>
 </footer>
 
