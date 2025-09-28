@@ -109,7 +109,7 @@
 
 	.filter-wrapper {
 		position: static;
-		width: 60%;
+		width: 280px;
 		padding-top: 2.8rem;
 		margin: 0 auto 3.2rem;
 		display: block;

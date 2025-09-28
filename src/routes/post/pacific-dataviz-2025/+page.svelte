@@ -29,7 +29,9 @@
 	}
 </script>
 
-<FirstScrolly />
+<div class="desktop-only">
+    <FirstScrolly />
+</div>
 
 <article>
 	<div class="completeright">
@@ -409,6 +411,13 @@
 <BacktoHome />
 
 <style>
+
+@media (max-width: 1023px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+	
 	.sticky {
 		position: sticky;
 		top: 0;

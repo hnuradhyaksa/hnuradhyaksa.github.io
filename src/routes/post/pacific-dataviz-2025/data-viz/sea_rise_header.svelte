@@ -1,4 +1,3 @@
-<!-- src/components/Response.svelte -->
 <script>
 	import { data } from '../data/sea_level_rise.js';
 	import {
@@ -8,18 +7,15 @@
 	  selectedCountry
 	} from '../data/stores.js';
   
-	// motion
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
 	import { fade } from 'svelte/transition';
   
-	// grab store values
 	$: year       = $selectedYear;
 	$: scenario   = $selectedScenario;
 	$: confidence = $selectedConfidence;
 	$: country    = $selectedCountry;
   
-	// filter & compute raw (meters)
 	$: filtered     = data.filter(
 	  (d) =>
 		d.period_year === year &&
@@ -31,20 +27,17 @@
 	  ? Math.max(...filtered.map((d) => d.value))
 	  : undefined;
   
-	// 1) tweened store, starting at 0
 	const animated = tweened(0, {
 	  duration: 600,
 	  easing: cubicOut
 	});
   
-	// 2) drive it whenever rawSeaLevel changes
 	$: if (rawSeaLevel !== undefined) {
 	  animated.set(rawSeaLevel);
 	} else {
 	  animated.set(0);
 	}
   
-	// 3) derive sign & cm value from the live tweened number
 	$: displaySign = $animated >= 0 ? '+' : '−';
 	$: displayVal  = (Math.abs($animated) * 100).toFixed(2);
   </script>

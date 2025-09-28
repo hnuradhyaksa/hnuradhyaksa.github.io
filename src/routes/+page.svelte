@@ -149,7 +149,7 @@
 	header .logo {
 		width: 80px;
 		height: 80px;
-		display: flex; 
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
@@ -181,6 +181,7 @@
 		flex-direction: column;
 		padding-right: 2rem;
 		overflow-y: auto;
+		padding-left: 1rem;
 	}
 	.greeting .text {
 		flex: 9;

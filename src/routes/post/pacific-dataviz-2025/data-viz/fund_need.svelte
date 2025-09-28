@@ -5,20 +5,19 @@
 	const total = 1500;
 	const accessed = 200;
 	const untapped = total - accessed;
-
 	const dataTotal = { children: Array.from({ length: total }, () => ({})) };
 	const dataAccessed = { children: Array.from({ length: accessed }, () => ({})) };
 	const dataUntapped = { children: Array.from({ length: untapped }, () => ({})) };
-
 	const R = 4;
-
 	const colorTotal = '#8172ac';
 	const colorAccessed = '#0D96F9';
 	const colorUntapped = '#d9d9d9';
-
 	const labelTotal = '1,500 Million';
 	const labelAccessed = '200 Million';
 	const labelUntapped = '1,300 Million';
+
+	const breakpoint = 640;
+	let viewportWidth;
 
 	function renderPack(data, selector, fillColor, label) {
 		const root = hierarchy(data).sum(() => 1);
@@ -28,7 +27,6 @@
 		const size = root.r * 2;
 
 		select(selector).attr('width', size).attr('height', size).selectAll('*').remove();
-
 		const g = select(selector).append('g').attr('transform', `translate(${root.r},${root.r})`);
 
 		g.selectAll('circle')
@@ -54,36 +52,60 @@
 			.style('fill', 'black');
 	}
 
-	onMount(() => {
-		renderPack(dataTotal, '#chart-total', colorTotal, labelTotal);
-		renderPack(dataAccessed, '#chart-accessed', colorAccessed, labelAccessed);
-		renderPack(dataUntapped, '#chart-untapped', colorUntapped, labelUntapped);
-
-		select('#chart-untapped').style('overflow', 'visible');
-
+	// NEW: Function to draw the annotation, which we can call anytime
+	function drawAnnotation() {
 		const rootUntapped = hierarchy(dataUntapped).sum(() => 1);
 		pack()
 			.radius(() => R)
 			.padding(1)(rootUntapped);
 		const leaves = rootUntapped.leaves();
-
-		const highlight = (() => {
-			const quad = leaves.filter((d) => d.x < 0 && d.y > 0);
-			const cx = -rootUntapped.r / 2;
-			const cy = rootUntapped.r / 2;
-			return quad.length
-				? quad.reduce((best, cur) => {
-						const db = Math.hypot(best.x - cx, best.y - cy);
-						const dc = Math.hypot(cur.x - cx, cur.y - cy);
-						return dc < db ? cur : best;
-					})
-				: leaves[0];
-		})();
-
 		const gUntapped = select('#chart-untapped').select('g');
+
+		gUntapped.selectAll('.annotation-element').remove();
+
+		let highlight, angle1, angle2, textAnchor, segLen1, segLen2;
+
+		if (viewportWidth < breakpoint) {
+			highlight = (() => {
+				const quad = leaves.filter((d) => d.x < 0 && d.y < 0);
+				const cx = -rootUntapped.r / 2;
+				const cy = -rootUntapped.r / 2;
+				return quad.length
+					? quad.reduce((best, cur) =>
+							Math.hypot(cur.x - cx, cur.y - cy) < Math.hypot(best.x - cx, best.y - cy) ? cur : best
+						)
+					: leaves[0];
+			})();
+
+			angle1 = (315 * Math.PI) / 180;
+			angle2 = angle1 - (45 * Math.PI) / 180;
+			textAnchor = 'start';
+
+			segLen1 = R * 6;
+			segLen2 = R * 20;
+		} else {
+			highlight = (() => {
+				const quad = leaves.filter((d) => d.x < 0 && d.y > 0);
+				const cx = -rootUntapped.r / 2;
+				const cy = rootUntapped.r / 2;
+				return quad.length
+					? quad.reduce((best, cur) =>
+							Math.hypot(cur.x - cx, cur.y - cy) < Math.hypot(best.x - cx, best.y - cy) ? cur : best
+						)
+					: leaves[0];
+			})();
+
+			angle1 = (135 * Math.PI) / 180;
+			angle2 = angle1 + (45 * Math.PI) / 180;
+			textAnchor = 'end';
+
+			segLen1 = R * 5;
+			segLen2 = R * 15;
+		}
 
 		gUntapped
 			.append('circle')
+			.attr('class', 'annotation-element')
 			.attr('cx', highlight.x)
 			.attr('cy', highlight.y)
 			.attr('r', highlight.r)
@@ -91,30 +113,25 @@
 			.attr('stroke', '#333')
 			.attr('stroke-width', 1);
 
-		const segLen1 = R * 6;
-		const segLen2 = R * 18;
-		const angle1 = (135 * Math.PI) / 180;
 		const x1 = highlight.x + Math.cos(angle1) * segLen1;
 		const y1 = highlight.y + Math.sin(angle1) * segLen1;
-
-		const angle2 = angle1 + (45 * Math.PI) / 180;
 		const x2 = x1 + Math.cos(angle2) * segLen2;
 		const y2 = y1 + Math.sin(angle2) * segLen2;
-
 		const startX = highlight.x + Math.cos(angle1) * highlight.r;
 		const startY = highlight.y + Math.sin(angle1) * highlight.r;
 
 		gUntapped
 			.append('line')
+			.attr('class', 'annotation-element')
 			.attr('x1', startX)
 			.attr('y1', startY)
 			.attr('x2', x1)
 			.attr('y2', y1)
 			.attr('stroke', '#333')
 			.attr('stroke-width', 1);
-
 		gUntapped
 			.append('line')
+			.attr('class', 'annotation-element')
 			.attr('x1', x1)
 			.attr('y1', y1)
 			.attr('x2', x2)
@@ -124,15 +141,30 @@
 
 		gUntapped
 			.append('text')
-			.attr('x', x2 - 4)
-			.attr('y', y2 + 4)
+			.attr('class', 'annotation-element')
+			.attr('x', textAnchor === 'end' ? x2 - 4 : x2 + 4)
+			.attr('y', textAnchor === 'end' ? y2 + 4 : y2 - 4)
 			.text('One circle represents 1 Million US$')
 			.style('font-family', 'Inter, sans-serif')
 			.style('font-size', '0.75rem')
 			.attr('fill', '#333')
-			.attr('text-anchor', 'end');
+			.attr('text-anchor', textAnchor);
+	}
+
+	onMount(() => {
+		renderPack(dataTotal, '#chart-total', colorTotal, labelTotal);
+		renderPack(dataAccessed, '#chart-accessed', colorAccessed, labelAccessed);
+		renderPack(dataUntapped, '#chart-untapped', colorUntapped, labelUntapped);
+
+		select('#chart-untapped').style('overflow', 'visible');
 	});
+
+	$: if (viewportWidth) {
+		drawAnnotation();
+	}
 </script>
+
+<svelte:window bind:innerWidth={viewportWidth} />
 
 <div class="grid-container">
 	<div class="chart-container top">
@@ -184,5 +216,19 @@
 	svg {
 		display: block;
 		margin: 0 auto;
+	}
+
+	@media (max-width: 640px) {
+		.grid-container {
+			grid-template-columns: 1fr;
+		}
+
+		.chart-container.top {
+			grid-column: auto;
+		}
+
+		.chart-container .title {
+			max-width: 80%;
+		}
 	}
 </style>

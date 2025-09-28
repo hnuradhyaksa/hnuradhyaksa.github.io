@@ -3,25 +3,19 @@
 	import {
 		selectedYear,
 		selectedScenario,
-		//   selectedConfidence,
 		selectedCountry
 	} from '../data/stores.js';
 	import { fade } from 'svelte/transition';
 
-	// derive filter options
 	const scenarios = Array.from(new Set(data.map((d) => d.scenario))).filter(
 		(s) => s !== 'historical'
 	);
-	// const confidences = Array.from(new Set(data.map(d => d.confidence)));
 	const countries = Array.from(new Set(data.map((d) => d.name))).sort();
 
-	// popover flags & timeouts
 	let showScenario = false;
-	// let showConfidence = false;
 	let showCountry = false;
 	let hideScenarioTimeout, hideConfidenceTimeout, hideCountryTimeout;
 
-	// tooltip flags & timeouts
 	let showScenarioTooltip = false;
 	let hideScenarioTooltipTimeout;
 	// let showConfidenceTooltip = false;

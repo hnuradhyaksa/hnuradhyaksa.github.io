@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import * as d3 from 'd3';
 	import { scaleQuantile } from 'd3';
 	import { data as rawCountryData } from '../data/country_vuln_emmi.js';
@@ -9,8 +9,9 @@
 	let selectedCountryName = '';
 
 	let chartContainer;
+	let resizeObserver;
 	let svgNode;
-	let circles; // will hold d3 selection of circles
+	let circles;
 	let xScaleLog, yScale, margin;
 	let hoveredChild = null;
 	let tooltipX = 0;
@@ -225,6 +226,7 @@
 
 		pacificLabelsG.style('opacity', 0);
 	}
+
 	function handleMouseOut(event, d) {
 		if (selectedCountryName && d.country !== selectedCountryName) return;
 
@@ -242,6 +244,7 @@
 		countryLabel.style('opacity', 0);
 		pacificLabelsG.style('opacity', 1);
 	}
+
 	function updateTooltipPosition(event) {
 		tooltipX = event.clientX + 10;
 		tooltipY = event.clientY + 10;
@@ -315,7 +318,9 @@
 			.attr('opacity', (d) => (d.yi === yi ? 0.4 : 0));
 	}
 
-	onMount(() => {
+	function drawChart() {
+		d3.select(chartContainer).select('svg').remove();
+
 		const vw = chartContainer.clientWidth;
 		const vh = chartContainer.clientHeight;
 
@@ -326,26 +331,26 @@
 			.attr('height', '100%');
 		svgNode = svg.node();
 
-		const defs = svg.append('defs');
-		defs
-			.append('filter')
-			.attr('id', 'whiteOutline')
-			.attr('x', '-20%')
-			.attr('y', '-20%')
-			.attr('width', '140%')
-			.attr('height', '140%').html(`
-		  <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="dilated"/>
-		  <feFlood flood-color="white" result="flood"/>
-		  <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
-		  <feMerge>
-			<feMergeNode in="outline"/>
-			<feMergeNode in="SourceGraphic"/>
-		  </feMerge>
-		`);
+		const vizTotalWidth = vw;
+		const offsetX = 0;
 
-		const vizTotalWidth = 800;
-		const offsetX = Math.max(0, (vw - vizTotalWidth) / 2);
-		margin = { top: 60, right: 60, bottom: 100, left: 60 };
+		const breakpoint = 720;
+
+		const isSmallScreen = vw < breakpoint;
+
+		const smallScreenHorizontalMargin = 20;
+		const largeScreenHorizontalMargin = 60;
+
+		const baseFontSize = isSmallScreen ? '0.72rem' : '0.86rem';
+
+		const labelStrokeWidth = isSmallScreen ? 3 : 5;
+
+		margin = {
+			top: 60,
+			right: isSmallScreen ? smallScreenHorizontalMargin : largeScreenHorizontalMargin,
+			bottom: 100,
+			left: isSmallScreen ? smallScreenHorizontalMargin : largeScreenHorizontalMargin
+		};
 		const vizInnerWidth = vizTotalWidth - margin.left - margin.right;
 		const vizInnerHeight = vh - margin.top - margin.bottom;
 
@@ -382,11 +387,11 @@
 			.attr('y', (d) => d.y - 10)
 			.attr('text-anchor', 'middle')
 			.attr('font-family', 'Inter, sans-serif')
-			.attr('font-size', '0.86rem')
+			.attr('font-size', baseFontSize)
 			.attr('fill', '#333')
 			.attr('stroke', 'white')
 			.attr('stroke-linejoin', 'round')
-			.attr('stroke-width', 3)
+			.attr('stroke-width', labelStrokeWidth)
 			.attr('paint-order', 'stroke fill')
 			.style('pointer-events', 'none')
 			.style('opacity', 1)
@@ -421,7 +426,7 @@
 			.append('text')
 			.attr('class', 'y-axis-title')
 			.attr('x', margin.left)
-			.attr('y', margin.top + yScale(tickMax - 0.025))
+			.attr('y', margin.top / 2)
 			.attr('dy', '-0.6em')
 			.attr('font-family', 'Inter, sans-serif')
 			.attr('font-size', '0.86rem')
@@ -429,7 +434,6 @@
 			.attr('fill', '#333')
 			.text('Climate Change Vulnerability Index');
 
-		// more/less labels on Y
 		const s1 = tickMax - 0.1,
 			s2 = tickMax - 0.2;
 		// vizG
@@ -679,6 +683,10 @@
 			.attr('class', 'bivariate-legend')
 			.attr('transform', `translate(${legendX},${legendY})`);
 
+		if (vw < 720) {
+			legendG.style('display', 'none');
+		}
+
 		legendG
 			.selectAll('rect')
 			.data(legendData)
@@ -781,6 +789,22 @@
 			.text('Vulnerability');
 
 		pacificLabelsG.raise();
+	}
+
+	onMount(() => {
+		drawChart();
+
+		resizeObserver = new ResizeObserver(() => {
+			drawChart();
+		});
+
+		resizeObserver.observe(chartContainer);
+	});
+
+	onDestroy(() => {
+		if (resizeObserver) {
+			resizeObserver.disconnect();
+		}
 	});
 </script>
 
@@ -934,6 +958,7 @@
 		height: 80vh;
 		position: relative;
 		background: white;
+		z-index: 0;
 	}
 	:global(.scatter-log-chart svg) {
 		width: 100%;

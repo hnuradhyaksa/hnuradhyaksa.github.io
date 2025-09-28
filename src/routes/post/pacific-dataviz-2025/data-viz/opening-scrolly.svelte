@@ -28,6 +28,283 @@
 	let currentStep = 0;
 	let previousStep = 0;
 
+	let vizGroup, yAxisGroup, circles, labels, xAxisLogGroup, xAxisLinearGroup, moreLabel, lessLabel;
+
+	let xScaleLog, xScaleLin, xClass, yClass, margin;
+
+	let nodes, vulnExtent, pacificCodes, bivariatePalette;
+
+	let getRightX;
+
+	let hasCrawled = false;
+	function recolorAndShowAxis() {
+		if (hasCrawled) return;
+		hasCrawled = true;
+
+		yAxisGroup.transition().duration(600).attr('opacity', 1);
+		vizGroup.select('.y-axis-title').transition().duration(600).attr('opacity', 1);
+		vizGroup.select('.y-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
+		vizGroup.select('.y-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
+
+		const colorScale = d3.scaleLinear().domain(vulnExtent).range(['#FFF7EC', '#D7301F']);
+		const sorted = nodes
+			.map((node, i) => ({ v: node.vulnerability, index: i }))
+			.sort((a, b) => a.v - b.v);
+
+		sorted.forEach((item, rank) => {
+			circles
+				.filter((d, i) => i === item.index)
+				.transition()
+				.delay(rank * 5)
+				.duration(300)
+				.attr('fill', () => {
+					const node = nodes[item.index];
+					const xi = xClass(node.historical_emission);
+					const yi = yClass(node.vulnerability);
+					return bivariatePalette[yi][xi];
+				})
+				.attr('stroke', '#fff')
+				.attr('stroke-width', 1)
+				.attr('opacity', 1);
+		});
+	}
+
+	function revertRecolorAndHideAxis() {
+		if (!hasCrawled) return;
+		hasCrawled = false;
+
+		const sorted = nodes
+			.map((node, i) => ({ v: node.vulnerability, index: i }))
+			.sort((a, b) => a.v - b.v);
+		const reversed = sorted.slice().reverse();
+
+		reversed.forEach((item, rank) => {
+			circles
+				.filter((d, i) => i === item.index)
+				.transition()
+				.delay(rank * 5)
+				.duration(300)
+				.attr('fill', '#ccc')
+				.attr('stroke', null)
+				.attr('stroke-width', 0)
+				.attr('opacity', 0.4);
+		});
+
+		yAxisGroup.transition().duration(600).attr('opacity', 0);
+		vizGroup.select('.y-axis-title').transition().duration(600).attr('opacity', 0);
+		vizGroup.select('.y-axis-more').transition().duration(600).attr('opacity', 0);
+		vizGroup.select('.y-axis-less').transition().duration(600).attr('opacity', 0);
+	}
+
+	let hasHighlightedPI = false;
+	function highlightPacific() {
+		if (hasHighlightedPI) return;
+		hasHighlightedPI = true;
+
+		circles
+			.filter((d) => !pacificCodes.has(d.iso3))
+			.transition()
+			.duration(500)
+			.attr('fill', '#ccc')
+			.attr('opacity', 0.4);
+
+		circles
+			.filter((d) => pacificCodes.has(d.iso3))
+			.transition()
+			.duration(500)
+			.attr('fill', (d) => {
+				const xi = xClass(d.historical_emission);
+				const yi = yClass(d.vulnerability);
+				return bivariatePalette[yi][xi];
+			})
+			.attr('opacity', 1)
+			.attr('stroke', '#000')
+			.attr('stroke-width', 1.5);
+
+		labels.transition().delay(200).duration(500).attr('opacity', 1);
+	}
+
+	function revertHighlightPacific() {
+		if (!hasHighlightedPI) return;
+		hasHighlightedPI = false;
+
+		circles
+			.transition()
+			.duration(500)
+			.attr('fill', (d) => {
+				const xi = xClass(d.historical_emission);
+				const yi = yClass(d.vulnerability);
+				return bivariatePalette[yi][xi];
+			})
+			.attr('opacity', 1)
+			.attr('stroke', null)
+			.attr('stroke-width', 0);
+
+		labels.transition().duration(500).attr('opacity', 0);
+	}
+
+	let hasShownScatter = false;
+	function showScatter() {
+		if (hasShownScatter) return;
+		hasShownScatter = true;
+
+		xAxisLogGroup.transition().duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-title').transition().delay(200).duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
+
+		circles
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('cx', (d) => xScaleLog(d.historical_emission));
+
+		labels
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('x', (d) => xScaleLog(d.historical_emission));
+	}
+
+	function revertShowScatter() {
+		if (!hasShownScatter) return;
+		hasShownScatter = false;
+
+		circles
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('cx', (d) => d.x);
+
+		labels
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('x', (d) => d.x);
+
+		xAxisLogGroup.transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
+	}
+
+	let hasSwitchedScale = false;
+	function switchToLinearScale() {
+		if (hasSwitchedScale) return;
+		hasSwitchedScale = true;
+
+		xAxisLogGroup.transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
+		xAxisLogGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
+
+		xAxisLinearGroup.transition().duration(600).attr('opacity', 1);
+		xAxisLinearGroup
+			.select('.x-axis-title')
+			.transition()
+			.delay(200)
+			.duration(600)
+			.attr('opacity', 1);
+		xAxisLinearGroup
+			.select('.x-axis-less')
+			.transition()
+			.delay(200)
+			.duration(600)
+			.attr('opacity', 1);
+		xAxisLinearGroup
+			.select('.x-axis-more')
+			.transition()
+			.delay(200)
+			.duration(600)
+			.attr('opacity', 1);
+
+		circles
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('cx', (d) => xScaleLin(d.historical_emission));
+
+		labels
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('x', (d) => xScaleLin(d.historical_emission));
+
+		const targetX = getRightX(200);
+		if (moreLabel) {
+			moreLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', targetX);
+		}
+		if (lessLabel) {
+			lessLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', targetX);
+		}
+	}
+
+	function revertSwitchToLinearScale() {
+		if (!hasSwitchedScale) return;
+		hasSwitchedScale = false;
+
+		xAxisLinearGroup.transition().duration(600).attr('opacity', 0);
+		xAxisLinearGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
+		xAxisLinearGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
+		xAxisLinearGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
+
+		xAxisLogGroup.transition().duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-title').transition().delay(200).duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
+		xAxisLogGroup.select('.x-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
+
+		circles
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('cx', (d) => xScaleLog(d.historical_emission));
+
+		labels
+			.transition()
+			.duration(1000)
+			.ease(d3.easeCubic)
+			.attr('x', (d) => xScaleLog(d.historical_emission));
+
+		if (moreLabel) {
+			moreLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', margin.left);
+		}
+		if (lessLabel) {
+			lessLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', margin.left);
+		}
+	}
+
+	function updateVisualization(activeStep) {
+		if (activeStep >= 1) {
+			recolorAndShowAxis();
+		} else {
+			revertRecolorAndHideAxis();
+		}
+
+		if (activeStep >= 2) {
+			highlightPacific();
+		} else {
+			revertHighlightPacific();
+		}
+
+		if (activeStep >= 3) {
+			showScatter();
+		} else {
+			revertShowScatter();
+		}
+
+		if (activeStep >= 4) {
+			switchToLinearScale();
+		} else {
+			revertSwitchToLinearScale();
+		}
+	}
+
+	$: updateVisualization(currentStep);
+
+	function drawChart() {
+		d3.select(chartContainer).select('svg').remove();
+	}
+
 	onMount(() => {
 		const countryData = rawCountryData.filter((d) => d.climate_vulnerability_index != null);
 		const viewportWidth = chartContainer.clientWidth;
@@ -42,16 +319,16 @@
 		const vizTotalWidth = 800;
 		const offsetX = Math.max(0, (viewportWidth - vizTotalWidth) / 2);
 
-		const getRightX = (pad = 30) => {
+		getRightX = (pad = 30) => {
 			const totalW = chartContainer.clientWidth;
 			return totalW - offsetX - pad;
 		};
 
-		const margin = { top: 180, right: 60, bottom: 180, left: 60 };
+		margin = { top: 180, right: 60, bottom: 180, left: 60 };
 		const vizInnerWidth = vizTotalWidth - margin.left - margin.right;
 		const vizInnerHeight = viewportHeight - margin.top - margin.bottom;
 
-		const vulnExtent = d3.extent(countryData, (d) => d.climate_vulnerability_index);
+		vulnExtent = d3.extent(countryData, (d) => d.climate_vulnerability_index);
 		const yScale = d3.scaleLinear().domain(vulnExtent).range([vizInnerHeight, 0]);
 
 		const yDomainMin = vulnExtent[0];
@@ -62,7 +339,7 @@
 		const tickVals = d3.range(tickMin, tickMax + 0.0001, 0.1).map((v) => +v.toFixed(1));
 		const innerTickVals = tickVals.filter((v) => v !== tickMin && v !== tickMax);
 
-		const vizGroup = svg.append('g').attr('transform', `translate(${offsetX}, 0)`);
+		vizGroup = svg.append('g').attr('transform', `translate(${offsetX}, 0)`);
 
 		const yAxis = d3
 			.axisLeft(yScale)
@@ -70,7 +347,7 @@
 			.tickFormat(d3.format('.1f'))
 			.tickSize(-vizInnerWidth);
 
-		const yAxisGroup = vizGroup
+		yAxisGroup = vizGroup
 			.append('g')
 			.attr('transform', `translate(${margin.left}, ${margin.top})`)
 			.call(yAxis)
@@ -102,8 +379,8 @@
 
 		const secondTick = tickMax - 0.1;
 		const thirdTick = secondTick - 0.1;
-		let moreLabel = null;
-		let lessLabel = null;
+		moreLabel = null;
+		lessLabel = null;
 		if (secondTick >= tickMin) {
 			const yTop = margin.top + yScale(secondTick);
 			const ySecond = margin.top + yScale(thirdTick);
@@ -163,7 +440,7 @@
 		}
 
 		const nodeRadius = 6;
-		const nodes = countryData.map((d) => ({
+		nodes = countryData.map((d) => ({
 			country: d.country,
 			iso3: d.country_iso3,
 			vulnerability: d.climate_vulnerability_index,
@@ -175,7 +452,7 @@
 
 		const nodeGroup = vizGroup.append('g');
 
-		const circles = nodeGroup
+		circles = nodeGroup
 			.selectAll('circle')
 			.data(nodes)
 			.enter()
@@ -201,7 +478,7 @@
 		for (let i = 0; i < 200; i++) simulation.tick();
 		circles.attr('cx', (d) => d.x).attr('cy', (d) => d.yTarget);
 
-		const pacificCodes = new Set([
+		pacificCodes = new Set([
 			'FJI',
 			'KIR',
 			'MHL',
@@ -217,7 +494,7 @@
 			'NCL'
 		]);
 		const piNodes = nodes.filter((d) => pacificCodes.has(d.iso3));
-		const labels = nodeGroup
+		labels = nodeGroup
 			.selectAll('.pi-label')
 			.data(piNodes)
 			.enter()
@@ -236,32 +513,29 @@
 			.attr('opacity', 0)
 			.text((d) => d.country);
 
-		// Compute extents of historical_emission
 		const emissionExtent = d3.extent(nodes, (d) => d.historical_emission);
 		const emissionMin = emissionExtent[0];
 		const emissionMax = emissionExtent[1];
 
-		// Padded min for log scale
 		let paddedMin = emissionMin / 2;
 		paddedMin = Math.max(1, paddedMin);
 
-		const xClass = d3
+		xClass = d3
 			.scaleQuantile()
 			.domain(nodes.map((d) => d.historical_emission))
 			.range([0, 1, 2]);
 
-		const yClass = d3
+		yClass = d3
 			.scaleQuantile()
 			.domain(nodes.map((d) => d.vulnerability))
 			.range([0, 1, 2]);
 
-		const bivariatePalette = [
+		bivariatePalette = [
 			['#ddd', '#ddd', '#ddd'],
 			['#edc2c2', '#ddd', '#ddd'],
 			['#e68e8e', '#ac7790', '#ddd']
 		];
 
-		// Axis generator helper
 		const formatUnit = (d) => {
 			if (d === 1e9) return '1 Giga';
 			if (d === 1e6) return '1 Mega';
@@ -272,9 +546,10 @@
 			return d.toFixed(0);
 		};
 
-		let xScaleLog, xScaleLin;
+		xScaleLog;
+		xScaleLin;
 
-		const xAxisLogGroup = vizGroup
+		xAxisLogGroup = vizGroup
 			.append('g')
 			.attr('transform', `translate(0, ${yMinPixel})`)
 			.attr('opacity', 0);
@@ -374,8 +649,7 @@
 				.text('->');
 		})();
 
-		// 2) LINEAR‐axis group (hidden)
-		const xAxisLinearGroup = vizGroup
+		xAxisLinearGroup = vizGroup
 			.append('g')
 			.attr('transform', `translate(0, ${yMinPixel})`)
 			.attr('opacity', 0);
@@ -475,315 +749,25 @@
 				.text('->');
 		})();
 
-		let hasCrawled = false;
-		function recolorAndShowAxis() {
-			if (hasCrawled) return;
-			hasCrawled = true;
-
-			yAxisGroup.transition().duration(600).attr('opacity', 1);
-			vizGroup.select('.y-axis-title').transition().duration(600).attr('opacity', 1);
-			vizGroup.select('.y-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
-			vizGroup.select('.y-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
-
-			const colorScale = d3.scaleLinear().domain(vulnExtent).range(['#FFF7EC', '#D7301F']);
-			const sorted = nodes
-				.map((node, i) => ({ v: node.vulnerability, index: i }))
-				.sort((a, b) => a.v - b.v);
-
-			sorted.forEach((item, rank) => {
-				circles
-					.filter((d, i) => i === item.index)
-					.transition()
-					.delay(rank * 5)
-					.duration(300)
-					.attr('fill', () => {
-						const node = nodes[item.index];
-						const xi = xClass(node.historical_emission);
-						const yi = yClass(node.vulnerability);
-						return bivariatePalette[yi][xi];
-					})
-					.attr('stroke', '#fff')
-					.attr('stroke-width', 1)
-					.attr('opacity', 1);
-			});
-		}
-
-		function revertRecolorAndHideAxis() {
-			if (!hasCrawled) return;
-			hasCrawled = false;
-
-			const sorted = nodes
-				.map((node, i) => ({ v: node.vulnerability, index: i }))
-				.sort((a, b) => a.v - b.v);
-			const reversed = sorted.slice().reverse();
-
-			reversed.forEach((item, rank) => {
-				circles
-					.filter((d, i) => i === item.index)
-					.transition()
-					.delay(rank * 5)
-					.duration(300)
-					.attr('fill', '#ccc')
-					.attr('stroke', null)
-					.attr('stroke-width', 0)
-					.attr('opacity', 0.4);
-			});
-
-			yAxisGroup.transition().duration(600).attr('opacity', 0);
-			vizGroup.select('.y-axis-title').transition().duration(600).attr('opacity', 0);
-			vizGroup.select('.y-axis-more').transition().duration(600).attr('opacity', 0);
-			vizGroup.select('.y-axis-less').transition().duration(600).attr('opacity', 0);
-		}
-
-		let hasHighlightedPI = false;
-		function highlightPacific() {
-			if (hasHighlightedPI) return;
-			hasHighlightedPI = true;
-
-			// Fade non-Pacific islands
-			circles
-				.filter((d) => !pacificCodes.has(d.iso3))
-				.transition()
-				.duration(500)
-				.attr('fill', '#ccc')
-				.attr('opacity', 0.4);
-
-			// Emphasize Pacific islands
-			circles
-				.filter((d) => pacificCodes.has(d.iso3))
-				.transition()
-				.duration(500)
-				.attr('fill', (d) => {
-					// your bivariate palette
-					const xi = xClass(d.historical_emission);
-					const yi = yClass(d.vulnerability);
-					return bivariatePalette[yi][xi];
-				})
-				.attr('opacity', 1) // fully opaque
-				.attr('stroke', '#000') // black outline
-				.attr('stroke-width', 1.5);
-
-			// Show country labels
-			labels.transition().delay(200).duration(500).attr('opacity', 1);
-		}
-
-		// 2) Revert highlight so every circle goes back to its original style
-		function revertHighlightPacific() {
-			if (!hasHighlightedPI) return;
-			hasHighlightedPI = false;
-
-			// Restore all circles to bivariate fill, full opacity, no stroke
-			circles
-				.transition()
-				.duration(500)
-				.attr('fill', (d) => {
-					const xi = xClass(d.historical_emission);
-					const yi = yClass(d.vulnerability);
-					return bivariatePalette[yi][xi];
-				})
-				.attr('opacity', 1)
-				.attr('stroke', null)
-				.attr('stroke-width', 0);
-
-			// Hide labels again
-			labels.transition().duration(500).attr('opacity', 0);
-		}
-
-		let hasShownScatter = false;
-		function showScatter() {
-			if (hasShownScatter) return;
-			hasShownScatter = true;
-
-			xAxisLogGroup.transition().duration(600).attr('opacity', 1);
-			xAxisLogGroup
-				.select('.x-axis-title')
-				.transition()
-				.delay(200)
-				.duration(600)
-				.attr('opacity', 1);
-			xAxisLogGroup.select('.x-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
-			xAxisLogGroup.select('.x-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
-
-			circles
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('cx', (d) => xScaleLog(d.historical_emission));
-
-			labels
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('x', (d) => xScaleLog(d.historical_emission));
-		}
-
-		function revertShowScatter() {
-			if (!hasShownScatter) return;
-			hasShownScatter = false;
-
-			circles
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('cx', (d) => d.x);
-
-			labels
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('x', (d) => d.x);
-
-			xAxisLogGroup.transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
-		}
-
-		let hasSwitchedScale = false;
-		function switchToLinearScale() {
-			if (hasSwitchedScale) return;
-			hasSwitchedScale = true;
-
-			// 1) Cross‐fade between log and linear
-			xAxisLogGroup.transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
-			xAxisLogGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
-
-			xAxisLinearGroup.transition().duration(600).attr('opacity', 1);
-			xAxisLinearGroup
-				.select('.x-axis-title')
-				.transition()
-				.delay(200)
-				.duration(600)
-				.attr('opacity', 1);
-			xAxisLinearGroup
-				.select('.x-axis-less')
-				.transition()
-				.delay(200)
-				.duration(600)
-				.attr('opacity', 1);
-			xAxisLinearGroup
-				.select('.x-axis-more')
-				.transition()
-				.delay(200)
-				.duration(600)
-				.attr('opacity', 1);
-
-			circles
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('cx', (d) => xScaleLin(d.historical_emission));
-
-			labels
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('x', (d) => xScaleLin(d.historical_emission));
-
-			// 3) Shift “more/less” labels to the right (anchor=“start”)
-			const targetX = getRightX(200);
-			if (moreLabel) {
-				moreLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', targetX);
-			}
-			if (lessLabel) {
-				lessLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', targetX);
-			}
-		}
-
-		function revertSwitchToLinearScale() {
-			if (!hasSwitchedScale) return;
-			hasSwitchedScale = false;
-
-			// 1) Cross‐fade back to log
-			xAxisLinearGroup.transition().duration(600).attr('opacity', 0);
-			xAxisLinearGroup.select('.x-axis-title').transition().duration(600).attr('opacity', 0);
-			xAxisLinearGroup.select('.x-axis-less').transition().duration(600).attr('opacity', 0);
-			xAxisLinearGroup.select('.x-axis-more').transition().duration(600).attr('opacity', 0);
-
-			xAxisLogGroup.transition().duration(600).attr('opacity', 1);
-			xAxisLogGroup
-				.select('.x-axis-title')
-				.transition()
-				.delay(200)
-				.duration(600)
-				.attr('opacity', 1);
-			xAxisLogGroup.select('.x-axis-less').transition().delay(200).duration(600).attr('opacity', 1);
-			xAxisLogGroup.select('.x-axis-more').transition().delay(200).duration(600).attr('opacity', 1);
-
-			// 2) Move circles/labels from linear→log (back to scatter, not center)
-			circles
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('cx', (d) => xScaleLog(d.historical_emission));
-
-			labels
-				.transition()
-				.duration(1000)
-				.ease(d3.easeCubic)
-				.attr('x', (d) => xScaleLog(d.historical_emission));
-
-			// 3) Shift “more/less” labels back to the left
-			if (moreLabel) {
-				moreLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', margin.left);
-			}
-			if (lessLabel) {
-				lessLabel.transition().duration(1000).ease(d3.easeCubic).attr('x', margin.left);
-			}
-		}
-
-		// ─────────────────────────────────────────────────────────────────────────────
-		// D) INTERSECTION OBSERVER
-		// ─────────────────────────────────────────────────────────────────────────────
 		const options = { root: null, threshold: 0.5 };
-		const observer = new IntersectionObserver((entries) => {
-			let activatedIdx = null;
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					const idx = Number(entry.target.dataset.stepIndex);
-					activatedIdx = idx;
-				}
-			});
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const intersectingEntry = entries.find((entry) => entry.isIntersecting);
 
-			if (activatedIdx !== null) {
-				previousStep = currentStep;
-				currentStep = activatedIdx;
+				if (intersectingEntry) {
+					const newStep = Number(intersectingEntry.target.dataset.stepIndex);
 
-				entries.forEach((entry) => {
-					const idx = Number(entry.target.dataset.stepIndex);
-					if (idx === currentStep) {
-						entry.target.classList.add('is-active');
-					} else if (idx === previousStep) {
-						entry.target.classList.remove('is-active');
+					if (newStep !== currentStep) {
+						previousStep = currentStep;
+						currentStep = newStep;
 					}
-				});
-
-				if (currentStep === 1) recolorAndShowAxis();
-				if (currentStep === 2) highlightPacific();
-				if (currentStep === 3) showScatter();
-				if (currentStep === 4) switchToLinearScale();
+				}
+			},
+			{
+				rootMargin: '-50% 0px -50% 0px',
+				threshold: 0
 			}
-
-			entries.forEach((entry) => {
-				if (!entry.isIntersecting) {
-					const idx = Number(entry.target.dataset.stepIndex);
-					if (idx === 1 && previousStep === 1 && currentStep < 1) {
-						revertRecolorAndHideAxis();
-					}
-					if (idx === 2 && previousStep === 2 && currentStep < 2) {
-						revertHighlightPacific();
-					}
-					if (idx === 3 && previousStep === 3 && currentStep < 3) {
-						revertShowScatter();
-					}
-					if (idx === 4 && previousStep === 4 && currentStep < 4) {
-						revertSwitchToLinearScale();
-					}
-				}
-			});
-		}, options);
+		);
 
 		stepElements.forEach((el) => {
 			if (el) observer.observe(el);
@@ -796,7 +780,8 @@
 
 	{#each dataSteps as step, i}
 		<div
-			class="text-step {i === currentStep ? 'is-active' : ''}"
+			class="text-step"
+			class:is-active={i === currentStep}
 			data-step-index={i}
 			bind:this={stepElements[i]}
 		>
@@ -861,7 +846,6 @@
 		}
 	}
 
-	/* Pull the very first step up so you see its top at 50vh */
 	.scrolly-container > .text-step:nth-child(2) {
 		margin-top: -100vh;
 	}

@@ -109,7 +109,7 @@
 
 	.filter-wrapper {
 		position: static;
-		width: 60%;
+		width: 280px;
 		padding-top: 2.8rem;
 		margin: 0 auto 3.2rem;
 		display: block;
@@ -249,14 +249,12 @@
 	}
 
 	.pointer svg {
-		/* pick up your existing CSS vars for width/height: */
 		width: calc(var(--pointer-width) + var(--stroke));
 		height: calc(var(--pointer-height) + var(--stroke) + var(--triangle-height));
-		display: block; /* remove any inline‐SVG whitespace */
+		display: block;
 		pointer-events: none;
 	}
 
-	/* — Tooltip (unchanged) — */
 	.tooltip {
 		position: absolute;
 		bottom: calc(100% + 0.5em);
