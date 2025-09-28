@@ -16,7 +16,6 @@
     return [safeName];
   }
 
-  // Filter and group the data
   const filtered = data.filter(d => d.plant_name !== "Total plant addition");
   const groups = filtered.filter(d => d.level === 2);
   const groupDict = {};
@@ -33,7 +32,6 @@
   });
   const groupData = Object.values(groupDict);
 
-  // Calculate radius for each group based on capacity
   const maxParentCapacity = d3.max(groupData, d => +d.capacity);
   const parentRadiusScale = d3.scaleSqrt()
     .domain([0, maxParentCapacity])
@@ -42,7 +40,6 @@
     g.radius = parentRadiusScale(+g.capacity);
   });
 
-  // Run pack layout for children inside each group if available
   groupData.forEach(g => {
     if (g.children.length) {
       const root = d3.hierarchy({ children: g.children }).sum(d => +d.capacity);
@@ -52,13 +49,12 @@
     }
   });
 
-  // Set up responsiveness. Define a reactive isMobile variable.
   let isMobile = false;
   onMount(() => {
     function handleResize() {
       isMobile = window.innerWidth < 600;
     }
-    handleResize(); // initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   });
@@ -66,22 +62,18 @@
   const margin = 40;
   let totalWidth, totalHeight;
 
-  // Recompute positions and dimensions when groupData or isMobile changes.
   $: {
   if (isMobile) {
-    const verticalGap = 100; // Extra gap between circles (in addition to the margin)
+    const verticalGap = 100;
     let yOffset = margin;
     groupData.forEach(g => {
-      g.cx = margin + g.radius; // keep x as before
-      // Set y position and add an extra gap after each circle.
+      g.cx = margin + g.radius;
       g.cy = yOffset + g.radius;
-      // Increase the yOffset by the circle’s height plus margin and extra gap.
       yOffset += 2 * g.radius + margin + verticalGap;
     });
     totalWidth = d3.max(groupData, g => 2 * g.radius) + 2 * margin;
     totalHeight = groupData.reduce((sum, g) => sum + 2 * g.radius, 0) + (groupData.length + 1) * (margin + verticalGap);
   } else {
-    // Desktop horizontal layout (unchanged)
     let xOffset = margin;
     groupData.forEach(g => {
       g.cx = xOffset + g.radius;
@@ -93,7 +85,6 @@
   }
 }
 
-  // Tooltip related variables and functions
   let hoveredChild = null;
   let tooltipX = 0;
   let tooltipY = 0;
@@ -112,7 +103,6 @@
     hoveredChild = null;
   }
 
-  // Helper function for dynamic status badge styling
   function getStatusBadgeStyle(status) {
     const isConstruction = status === 'construction';
     const isPrepermit = status === 'pre-permit';

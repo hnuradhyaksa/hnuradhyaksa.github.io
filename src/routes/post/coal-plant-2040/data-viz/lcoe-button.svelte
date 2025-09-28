@@ -145,11 +145,6 @@
 		{/each}
 	  </tbody>
 	</table>
-	<div class="table-annotation">
-	  <p>
-		<strong>Data Source:</strong> Indonesia LCOE Calculator, IESR, 2023 release.
-	  </p>
-	</div>
   </div>
   
   <style>

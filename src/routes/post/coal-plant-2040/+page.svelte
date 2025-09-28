@@ -33,6 +33,22 @@
     <CandleBar/>
 </div>
 
+<div class="viz">
+	<div class="text">
+		<div class="footer">
+			<span class="g-ref">
+				Coal capacity addition data obtained from
+				<a href="https://globalenergymonitor.org/projects/global-coal-plant-tracker/" target="_blank">
+					Global Coal Plant Tracker, Global Energy Monitor, January 2025 release.
+				</a>
+			</span>
+			<span class="g-ref">
+				Includes both grid-connected and captive coal plants.
+			</span>
+		</div>
+	</div>
+</div>
+
 <article>
     <div class="completeright">
         <div class="body article-text-center">
@@ -93,6 +109,16 @@
 
 <div class="chart-container">
     <LcoeTable/>
+</div>
+
+<div class="viz">
+	<div class="text">
+		<div class="footer">
+			<span class="g-ref">
+				The Levelized Cost of Energy value is obtained from IESR: Indonesia LCOE Calculator, 2023 release.
+			</span>
+		</div>
+	</div>
 </div>
 
 <article>

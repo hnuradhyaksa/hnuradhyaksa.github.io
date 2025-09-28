@@ -3,35 +3,28 @@
 	import * as d3 from 'd3';
 	import { data } from '../data/coal_plant_op.js';
 
-	// Fixed domain: always display from 2014 to 2060.
 	let allYears = d3.range(2014, 2060 + 1);
-	// Default scenario.
 	let selectedScenario = 'typical';
 
-	// Global variables for our svg elements, scales, groups, and canvas group.
 	let svg, x, y, canvasGroup, width;
 	let fillRectGroup, netBarGroup, cancelledBarGroup;
 
-	// Pre-calculate the base (cumulative total before 2014) using net_addition.
 	const base = d3.sum(
 		data.filter((d) => +d.year < 2014),
 		(d) => +d.net_addition || 0
 	);
 
-	// Flag so that on the very first update we don't animate the label.
 	let firstUpdate = true;
 
 	onMount(() => {
-		// Define chart dimensions.
 		const svgHeight = 420;
 		const margin = { top: 30, right: 30, bottom: 30, left: 50 };
-		const titleMarginBottom = 50; // space for title
+		const titleMarginBottom = 50;
 		const canvasHeight = svgHeight - margin.top - margin.bottom - titleMarginBottom;
 		width = 800 - margin.left - margin.right;
 		const yaxisWidth = 60;
 		const netchartWidth = width - yaxisWidth;
 
-		// Create the main SVG container.
 		svg = d3
 			.select('#chart')
 			.append('svg')
@@ -40,7 +33,6 @@
 			.append('g')
 			.attr('transform', `translate(${margin.left},${margin.top})`);
 
-		// Define the stripe pattern for cancelled bars.
 		const defs = svg.append('defs');
 		defs
 			.append('pattern')
@@ -53,7 +45,6 @@
 			.attr('stroke', 'darkgrey')
 			.attr('stroke-width', 1);
 
-		// Compute the y-scale based on the typical scenario data.
 		let typicalData = allYears.map((year) => {
 			const record = data.find((d) => +d.year === year);
 			return record
@@ -64,15 +55,12 @@
 					}
 				: { year, value: 0, cancelled: 0 };
 		});
-		// Compute cumulative waterfall values.
 		let cumulative = base;
 		typicalData.forEach((d) => {
 			d.start = cumulative;
 			cumulative += d.value;
 			d.end = cumulative;
-			// Determine the top of the net bar.
 			d.netBarTop = d.value >= 0 ? d.end : d.start;
-			// Cancelled bar always starts at the net bar's top.
 			d.cancelledStart = d.netBarTop;
 			d.cancelledEnd = d.netBarTop + d.cancelled;
 		});
@@ -84,23 +72,19 @@
 		]);
 		const minVal = d3.min(allYValues);
 		const maxVal = d3.max(allYValues);
-		// Expand the domain a bit for visual padding.
 		const expandedMax = maxVal + 12;
 		const expandedMin = minVal - 12;
 		const roundedMax = Math.ceil(expandedMax / 5) * 5;
 		const roundedMin = Math.floor(expandedMin / 5) * 5;
 
-		// Create fixed scales.
 		y = d3.scaleLinear().domain([roundedMin, roundedMax]).range([canvasHeight, 0]);
 		x = d3.scaleBand().domain(allYears).range([0, netchartWidth]).padding(0.05);
 
-		// Append a group for the canvas (bars and grid) and store it globally.
 		canvasGroup = svg
 			.append('g')
 			.attr('class', 'chart-canvas-group')
 			.attr('transform', `translate(${yaxisWidth}, ${titleMarginBottom})`);
 
-		// Draw the x-axis (fixed tick values).
 		const xAxis = canvasGroup
 			.append('g')
 			.attr('class', 'x-axis')
@@ -113,7 +97,6 @@
 			.style('font-size', '0.74rem')
 			.style('fill', '#7f7f7f');
 
-		// Draw the y-axis.
 		const yAxis = canvasGroup.append('g').attr('class', 'y-axis').call(d3.axisLeft(y).ticks(4));
 		yAxis
 			.selectAll('text')
@@ -123,12 +106,10 @@
 			.style('text-anchor', 'end');
 		yAxis.select('.domain').remove();
 
-		// Append groups for the bars.
 		fillRectGroup = canvasGroup.append('g').attr('class', 'fill-rect-group');
 		netBarGroup = canvasGroup.append('g').attr('class', 'net-bar-group');
 		cancelledBarGroup = canvasGroup.append('g').attr('class', 'cancelled-bar-group');
 
-		// Append a title group.
 		const titleGroup = svg
 			.append('g')
 			.attr('class', 'title-group')
@@ -142,7 +123,6 @@
 			.style('font-weight', '700')
 			.style('fill', 'black');
 
-		// Add the y-axis label.
 		canvasGroup
 			.append('foreignObject')
 			.attr('x', -margin.left - 20)
@@ -163,7 +143,6 @@
 		  </div>
 		`);
 
-		// === Annotation Feature (for bars) ===
 		const annotations = [
 			{
 				class: 'annotate-major-left',
@@ -236,29 +215,24 @@
 					`${annotationStyle}<div class="annotation ${annotation.class}">${annotation.label}</div>`
 				);
 		});
-		// === End of Annotation Feature ===
-
+		
 		canvasGroup
 			.append('text')
 			.attr('id', 'net-reduced-label')
-			.attr('x', 320) // initial x position for the typical scenario
-			.attr('y', 0) // initial y position for the typical scenario
+			.attr('x', 320)
+			.attr('y', 0)
 			.attr('text-anchor', 'start')
 			.style('font-family', 'Roboto')
 			.style('font-size', '0.74rem')
 			.style('fill', '#7f7f7f')
 			.text('Net capacity reduced');
 
-		// Draw the initial chart (but note: the label transition inside updateChart is set
-		// to run only on toggle clicks)
 		updateChart(selectedScenario);
 
-		// Lower the grid group so grid lines are behind bars.
 		d3.select('.grid').lower();
 	});
 
 	function updateChart(scenario) {
-		// Prepare complete data for the selected scenario.
 		const completeData = allYears.map((year) => {
 			const record = data.find((d) => +d.year === year);
 			if (record) {
@@ -280,15 +254,12 @@
 			}
 		});
 
-		// Compute cumulative values (waterfall).
 		let cumulative = base;
 		completeData.forEach((d) => {
 			d.start = cumulative;
 			cumulative += d.value;
 			d.end = cumulative;
-			// Determine the top of the net bar.
 			d.netBarTop = d.value >= 0 ? d.end : d.start;
-			// Cancelled bar always starts from the net bar's top.
 			d.cancelledStart = d.netBarTop;
 			d.cancelledEnd = d.netBarTop + d.cancelled;
 		});
@@ -300,10 +271,8 @@
 
 		d3.select('.chart-title').text(newTitle);
 
-		// The baseline (y=0) position.
 		const baseline = y(0);
 
-		// --- Update the fill rectangles ---
 		const fillRects = fillRectGroup.selectAll('rect').data(completeData, (d) => d.year);
 		fillRects
 			.enter()
@@ -336,7 +305,6 @@
 			.style('fill', (d) => (d.year <= 2024 ? '#e8e8e8' : '#f7f7f7'));
 		fillRects.exit().remove();
 
-		// --- Update the net bars ---
 		const netBars = netBarGroup.selectAll('rect').data(completeData, (d) => d.year);
 		netBars
 			.enter()
@@ -360,7 +328,6 @@
 			.style('fill', (d) => (d.value >= 0 ? '#4c5067' : '#d75638'));
 		netBars.exit().remove();
 
-		// --- Update the cancelled bars ---
 		const cancelledBars = cancelledBarGroup.selectAll('rect').data(
 			completeData.filter((d) => d.cancelled !== 0),
 			(d) => d.year
@@ -383,7 +350,6 @@
 			.attr('height', (d) => Math.abs(y(d.cancelledStart) - y(d.cancelledEnd)));
 		cancelledBars.exit().remove();
 
-		// Draw grid lines.
 		const grid = canvasGroup.selectAll('.grid').data([null]);
 		grid
 			.enter()
@@ -402,15 +368,12 @@
 			.attr('stroke-width', 1);
 		canvasGroup.select('.grid').select('.domain').remove();
 
-		// --- Transition the "Net capacity reduced" label only when toggling ---
-		// Define the fixed coordinates for each scenario.
 		const labelPositions = {
 			typical: { x: 320, y: 50 },
 			goal: { x: 320, y: 210 }
 		};
 		const newPos = labelPositions[scenario] || labelPositions['typical'];
 
-		// Only animate the transition if this is not the first update.
 		if (!firstUpdate) {
 			d3.select('#net-reduced-label')
 				.transition()
@@ -418,13 +381,11 @@
 				.attr('x', newPos.x)
 				.attr('y', newPos.y);
 		} else {
-			// First update: ensure the label is set correctly without transition.
 			d3.select('#net-reduced-label').attr('x', newPos.x).attr('y', newPos.y);
 		}
 		firstUpdate = false;
 	}
 
-	// Reactively update the chart whenever the scenario changes and the scales (y) are defined.
 	$: if (selectedScenario && y) {
 		updateChart(selectedScenario);
 	}
@@ -446,17 +407,6 @@
 		>
 			Target
 		</button>
-	</div>
-
-	<!-- Annotation for data source and assumptions placed below the chart -->
-	<div class="chart-annotation">
-		<p>
-			<strong> Data Source: </strong> Global Coal Plant Tracker, Global Energy Monitor, January 2025
-			release.
-		</p>
-		<p>
-			Includes both grid-connected and captive coal plants.
-		</p>
 	</div>
 </div>
 
