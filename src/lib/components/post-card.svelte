@@ -1,92 +1,221 @@
 <script>
-  export let post;
+	export let post;
+	import { base } from '$app/paths';
+
+	const toolColors = {
+		svelte: '#FE3C01',
+		d3: '#F9A13B',
+		figma2html: '#666666',
+		r: '#1A64B8'
+	};
+
+	function getColor(toolName) {
+		return toolColors[toolName.toLowerCase()] || '#888888';
+	}
 </script>
 
-<a class="post-card" href={post.link}>
-  <div
-    class="thumbnail"
-    style="background-image: url({post.thumbnail});"
-  >
-    <div class="post-date">{post.date}</div>
-  </div>
+<a href={post.link} class="card">
+	<div class="meta-top">
+		{#if post.client}
+			<span class="client">{post.client}</span>
+		{:else}
+			<span class="client placeholder">Personal</span>
+		{/if}
 
-  <div class="text-container">
-    <h3 class="post-title">{post.title}</h3>
-  </div>
+		{#if post.recog}
+			<div class="award-badge">
+				<img
+					src="{base}/icon/award-{post.recog}.svg"
+					alt="{post.recog} award"
+					width="18"
+					height="18"
+				/>
+
+				<div class="tooltip">
+					{post.recogtext}
+				</div>
+			</div>
+		{/if}
+	</div>
+
+	<div class="media-wrapper">
+		<img src={post.thumbnail} alt={post.title} />
+	</div>
+
+	<h3 class="title">{post.title}</h3>
+	<p class="summary">{post.summary}</p>
+
+	<div class="tools">
+		{#if post.tools}
+			{#each post.tools as tool}
+				<span class="tool-tag" style="--tag-color: {getColor(tool)}">
+					{tool}
+				</span>
+			{/each}
+		{/if}
+	</div>
 </a>
 
 <style>
-  /* keep your blur keyframes */
-  @keyframes blurIn {
-    from { backdrop-filter: blur(0) }
-    to   { backdrop-filter: blur(8px) }
-  }
-  @keyframes blurOut {
-    from { backdrop-filter: blur(8px) }
-    to   { backdrop-filter: blur(0) }
-  }
+	.card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		border: none;
+		outline: none;
+	}
+	.card:hover {
+		border: none;
+		text-decoration: none;
+		background: transparent;
+	}
+	.meta-top {
+		margin-bottom: 24px;
+		min-height: 1.2rem;
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+	.client {
+		font-family: 'Inter', sans-serif;
+		font-size: 0.84rem;
+		letter-spacing: 0.05rem;
+		text-transform: uppercase;
+		color: #ababab;
+		font-weight: 500;
+	}
+	.client.placeholder {
+		visibility: hidden;
+	}
+	.award-badge {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 18px;
+		height: 18px;
+	}
 
-  .post-card {
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 70% 30%;
-    row-gap: 0.48rem;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(0);
-    animation: blurOut 0.3s ease forwards;
-    overflow: visible;
-  }
-  .post-card:hover {
-    animation: blurIn 0.3s ease forwards;
-  }
+	.award-badge img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
 
-  .thumbnail {
-    grid-row: 1 / 2;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    border-radius: 4px;
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.12));
-  }
+	.tooltip {
+		position: absolute;
+		bottom: 140%;
+		left: 50%;
+		transform: translateX(-50%) translateY(5px);
+		background-color: #333;
+		color: #fff;
+		font-family: 'Inter', sans-serif;
+		font-size: 0.7rem;
+		font-weight: 500;
+		text-align: center;
+		white-space: nowrap;
+		padding: 6px 10px;
+		border-radius: 4px;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			opacity 0.2s ease,
+			transform 0.2s ease;
+		z-index: 10;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	}
 
-  .post-date {
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-    z-index: 2;
-    background: rgba(0,0,0,0.25);
-    color: #ffffff;
-    font-family: Inter, sans-serif;
-    font-size: 0.54rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 12px;
-  }
+	.tooltip::after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -4px;
+		border-width: 4px;
+		border-style: solid;
+		border-color: #333 transparent transparent transparent;
+	}
 
-  .text-container {
-    grid-row: 2 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background: rgba(255,255,255,0.7);
-  }
+	.award-badge:hover .tooltip {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-50%) translateY(0);
+	}
 
-  .post-title {
-    margin: 0;
-    font-family: Inter, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    text-align: left;
-  }
+	.media-wrapper {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		background-color: #f4f4f4;
+		border-radius: 8px;
+		overflow: hidden;
+		margin-bottom: 16px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+	}
+	.media-wrapper img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+	.card:hover .media-wrapper {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+	}
+	.title {
+		font-family: 'Inter', sans-serif;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #111;
+		margin: 24px 0 12px 0;
+		line-height: 1.3;
+	}
+	.summary {
+		font-family: 'Inter', sans-serif;
+		font-size: 0.96rem;
+		font-weight: 400;
+		color: #a0a0a0;
+		margin: 0 0 16px 0;
+		line-height: 1.5;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.tools {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-top: auto;
+	}
 
-  /* hide the subtitle */
-  .post-summary {
-    display: none;
-  }
+	.tool-tag {
+		font-family: 'Inter', sans-serif;
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
+		padding: 4px 10px;
+		border-radius: 100px;
+
+		color: var(--tag-color);
+		border: 2px solid var(--tag-color);
+
+		background-color: var(--tag-color);
+
+		background-color: color-mix(in srgb, var(--tag-color), transparent 80%);
+	}
+
+	@supports not (background: color-mix(in srgb, red, transparent)) {
+		.tool-tag {
+			background-color: transparent;
+		}
+	}
 </style>
