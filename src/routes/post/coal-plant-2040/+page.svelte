@@ -84,9 +84,19 @@
             <p>
                 In total, Indonesia is still planning to add at least 18 coal-fired power plants to meet residential electricity demand and another 7 for industrial use by 2030, amounting to 3.60 GW of grid-connected capacity and 3.57 GW of captive capacity.
             </p>
-            <h2 class="h2">
-                What does the future hold?
-            </h2>
+        </div>
+    </div>
+</article>
+
+<div class="viz">
+	<div class="text">
+		<div class="title">What does the future hold?</div>
+	</div>
+</div>
+
+<article>
+	<div class="completeright">
+		<div class="body article-text-center">
             <p>
                 Prior to outlining Indonesia's coal phase-out commitment, President Prabowo emphasized the country's vast geothermal potential. 
                 He pledged to meet future electricity demand with 75 GW of renewable energy, placing geothermal among the technologies expected to anchor Indonesia's low-carbon transition.
