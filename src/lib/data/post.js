@@ -53,6 +53,19 @@ export const posts = [
     recog: 'gold', 
     recogtext: 'Winner of Interactive Category Open Entry',
   },
+  {
+    id: 5,
+    thumbnail: `${base}/thumbnails/cyclone-senyar.png`,
+    date: 'MAY 2026',
+    client: '',
+    title: "How Cyclone Senyar Became Indonesia's Deadliest Storm in Half a Century",
+    summary: "How a rare storm exposed decades of environmental neglect and administrative failure across northern Sumatra",
+    link: `${base}/post/cyclone-senyar`,
+    author: 'Nur Adhyaksa Hamid',
+    tools: ['Svelte', 'D3', 'QGIS', 'Figma2HTML', 'R'],
+    recog: '', 
+    recogtext: '',
+  }
   // {
   //   id: 5,
   //   thumbnail: `${base}/thumbnails/pacific-dataviz-2025.png`,

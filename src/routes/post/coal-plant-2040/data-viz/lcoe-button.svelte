@@ -197,7 +197,6 @@
 </div>
 
 <style>
-    /* ... (Previous styles unchanged) ... */
     #chart-container {
         position: relative;
         width: 960px;
@@ -263,7 +262,7 @@
         align-items: center;
         gap: 0.5rem;
         font-family: 'Inter', sans-serif;
-        font-size: 0.8rem;
+        font-size: 0.72rem;
         color: #666;
         cursor: pointer;
         transition: opacity 0.3s ease;
@@ -309,7 +308,7 @@
         cursor: pointer;
         font-family: Roboto, sans-serif;
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 0.72rem;
         color: #aaaab0;
         transition: background 0.3s ease, color 0.3s ease;
     }

@@ -2,19 +2,8 @@
 	import { posts } from '$lib/data/post.js';
 	import PostCard from '$lib/components/post-card.svelte';
 	import { fade } from 'svelte/transition';
-	import { tick } from 'svelte';
 
-	const sorted = [...posts].sort((a, b) => b.id - a.id);
-	let offset = 0;
-
-	const windowSize = 4;
-
-	const fadeDur = 100;
-	let displayedPosts = [];
-
-	$: if (!displayedPosts.length) {
-		displayedPosts = sorted.slice(offset, offset + windowSize);
-	}
+	const displayedPosts = [...posts].sort((a, b) => b.id - a.id);
 </script>
 
 <div class="wrapper">

@@ -6,7 +6,8 @@
 		svelte: '#FE3C01',
 		d3: '#F9A13B',
 		figma2html: '#666666',
-		r: '#1A64B8'
+		r: '#1A64B8',
+		qgis: '#83AF00'
 	};
 
 	function getColor(toolName) {
