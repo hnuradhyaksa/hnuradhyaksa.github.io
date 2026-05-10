@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/post/pacific-dataviz-2025/+page.svelte";
