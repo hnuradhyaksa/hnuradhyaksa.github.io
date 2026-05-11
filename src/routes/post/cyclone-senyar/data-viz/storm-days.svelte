@@ -17,7 +17,7 @@
 	let svgMouseX = 0;
 	let svgMouseY = 0;
 
-	const blackStorms = ['SEROJA', 'DAHLIA', 'VAMEI', 'TERATAI', 'FLORES', 'CEMPAKA', 'BAKUNG'];
+	const blackStorms = ['VAMEI'];
 
 	function toProperCase(str) {
 		if (!str) return '';

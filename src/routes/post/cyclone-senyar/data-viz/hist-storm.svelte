@@ -40,23 +40,35 @@
 			}
 		}))
 	};
-
-	const blackStorms = ['SEROJA', 'DAHLIA', 'VAMEI', 'TERATAI', 'FLORES', 'CEMPAKA', 'BAKUNG'];
-
+	const blackStorms = [
+		{ name: 'SEROJA' },
+		{ name: 'DAHLIA' },
+		{ name: 'VAMEI' },
+		{ name: 'TERATAI' },
+		{ name: 'FLORES' },
+		{ name: 'CEMPAKA' },
+		{ name: 'BAKUNG', year: 2025 },
+		{ name: 'KOTO' }
+	];
+	function isBlackStorm(stormName, stormYear) {
+		return blackStorms.some(
+			(storm) => storm.name === stormName && (storm.year === undefined || storm.year === stormYear)
+		);
+	}
 	function toProperCase(str) {
 		if (!str) return '';
 		return str.charAt(0).toUpperCase() + str.toLowerCase().slice(1);
 	}
 
-	function getStormBaseColor(name) {
+	function getStormBaseColor(name, year) {
 		if (name === 'SENYAR') return '#d75638';
-		if (blackStorms.includes(name)) return '#333333';
+		if (isBlackStorm(name, year)) return '#333333';
 		return '#bbbbbb';
 	}
 
-	function getStormClass(name, sid) {
+	function getStormClass(name, sid, year) {
 		const isBaseRed = name === 'SENYAR';
-		const isBaseBlack = blackStorms.includes(name);
+		const isBaseBlack = isBlackStorm(name, year); // UPDATED
 
 		if (hoveredStorm) {
 			if (hoveredStorm.sid === sid) {
@@ -76,10 +88,10 @@
 		return 'path-background';
 	}
 
-	function getStormRank(name, sid) {
+	function getStormRank(name, sid, year) {
 		if (hoveredStorm && hoveredStorm.sid === sid) return 99;
 		if (name === 'SENYAR') return 2;
-		if (blackStorms.includes(name)) return 1;
+		if (isBlackStorm(name, year)) return 1; // UPDATED
 		return 0;
 	}
 
@@ -87,20 +99,22 @@
 		stormGeoJSON && stormGeoJSON.features
 			? [...stormGeoJSON.features].sort(
 					(a, b) =>
-						getStormRank(a.properties.NAME, a.properties.SID) -
-						getStormRank(b.properties.NAME, b.properties.SID)
+						getStormRank(a.properties.NAME, a.properties.SID, a.properties.YEAR) - // UPDATED
+						getStormRank(b.properties.NAME, b.properties.SID, b.properties.YEAR) // UPDATED
 				)
 			: [];
 
-	// UPDATED ARROWS: Dynamic calculation based on hover state
+	// UPDATED ARROWS
 	$: arrowMarkers =
 		stormTracks && projection
 			? stormTracks
 					.filter((track) => {
-						// If a storm is hovered, ONLY generate arrows for that specific storm
 						if (hoveredStorm) return track[0].SID === hoveredStorm.sid;
-						// Otherwise, use the default idle behavior
-						return track[0].NAME === 'SENYAR' || blackStorms.includes(track[0].NAME);
+						// UPDATED check
+						return (
+							track[0].NAME === 'SENYAR' ||
+							isBlackStorm(track[0].NAME, track[0].ISO_TIME.getFullYear())
+						);
 					})
 					.flatMap((track) => {
 						const markers = [];
@@ -126,7 +140,7 @@
 									x: x1,
 									y: y1,
 									angle: angle,
-									color: getStormBaseColor(pt.NAME),
+									color: getStormBaseColor(pt.NAME, pt.ISO_TIME.getFullYear()), // UPDATED
 									day: daysElapsed
 								});
 							}
@@ -135,13 +149,17 @@
 					})
 			: [];
 
-	// UPDATED LABELS: Only display static labels when NOTHING is being hovered
+	// UPDATED LABELS
 	$: stormLabels =
 		stormTracks && projection
 			? stormTracks
 					.filter((track) => {
-						if (hoveredStorm) return false; // Vanish all static labels on hover
-						return track[0].NAME === 'SENYAR' || blackStorms.includes(track[0].NAME);
+						if (hoveredStorm) return false;
+						// UPDATED check
+						return (
+							track[0].NAME === 'SENYAR' ||
+							isBlackStorm(track[0].NAME, track[0].ISO_TIME.getFullYear())
+						);
 					})
 					.map((track) => {
 						const stormName = track[0].NAME;
@@ -162,7 +180,7 @@
 							name: toProperCase(stormName),
 							x: x,
 							y: y,
-							color: getStormBaseColor(stormName)
+							color: getStormBaseColor(stormName, stormYear) // UPDATED
 						};
 					})
 					.filter(
@@ -330,7 +348,11 @@
 					{#each sortedFeatures as feature}
 						<path
 							d={pathGenerator(feature)}
-							class="storm-path {getStormClass(feature.properties.NAME, feature.properties.SID)}"
+							class="storm-path {getStormClass(
+								feature.properties.NAME,
+								feature.properties.SID,
+								feature.properties.YEAR
+							)}"
 							on:mouseenter={(e) => {
 								// Grab immediate coordinates on enter to avoid an instant teleport/flicker
 								const rect = e.target.closest('svg').getBoundingClientRect();
@@ -415,7 +437,7 @@
 						y={svgMouseY - 15}
 						text-anchor="middle"
 						alignment-baseline="middle"
-						fill={getStormBaseColor(hoveredStorm.name)}
+						fill={getStormBaseColor(hoveredStorm.name, hoveredStorm.year)}
 						stroke="white"
 						stroke-width="3"
 						stroke-linejoin="round"
