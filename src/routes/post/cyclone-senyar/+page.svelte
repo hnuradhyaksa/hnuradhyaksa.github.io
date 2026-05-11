@@ -59,7 +59,7 @@
 
 <div class="viz">
 	<div class="text">
-		<div class="title">Rare cyclone formation in an unlikely region"</div>
+		<div class="title">Rare cyclone formation in an unlikely region</div>
 	</div>
 </div>
 
